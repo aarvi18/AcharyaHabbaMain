@@ -1,0 +1,70 @@
+main {
+    /* background: url('/images/Contact-us-bg.jpg'); */
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url('/images/Cultural-characters.jpg');
+    background-color: rgb(70, 70, 224);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+
+}
+
+.faq-heading {
+    text-align: center;
+    color: #fff;
+    /* background-color: rgb(255, 255, 255); */
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    border-radius: 8px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+
+.faq-heading img {
+    width: 30rem;
+}
+
+.faq {
+    width: 100%;
+    margin: auto;
+    background: url('/images/Habba/2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/images/Contact-us-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.faq-cnt {
+    width: 60%;
+    margin: auto;
+    padding: 50px;
+}
+
+details {
+    margin: 25px;
+    padding: 15px;
+    background-color: #ffffffe1;
+    border-radius: 5px;
+    letter-spacing: 0px;
+}
+
+summary {
+    margin: 5px;
+    letter-spacing: 0.1rem;
+    font-weight: 800;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .faq-cnt {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+    }
+
+}

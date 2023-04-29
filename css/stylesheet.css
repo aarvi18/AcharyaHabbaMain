@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Universal css class */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Universal css class end*/
+
+
+#myVideo {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+main {
+    max-width: 1720px;
+    margin: auto;
+    /* height: 100vh; */
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: #000;
+    place-items: center;
+    transition: opacity 25s, visibility 45s;
+}
+
+.fade {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wrapper img {
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        width: 200%;
+    }
+
+    to {
+        width: 36.5%;
+    }
+}
+
+/* ##### Navigation bar ##### */
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: auto;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: auto;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+
+nav .logo img {
+    width: 6rem;
+}
+
+nav .respons-bar {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+nav .menu ul {
+    list-style: none;
+}
+
+nav .menu ul a {
+    text-decoration: none;
+    margin: 15px;
+    font-size: larger;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav .menu ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav .menu ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    scale: 0.1;
+    transform-origin: right;
+    transition: scale 0.23s;
+}
+
+nav .menu ul li:hover::before {
+    scale: 1;
+    transform-origin: left;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+header .main-cnt {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(29, 38, 113, 0.4), rgba(0, 0, 0, 0.9));
+    color: #fff;
+    text-align: center;
+}
+
+header .main-cnt span {
+    font-size: xx-large;
+    font-family: 'PT Sans', sans-serif;
+}
+
+header .sub-cnt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+    
+    
+}
+.main-cnt .sub-cnt h1{
+    font-size: 72px;
+    background: -webkit-linear-gradient(#ff1818, #ffe600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+.main-cnt .sub-cnt h2{
+    font-size: 72px;
+    background: -webkit-linear-gradient(#ffffff, #0066ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+header .sub-cnt .acharya{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 5rem;
+}
+header .sub-cnt .habba{
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    font-size: 8rem;
+}
+header .sub-cnt p {
+    letter-spacing: 0.5rem;
+}
+
+header .header-center {
+    color: white;
+    width: 90%;
+    /* background-color: #0000002d; */
+    padding: 2rem;
+    border-radius: 15px;
+
+}
+
+header .header-center h1 {
+    /* font-size: 6rem;
+    letter-spacing: 0.5rem; 
+    font-weight: 900; */
+    /* font-family: 'Sancreek', cursive; */
+    /* font-family: 'Cinzel Decorative', cursive; */
+    /* background: -webkit-linear-gradient(#00d9ff, #1ba300); */
+    /* background: linear-gradient(150deg, rgba(255, 1, 1, 0.863) 15% , rgba(251, 255, 0, 0.824) 45% , rgba(255, 0, 0, 0.824) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.header-center img {
+    width: 30rem;
+}
+
+header .header-center .habba-title {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    background-color: aliceblue;
+    padding: 5px;
+    color: #000;
+    border-radius: 5px;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+header .header-center span {
+    font-size: 1.5rem;
+    /* font-family: 'Comforter', cursive; */
+    font-family: 'Cinzel Decorative', cursive;
+    display: block;
+    margin-top: 3rem;
+}
+
+#myBtn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background-color: #ff000069;
+    color: #ffffff;
+    letter-spacing: 0.2rem;
+}
+
+
+.about-habba {
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    justify-content: space-around;
+} 
+
+.about-habba-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/Habba/34.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.about-habba-2 {
+    background-color: #ffffff;
+    background: url('../images/Habba/beanstalk.webp');
+}
+.about-habba-txt {
+    width: 50%;
+    text-align: justify;
+    
+} 
+.about-habba-simbha {
+    width: 40%;
+    
+} 
+
+.about-habba-txt h1 {
+    font-size: 2rem;
+    margin: 15px 0;
+}
+.about-habba-simbha img {
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+} 
+
+.picture-sec {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/Contact-us-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    /* background-color: #00d9ff; */ 
+}
+
+.picture-sec .last-yr-snap .pict img {
+    cursor: pointer;
+    width: 30rem;
+    border-radius: 8px;
+    border: 5px solid white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: 25px;
+}
+
+.pict {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+}
+
+.footer {
+    background: url('../images/homebg.png');
+    color: #fff;
+}
+
+.sub-footer {
+    padding: 25px;
+    justify-content: space-around;
+    text-align: left;
+    color: #fff;
+}
+
+.sub-footer .college-add img {
+    width: 15rem;
+}
+
+.footer .sub-footer .shortCut .menu ul {
+    display: block;
+}
+.footer .sub-footer .shortCut .menu ul a {
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    margin-bottom: 5px;
+
+}
+.footer .sub-footer .shortCut img {
+    width: 10rem;
+    display: flex;
+    margin: auto;
+}
+
+.footer .sub-footer .box {
+    width: 25%;
+}
+
+.footer .copyright {
+    text-align: center;
+    display: inline;
+    /* background-color: bisque; */
+}
+
+.social-link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-link span {
+    margin: 0px 15px;
+
+}
+
+
+/* #Media queries */
+@media only screen and (max-width: 600px) {
+
+    .nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu {
+        display: none;
+    }
+    nav .menu ul {
+       
+    }
+    #myVideo {
+        height: 100vh;
+        width: auto;
+    }
+
+    header .sub-cnt .acharya {
+        font-size: 2rem;
+    }
+
+    header .sub-cnt .habba {
+        font-size: 4rem;
+        letter-spacing: 0.3rem;
+    }
+
+    header .sub-cnt span {
+        font-size: 1.5rem;
+    }
+    header .sub-cnt p {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .picture-sec .last-yr-snap .pict img {
+        width: 20rem;
+    }
+
+    .about-habba {
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+    .about-habba-txt {
+        width: 100%;
+    }
+
+    .about-habba-simbha {
+        width: 100%;
+    }
+
+    .about-habba-simbha img {
+        width: 15rem;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+    } 
+    .sub-footer {
+        display: block;
+    }
+    .footer .sub-footer .box {
+        width: 100%;
+        text-align: justify;
+        
+    }
+
+    .footer .sub-footer .shortCut img {
+        width: 8rem;
+        display: flex;
+        margin: 25px auto;
+    }
+
+  }

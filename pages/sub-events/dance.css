@@ -1,0 +1,46 @@
+.dance {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px;
+    color: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/images/Contact-us-bg.jpg');
+}
+
+.dance-sec {
+    background: url('/images/Habba/beanstalk.webp');
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+
+/* .dance-sec img {
+    width: 12rem;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */
+
+.event-cnt {
+    text-align: justify;
+}
+
+.event-cnt h1 {
+    margin-bottom: 15px;
+    letter-spacing: 0.11rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    .dance-sec {
+        width: 95%;
+    }
+    .dance {
+       padding: 0;
+    }
+}
