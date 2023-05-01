@@ -127,6 +127,15 @@ img{
   margin-top:20px;
 }
 
+.team-message {
+  width: 80%;
+  margin: 5rem auto;
+  background: url('/images/Habba/beanstalk.webp');
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
 @media only screen and (max-width: 600px) {
   .team-body {
     display: flex;
