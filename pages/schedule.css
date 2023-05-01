@@ -23,9 +23,6 @@ main {
 
 }
 
-.schedule-sec {
-}
-
 .sub-schedule {
     padding: 5rem;
 }
@@ -81,6 +78,22 @@ main {
     margin: 8px;
 }
 
+.habba-calender {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.habba-calender img {
+    width: 32rem;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
 @media only screen and (max-width: 600px) {
     .sub-schedule {
         padding: 1rem;
@@ -90,6 +103,10 @@ main {
     }
     .do-dont {
         width: 95%;
+        text-align: justify;
+    }
+    .habba-calender img {
+        width: 20rem;
     }
 }
 
