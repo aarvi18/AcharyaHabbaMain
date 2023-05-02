@@ -7,9 +7,10 @@ body {
 }
 
 .contactus-box {
-    width: 80%;
+    width: 85%;
     margin: 5rem auto;
     background-color: #000000b6;
+    text-align: center;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     padding: 25px;
@@ -32,6 +33,11 @@ body {
 .contactus-box .name a {
     color: whitesmoke;
     text-decoration: none;
+}
+
+.habbamail a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .map {
