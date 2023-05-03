@@ -104,6 +104,12 @@
   font-size: 24px;
 }
 
+.director {
+  background: url('/images/Habba/beanstalk.webp');
+}
+.faculty {
+  background-color: rgba(233, 233, 233, 0.418);
+}
 
 .team-card{
   width: 20%;
