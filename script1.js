@@ -1,6 +1,6 @@
 // Countdown
 
-const targetDateTime = new Date ('2024-04-30T00:00:00');
+const targetDateTime = new Date ('2024-04-13T00:00:00');
 
 function updateCountdown () {
     const currentDate = new Date ();
