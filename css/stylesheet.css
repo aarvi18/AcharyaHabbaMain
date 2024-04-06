@@ -333,7 +333,6 @@ header .header-center span {
 
 .about-habba-2 {
     background-color: #ffffff;
-    background: url('../images/Habba/beanstalk.webp');
 }
 
 .about-habba-txt {
@@ -346,7 +345,7 @@ header .header-center span {
     font-size: 18px;
     font-weight: 200;
     color: #fff;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    /*text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);*/
 }
 
 
@@ -420,9 +419,9 @@ header .header-center span {
 }
 
 .picture-sec .edm-cont p{
-    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);
+    /*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
     font-family: "Outfit", sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 200;
     line-height: 20px;
     text-align: left;
@@ -468,7 +467,9 @@ footer{
 	width: 100%;
 	position: absolute;
 	bottom: 1;
-    background: url('../images/Habba/beanstalk.webp');	color:#EEA47F;
+    background-color: rgb(255, 255, 255);
+    /*background: url('../images/Habba/beanstalk.webp');*/	
+    color:#EEA47F;
 	padding: 30px 0 10px;
 	font-size: 13px;
 	line-height: 10px;
@@ -506,7 +507,7 @@ footer{
 	line-height: 1.5;
 	color: rgb(0, 0, 0);
 	text-decoration: none;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 	font-family: "Outfit", sans-serif;
 }
 
@@ -648,9 +649,9 @@ hr{
 	}
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px) {
 	footer{
-	background: linear-gradient(to right, #00093c, #2d0b00);
+	background: #fff;
 	border-top-right-radius: 125px;
 	border-top-left-radius: 20px;
 	bottom: unset;
@@ -686,9 +687,10 @@ hr{
 	}
 	.col ul li a{
 		text-decoration: none;
-		color: white;
+		color: rgb(0, 0, 0);
 		font-size: 15px;
-		font-family: 'Rajdhani', sans-serif;
+        font-weight: 420;
+		font-family: "Outfit", sans-serif;
 		letter-spacing: 1px;
 		margin-left: -0px;
 	}
@@ -697,12 +699,15 @@ hr{
 		height: 40px;
 		border-radius: 10%;
 		text-align: center;
-		line-height: 40px;
+		line-height: 0px;
 		font-size: 30px;
-		margin-right: -10px;
+		margin-left: 25px;
 		cursor: pointer;
-		padding: 0px 25px 0px 25px;
+		padding: 0px 10px 0px 0px;
 	}
+    .copyrights{
+        font-size: 13px;
+    }
 }
 
 /* #Media queries */
@@ -717,7 +722,7 @@ hr{
         display: none;
     }
 
-    nav .menu ul {}
+    nav .menu ul { }
 
     #myVideo {
         height: 100vh;
@@ -762,7 +767,14 @@ hr{
 
     .about-habba-simbha img {
         width: 15rem;
-        border-radius: 50%;
+        border-radius: 0% 0% 40% 50%;
+        display: block;
+        margin: auto;
+    }
+
+    .about-habba-simbha1 img {
+        width: 15rem;
+        border-radius: 0% 0% 80% 40%;
         display: block;
         margin: auto;
     }
@@ -783,6 +795,32 @@ hr{
         margin: 25px auto;
     }
 
+    .count {
+        background: url('../images/Habba/beanstalk.webp');
+        padding: 20px;
+    }
+    
+    #countdown {
+        font-family: "Syne", sans-serif;
+        letter-spacing: 4px;
+        background-color: #fff;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        border: 3px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        padding: 1px;
+        color: #0000ff;
+        font-weight: bolder;
+    }
+    
+    .stext {
+        color: #ff6E00;
+        font-size: 30px;
+        letter-spacing: 10px;
+        font-family: "Codystar", sans-serif;
+    }
+    
 
     /* This section is for mobile nav bar */
     .dropbtn {
@@ -838,16 +876,35 @@ hr{
         display: block;
     }
 
+    .about-habba-txt p{
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
 
     .picture-sec .edm-night {
         width: 100%;
         margin: 2rem auto;
     }
 
+    .picture-sec .edm-night p{
+        font-size: 15px;
+        width: 40%;
+        text-align: left;
+    }
+
+    .picture-sec .edm-night h1{
+        font-size: 20px;
+        padding-top: 20px;
+        width: 40%;
+    }
+
+    .picture-sec .edm-night button{
+        width: 35%;
+        margin-right: 100%;
+    }
 
     .picture-sec .edm-night img {
         width: 15rem;
-
         border-radius: 10px;
     }
 
