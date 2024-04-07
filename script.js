@@ -33,5 +33,3 @@ document.getElementById("myBtn").onclick = function() {opennav()};
 function opennav() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-
-

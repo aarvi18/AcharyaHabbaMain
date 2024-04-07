@@ -30,7 +30,7 @@
     <!---Updated Font-->
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
 
@@ -49,82 +49,35 @@
 
 <body>
     <main>
-        <header>
-
-            
-
-            <nav class="nav">
-                <div class="logo1">
-                    <img src="./images/HabbaLogo.png" alt="HabbaLogo">
-                </div>
-                <!-- <div class="respons-bar">
-                    <i class="fa fa-bars"></i>
-                </div> -->
-                <div class="dropdown">
-                    <button id="myBtn" class="dropbtn">Navigation</button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="/index.html">Home</a>
-                      <a href="./pages/event.html">Events</a>
-                      <a href="./pages/schedule.html">Schedule</a>
-                      <a href="./pages/sponsor.html">Sponsor</a>
-                      <a href="./pages/team.html">Teams</a>
-                      <a href="./pages/faq.html">Faq</a>
-                      <a href="./pages/contatus.html">Contact Us</a>
-                    </div>
-                  </div>
-                <div class="menu flex">
-                    <div class="logo">
-                        <img src="./images/HabbaLogo.png" alt="HabbaLogo">
-                    </div>
-                    <ul class="flex">
-                        <a href="/index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="./pages/event.html">
-                            <li>Events</li>
-                        </a>
-                        <a href="./pages/schedule.html">
-                            <li>Schedule</li>
-                        </a>
-                        <a href="./pages/sponsor.html">
-                            <li>Sponsor</li>
-                        </a>
-                        <a href="./pages/team.html">
-                            <li>Teams</li>
-                        </a>
-                        <a href="./pages/faq.html">
-                            <li>Faq</li>
-                        </a>
-                        <a href="./pages/contatus.html">
-                            <li>Contact Us</li>
-                        </a>
+        
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/HabbaLogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/event.html">About</a></li>
+                        <li><a href="acadamics.html">Events</a></li>
+                        <li><a href="admission.html">Teams</a></li>
+                        <li><a href="admission.html">Sponsor</a></li>
+                        <li><a href="facilities.html">Faq</a></li>	
+                        <li><a href="contact.html">Contact Us</a></li>							
                     </ul>
-
                 </div>
-
-
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
-
-            <video autoplay muted loop id="myVideo">
-                <source src="./video/Video2.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-
-            <div class="main-cnt">
-                <div class="sub-cnt">
-                    <h2 class="acharya">Acharya</h2>
-                    <h1 class="habba">Habba'24</h1>
-                    <span>00 May 2024 DJ Night</span>
-                    <p>Get ready for Bengaluru's biggest Techno Cultural fest</p>
-                    <!---<h3>19th & 20th May 2024 Main Day</h3>---->
-                    <button id="myBtns">Dj Night Tickets</button>
-                    <a href="./pages/registration.html"><button id="myBtns">Events Registerations</button></a>
-                    <script src="./script.js"></script>
-                </div>
+                
+            <div class="text-box">
+                <h1> ACHARYA </h1>
+                <h2>HABBA-24</h2>
+                <span>22 April 2024 Launch</span>
+                <p>Get ready for Bengaluru's biggest Techno Cultural fest</p> 
+                <a href="/pages/registration.html" class="hero-btn">Event Registerations<br></a>
+                <a href="" class="hero-btn">Dj Night Tickets</a>
             </div>
-            </div>
+        </section>
 
-        </header>
         <div class="count">
             <div id="countdown"></div>
             <script src="script1.js"></script>
@@ -202,8 +155,10 @@
             <div class="last-yr-snap">
                 
                 <div class="edm-night">
-                    <img src="./images/demoimg.jpg" alt="EDM Night">
+                    <!--<img src="./images/demoimg.jpg" alt="EDM Night">-->
                 <div class="edm-cont">
+                    <h1>Dj Night 10 May 2024</h1>
+                    <a href="/pages/registration.html" class="hero-btn1">Get your E-Pass<br></a>
                     <h2>Do's</h2>
                     <p><b>Plan your day accordingly:</b> Be on time and support your participating friends in their respective events have a look at the schedule 
                         and plan accordingly.</p>
@@ -213,25 +168,22 @@
                     <p><b>Identify Check:</b> Security personnel & Habba crew & NCC Cadets will be deployed across acharya campus, Please make sure to 
                         carry your physical ID cards of students (Driving License/ Aadhar card: For Outsiders).</p>
 
-                    <h2>Dont's</h2>
-                    <p><b>Not allowed:</b> Vanity bags, Cosmetics, Keychains with sharp ends, Sharp objects or weapons 
+                    <h2 class="edmh">Dont's</h2>
+                    <p class="edmp"><b>Not allowed:</b> Vanity bags, Cosmetics, Keychains with sharp ends, Sharp objects or weapons 
                         (e.g.Nail cutter), Pepper sprays, Bangles or Kadas, Carrying liquid or edibles, including water bottles.</p>
-                    <p><b>Dont be cheeky:</b> Any kind of suspicious activites/ peace distruptions/ illegal activities will result 
+                    <p class="edmp"><b>Dont be cheeky:</b> Any kind of suspicious activites/ peace distruptions/ illegal activities will result 
                         in immediate suspension from the campus and the individual will be subjected to required actions.</p>
-                    <p><b>We're watching you:</b> Police, security personnel & habba crew & NCC Cadets will be deployed across the 
+                    <p class="edmp"><b>We're watching you:</b> Police, security personnel & habba crew & NCC Cadets will be deployed across the 
                         campus & have the right to detain any individual involved in any kind of activity that leads to disruption 
                         of peace within the venue.</p>
-                    <p><b>Be Responsible:</b> Management is not responsible for any kind of loss. We DO NOT provide any 
+                    <p class="edmp"><b>Be Responsible:</b> Management is not responsible for any kind of loss. We DO NOT provide any 
                         cloak room facility.</p>
-                        <h1>DJ Night 10 MAY 2024</h1>
-                    <a href="tel:+918285802245"><button id="myBtns">Get your Dj Tickets</button></a>
+                        
                 </div>
                 </div>
-
-                <!--<h3>Habba Clips</h3>-->
 
                 <!---<div class="pict flex">
-
+                    <h3>Habba Clips</h3>
                     <div class="photo-sec" data-aos="zoom-in" data-aos-duration="1100">
                         <img src="./images/Habba/6.jpg" alt="Habba pic">
                     </div>
@@ -341,6 +293,19 @@
     <!-- ##### Java Script #####  -->
     <script src="./script.js"></script>
     <script src="./script1.js"></script>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");	
+        function showMenu(){
+            navLinks.style.right = "0px";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-100px";
+        }
+        
+    </script> 
+    
 
     <!-- ##### AOS Scroll Animation ##### -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
