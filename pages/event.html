@@ -17,6 +17,7 @@
     <!-- ##### Google Fonts ##### -->
     <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- ##### Font awesome ##### -->
@@ -32,63 +33,28 @@
 </head>
 
 <body>
-    <main>
-        <header>
-        <nav class="nav">
-            <div class="logo1">
-                <img src="/images/HabbaLogo.png" alt="HabbaLogo">
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/images/HabbaLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/event.html">Events</a></li>
+                    <li><a href="../pages/team.html">Teams</a></li>
+                    <li><a href="../pages/sponsor.html">Sponsor</a></li>
+                    <li><a href="../pages/faq.html">Faq</a></li>	
+                    <li><a href="../pages/contatus.html">Contact Us</a></li>				
+                </ul>
             </div>
-
-            <div class="dropdown">
-                <button id="myBtn" class="dropbtn">Navigation</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="/index.html">Home</a>
-                  <a href="./pages/event.html">Events</a>
-                  <a href="./pages/schedule.html">Schedule</a>
-                  <a href="./pages/sponsor.html">Sponsor</a>
-                  <a href="./pages/team.html">Teams</a>
-                  <a href="./pages/faq.html">Faq</a>
-                  <a href="./pages/contatus.html">Contact Us</a>
-                </div>
-              </div>
-            <div class="menu flex">
-                <div class="logo">
-                    <img src="/images/HabbaLogo.png" alt="HabbaLogo">
-                </div>
-                <ul class="flex">
-                    <a href="/index.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="./pages/event.html">
-                        <li>Events</li>
-                    </a>
-                    <a href="./pages/schedule.html">
-                        <li>Schedule</li>
-                    </a>
-                    <a href="./pages/sponsor.html">
-                        <li>Sponsor</li>
-                    </a>
-                    <a href="./pages/team.html">
-                        <li>Teams</li>
-                    </a>
-                    <a href="./pages/faq.html">
-                        <li>Faq</li>
-                    </a>
-                    <a href="./pages/contatus.html">
-                        <li>Contact Us</li>
-                    </a>
-
-            </div>
-
-        </nav>
-    </header>
-
-        <div class="faq-heading">
-            <h1>- Event -</h1>
-            <p>Acharya Habba'24 Event Registerations</p>
-            <!-- <img src="/images/Cultural-characters.jpg" alt=""> -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav> 
+        <div class="font">
+            <h1>Events</h1>
         </div>
-    </main>
+    </section>
+    
 
 
 

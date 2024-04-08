@@ -28,9 +28,11 @@
 	min-height: 100vh;
 	width: 100%; 
     background-image: linear-gradient(rgba(10,19,30,0.7),rgba(9,18,28,0.5)),url("../images/Habba/34.jpg");  
-	background-position: center;
-	background-size: cover;
-	position: relative;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 nav{
 	display: flex;
@@ -39,7 +41,7 @@ nav{
 	align-items: center;
 }
 nav img{
-	width: 100px;
+	width: 80px;
 	cursor: pointer;
 	border-radius: 10px;
 }
@@ -143,6 +145,27 @@ nav img{
 nav .fa{
 	display: none;
 }
+
+.sub-header{
+	height: 50vh;
+	width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.758)),url("../images/Habba/21.jpg");  
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+    padding: 0px 20px;
+	
+}
+.sub-header h1{
+    font-family: "Monoton", sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 10px;
+	margin-top: 10px;
+	color: white;
+}
+
 /*----------------Mobile screen coding----------------*/
 
 @media only screen and (max-width: 600px){
@@ -150,9 +173,10 @@ nav .fa{
 		min-height: 100vh;
 		width: auto; 
 		background-image: linear-gradient(rgba(10,19,30,0.7),rgba(9,18,28,0.5)),url("../images/Habba/34.jpg");  
-		background-position: center;
-		background-size: cover;
-		position: relative;
+		background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
 	.nav-links ul li{
 		display: block;
