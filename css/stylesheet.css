@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /* Universal css class */
 .flex {
   display: flex;
@@ -27,38 +31,45 @@
 
 /* Universal css class end*/
 
+/* ------------- Desktop Part Coding Starts From Here --------- */
+
+/* Header - Starting Page CSS only for desktop part */
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(10, 19, 30, 0.7), rgba(9, 18, 28, 0.5)),
-    url("../images/Habba/34.jpg");
+  background-image: linear-gradient(rgba(10, 19, 30, 0.7), rgba(9, 18, 28, 0.5)),url("../images/Habba/34.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
+
 nav {
   display: flex;
   padding: 2% 2%;
   justify-content: space-between;
   align-items: center;
 }
+
 nav img {
   width: 80px;
   cursor: pointer;
   border-radius: 10px;
 }
+
 .nav-links {
   flex: 1;
   text-align: right;
 }
+
 .nav-links ul li {
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
   position: relative;
 }
+
 .nav-links ul li a {
   color: #fff;
   font-family: "Kanit", sans-serif;
@@ -66,6 +77,7 @@ nav img {
   font-size: 20px;
   font-weight: 500;
 }
+
 .nav-links ul li::after {
   content: "";
   width: 0%;
@@ -75,6 +87,7 @@ nav img {
   margin: auto;
   transition: 1s;
 }
+
 .nav-links ul li:hover::after {
   width: 100%;
 }
@@ -82,7 +95,7 @@ nav img {
 .nav-links ul li:hover::after {
   width: 100%;
 }
-/*----------------next div------------------*/
+
 .text-box {
   width: 90%;
   color: #fff;
@@ -94,6 +107,7 @@ nav img {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .text-box h1 {
   font-size: 50px;
   background: -webkit-linear-gradient(#3a3ad8, #b5b7ff);
@@ -104,6 +118,7 @@ nav img {
   margin-bottom: -15px;
   letter-spacing: 20px;
 }
+
 .text-box h2 {
   font-size: 125px;
   background: -webkit-linear-gradient(#ffaf72, #ff6e00);
@@ -115,13 +130,15 @@ nav img {
   margin-bottom: 3%;
   font-weight: 100;
 }
+
 .text-box span {
   font-family: "Bungee Spice", sans-serif;
   font-size: 50px;
   letter-spacing: 4px;
 }
+
 .text-box p {
-  margin: 5px 0px 20px 0px;
+  margin: 10px 0px 20px 0px;
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: 2px;
   font-weight: 100;
@@ -129,36 +146,47 @@ nav img {
   font-size: 30px;
   color: #fff;
 }
-.hero-btn {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  border-radius: 100px;
-  padding: 12px 34px;
-  font-size: 17px;
-  font-weight: 600;
-  font-family: "Outfit", sans-serif;
-  background: silver;
-  position: relative;
-  cursor: pointer;
-  letter-spacing: 2px;
+
+.button{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
-.hero-btn:hover {
-  background-color: #000;
-  margin: 0px;
-  padding: 12px 34px;
-  color: white;
-  transition: 0.5s;
+
+.button-home{
+	text-decoration: none;
+	color: black;
+	padding: 12px 70px;
+	font-size: 20px;
+  font-weight: 700;
+	font-family: 'Kanit', sans-serif;
+	background: silver;
+	position: relative;
+	cursor: pointer;
+  border-radius: 10px;
+  margin: 10px 0px 0px 0px;
 }
+
+.button-home:hover{
+	box-shadow: 0 0 5px 0;
+  border-radius: 50px;
+	background: black;
+  padding: 12px 70px;
+	color: white;
+	transition: 1s;
+}
+
 nav .fa {
   display: none;
 }
 
+/* Header - Starting Page CSS end ----------- */
+
+/* Sub Header - for other pages Header only for Desktop Part */
 .sub-header {
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.758)),
-    url("../images/Habba/21.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.758)),url("../images/Habba/21.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -174,25 +202,452 @@ nav .fa {
   color: white;
 }
 
-/*----------------Mobile screen coding----------------*/
+/* Sub Header - for other pages Header CSS end ---------- */
+
+/* Countdown only for Desktop Part */
+.count {
+	background: url("../images/Habba/beanstalk.webp");
+	padding: 50px;
+  }
+  
+#countdown {
+	font-family: "Syne", sans-serif;
+	letter-spacing: 2px;
+	background-color: #fff;
+	letter-spacing: 5px;
+	justify-content: center;
+	text-align: center;
+	font-size: 2em;
+	border: 3px solid rgb(0, 0, 0);
+	border-radius: 10px;
+	padding: 5px;
+	color: #0000ff;
+	font-weight: bolder;
+}
+  
+.stext {
+	color: #ff6e00;
+	font-size: 100px;
+	letter-spacing: 10px;
+	font-family: "Codystar", sans-serif;
+}
+
+/* Countdown CSS end ---------- */
+
+/* About Habba only for Desktop Part */
+.about-habba {
+	width: 100%;
+	margin: auto;
+	padding: 50px;
+	justify-content: space-around;
+}
+  
+.about-habba-1 {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../images/abtbg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ff5500;
+}
+  
+.about-habba-2 {
+	background-color: #ffffff;
+}
+  
+.about-habba-txt {
+	width: 50%;
+	text-align: justify;
+}
+  
+.about-habba-txt p {
+	font-family: "Outfit", sans-serif;
+	font-size: 18px;
+	font-weight: 200;
+	color: #fff;
+}
+  
+.about-habba-simbha {
+	width: 40%;
+}
+  
+.about-habba-txt h1 {
+	font-family: "Syne", sans-serif;
+	letter-spacing: 2px;
+	font-size: 2rem;
+	margin: 15px 0;
+}
+  
+.about-habba-simbha img {
+	width: 100%;
+	border-radius: 0%;
+	margin-bottom: -56px;
+	filter: drop-shadow(10px 5px 10px rgba(0, 0, 0, 0.5));
+	width: 90%;
+	border-radius: 0%;
+	margin-bottom: -56px;
+	filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
+.about-habba-simbha1 img {
+	width: 500px;
+	margin-bottom: -93px;
+	border-radius: 0%;
+	filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+
+/* About Habba CSS end ---------- */
+
+/* EDM Night only for Desktop Part */
+.picture-sec {
+	width: 100%;
+	text-align: center;
+	padding: 25px;
+	margin: auto;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
+	  url("../images/Habba/10.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	/* background-color: #00d9ff; */
+}
+  
+.picture-sec .edm-cont {
+	width: 100%;
+}
+  
+.picture-sec .edm-cont h1 {
+	background: -webkit-linear-gradient(#ffb881, #ff5500);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: rgba(255, 255, 255, 0) 0px 54px 55px,
+	  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+	  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	font-size: 120px;
+	letter-spacing: 5px;
+	/*font-family: "Exo 2", sans-serif;*/
+	font-family: "Philosopher", sans-serif;
+	margin: 0px 0px 0px 0px;
+}
+  
+.picture-sec .edm-cont h2 {
+	width: 100px;
+	font-family: "Syne", sans-serif;
+	text-align: left;
+	font-size: 40px;
+	margin: 30px 0px 10px 37px;
+	color: greenyellow;
+}
+  
+.picture-sec .edm-cont .edmh {
+	width: 100px;
+	font-family: "Syne", sans-serif;
+	text-align: left;
+	font-size: 45px;
+	margin: -310px 0px 10px 747px;
+	color: rgb(251, 72, 72);
+}
+  
+.picture-sec .edm-cont p {
+	/*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
+	font-family: "Outfit", sans-serif;
+	font-size: 14px;
+	font-weight: 200;
+	line-height: 20px;
+	text-align: justify;
+	width: 45%;
+	margin: 0px 0px 15px 40px;
+	letter-spacing: 1.5px;
+}
+  
+.picture-sec .edm-cont .edmp {
+	font-family: "Outfit", sans-serif;
+	font-size: 14px;
+	font-weight: 200;
+	line-height: 20px;
+	text-align: justify;
+	width: 45%;
+	margin: 0px 0px 15px 750px;
+	letter-spacing: 1.5px;
+}
+  
+.edm-cont a {
+	margin: 20px;
+}
+  
+.hero-btn1 {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	border-radius: 100px;
+	padding: 18px 100px;
+	font-size: 25px;
+	font-weight: 600;
+	font-family: "Outfit", sans-serif;
+	background: silver;
+	position: relative;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+
+.hero-btn1:hover {
+	background-color: #2d2d2d;
+	margin: 20px;
+	padding: 18px 100px;
+	color: white;
+	transition: 0.9s;
+}
+  
+.picture-sec .edm-night img {
+	width: 35rem;
+	margin: 2rem;
+	border-radius: 10px;
+}
+  
+.picture-sec .last-yr-snap h3 {
+	font-size: 80px;
+	letter-spacing: 2px;
+	font-family: "Syne", sans-serif;
+	margin: 50px 0px 0px 0px;
+}
+  
+.picture-sec .last-yr-snap .pict img {
+	cursor: pointer;
+	width: 20rem;
+	border-radius: 8px;
+	border: 5px solid white;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	margin: 40px 5px 5px 5px;
+}
+  
+.pict {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/* EDM Night CSS end ---------- */
+
+/* Footer page only for Desktop Part */
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 1;
+	background-color: rgb(255, 255, 255);
+	/*background: url('../images/Habba/beanstalk.webp');*/
+	color: #eea47f;
+	padding: 30px 0 10px;
+	font-size: 13px;
+	line-height: 10px;
+}
+  
+.row {
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+  
+.col {
+	flex-basis: 25%;
+	padding: 10px;
+}
+  
+.col p {
+	margin-top: 20px;
+	font-size: 15px;
+	line-height: 2;
+	color: white;
+	letter-spacing: 2px;
+	font-family: "Outfit", sans-serif;
+}
+  
+.col i {
+	color: #152cfa;
+}
+  
+.col p {
+	font-size: 15px;
+	line-height: 1.5;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	letter-spacing: 1.5px;
+	font-family: "Outfit", sans-serif;
+}
+  
+.col:nth-child(2),
+.col:nth-child(3) {
+	flex-basis: 30px;
+}
+  
+.col img {
+	width: 250px;
+	border-top-left-radius: 20px;
+}
+  
+.col h1 {
+	font-weight: 20px;
+	color: #ff6200;
+	width: fit-content;
+	margin-bottom: 55px;
+	position: relative;
+	font-family: "Syne", sans-serif;
+	font-size: 25px;
+}
+  
+.email-id {
+	width: fit-content;
+	margin: 10px 0;
+}
+  
+ul li {
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.col ul li a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	font-size: 15px;
+	line-height: 0.8;
+	font-weight: 370;
+	font-family: "Outfit", sans-serif;
+	letter-spacing: 1px;
+	margin-left: -2px;
+}
+  
+form {
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #000000;
+	margin-bottom: 50px;
+	font-family: "Rajdhani", sans-serif;
+}
+  
+form i {
+	font-size: 18px;
+	margin-right: 10px;
+	color: #152cfa;
+}
+
+form input {
+	width: 100%;
+	background: transparent;
+	color: #000000;
+	border: 0;
+	outline: none;
+	font-family: "Rajdhani", sans-serif;
+	font-size: 20px;
+}
+  
+form button {
+	background: transparent;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+  
+form button i {
+	font-size: 16px;
+	color: #ffffff;
+}
+  
+.social-icons a {
+	margin-right: 100%;
+	padding: 0px 40px 0px 20px;
+}
+  
+.social-icons a {
+	width: 40px;
+	height: 40px;
+	border-radius: 10%;
+	text-align: left;
+	line-height: 40px;
+	font-size: 30px;
+	margin-right: 13.5px;
+	margin-left: -20px;
+	cursor: pointer;
+}
+  
+hr {
+	width: 90%;
+	border: 0;
+	border-bottom: 1px solid #152cfa;
+	margin: 20px auto;
+}
+  
+.copyrights {
+	text-align: center;
+	font-family: "Outfit", sans-serif;
+	font-size: 20px;
+	color: #000;
+}
+  
+.underline {
+	width: 100%;
+	height: 5px;
+	background: #152cfa;
+	border-radius: 3px;
+	position: absolute;
+	top: 25px;
+	left: 0;
+	overflow: hidden;
+}
+  
+.underline span {
+	width: 15px;
+	height: 100%;
+	background: #ffffff;
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	animation: moving 2s linear infinite;
+}
+  
+@keyframes moving {
+	0% {
+	  left: -20px;
+	}
+	100% {
+	  left: 100px;
+	}
+}
+
+/* Footer page CSS end ---------- */
+
+/*--------------- Coding part for Desktop Part Ends Here ------------- */
+
+/*---------------- Mobile screen coding Starts From Here ----------------*/
 
 @media only screen and (max-width: 600px) {
-  .header {
-    min-height: 100vh;
-    width: auto;
-    background-image: linear-gradient(
-        rgba(10, 19, 30, 0.7),
-        rgba(9, 18, 28, 0.5)
-      ),
-      url("../images/Habba/34.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+  /* Header - Starting Page only for Mobile Part */
+	.header{
+		min-height: 90vh;
+		width: 100%; 
+		background-image: linear-gradient(rgba(10,19,30,0.7),rgba(9,18,28,0.5)),url("../images/Habba/34.jpg");  
+		background-position: center;
+		background-size: cover;
+		position: relative;
+	}
+
+  nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
   }
+
   .nav-links ul li {
     display: block;
   }
+
   .nav-links ul li a {
     color: #00008b;
     text-decoration: none;
@@ -200,6 +655,7 @@ nav .fa {
     font-weight: 1000;
     line-height: 0px;
   }
+
   .nav-links {
     position: fixed;
     background: #f44336;
@@ -212,473 +668,310 @@ nav .fa {
     transition: 2s;
     background: silver;
   }
+
   nav .fa {
     display: block;
     color: #fff;
     margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
+    font-size: 25px;
   }
+
   .nav-links ul {
     padding: 30px;
   }
 
-  .hero-btn {
-    color: black;
-    font-size: 15px;
-    margin: 0px 0px 10px 0px;
+  .button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
   }
+  
+  .button-home{
+    text-decoration: none;
+    color: black;
+    padding: 12px 70px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Kanit', sans-serif;
+    background: silver;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .button-home:hover{
+    box-shadow: 0 0 5px 0;
+    border-radius: 50px;
+    background: black;
+    padding: 12px 70px;
+    color: white;
+  }
+
   .header img {
     width: 50px;
     cursor: pointer;
     border-radius: 10px;
     margin: 40% 0% 0% 30%;
   }
+
   .text-box {
-    top: 40%;
+    top: 65%;
   }
+
   .text-box h1 {
     text-align: center;
     font-family: "Expletus Sans", sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 800px;
     letter-spacing: 8px;
+    margin: -100px 0px 0px 0px;
   }
+
   .text-box h2 {
     padding: 20px 0px 25px 0px;
     /*font-family: 'Cinzel Decorative', cursive;*/
     font-family: "Monoton", sans-serif;
     letter-spacing: 5px;
-    font-size: 45px;
+    font-size: 48px;
     font-weight: 100;
+    margin: -20px 0px 0px 0px;
   }
+
   .text-box span {
-    font-size: 38px;
+    margin: 100px 0px 0px 0px;
+    font-size: 30px;
   }
+
   .text-box p {
     padding: 0px;
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 300;
   }
-  /*----------------next div------------------*/
-  .font h1 {
-    padding-top: 70px;
-    letter-spacing: 2px;
-    font-family: "Rajdhani", sans-serif;
-  }
-}
 
-.count {
-  background: url("../images/Habba/beanstalk.webp");
-  padding: 50px;
-}
+/* Header - Starting Page CSS end Mobile Part ------------ */
 
-#countdown {
-  font-family: "Syne", sans-serif;
-  letter-spacing: 2px;
-  background-color: #fff;
-  letter-spacing: 5px;
-  justify-content: center;
-  text-align: center;
-  font-size: 2em;
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  padding: 5px;
-  color: #0000ff;
-  font-weight: bolder;
-}
-
-.stext {
-  color: #ff6e00;
-  font-size: 100px;
-  letter-spacing: 10px;
-  font-family: "Codystar", sans-serif;
-}
-
-.about-habba {
-  width: 100%;
-  margin: auto;
-  padding: 50px;
-  justify-content: space-around;
-}
-
-.about-habba-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/abtbg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #ff5500;
-}
-
-.about-habba-2 {
-  background-color: #ffffff;
-}
-
-.about-habba-txt {
-  width: 50%;
-  text-align: justify;
-}
-
-.about-habba-txt p {
-  font-family: "Outfit", sans-serif;
-  font-size: 18px;
-  font-weight: 200;
-  color: #fff;
-  /*text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);*/
-}
-
-.about-habba-simbha {
-  width: 40%;
-}
-
-.about-habba-txt h1 {
-  font-family: "Syne", sans-serif;
-  letter-spacing: 2px;
-  font-size: 2rem;
-  margin: 15px 0;
-}
-
-.about-habba-simbha img {
+/* Sub Header - for other pages Header only for Mobile Part */
+  .sub-header{
+    height: 60vh;
     width: 100%;
-    border-radius: 0%;
-    margin-bottom: -56px;
-    /*box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;*/
-    filter: drop-shadow(10px 5px 10px rgba(0, 0, 0, 0.5));
-
-  width: 90%;
-  border-radius: 0%;
-  margin-bottom: -56px;
-  /*box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;*/
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
-
-}
-.about-habba-simbha1 img {
-  width: 500px;
-  margin-bottom: -93px;
-  border-radius: 0%;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
-  /*box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;*/
-}
-
-.picture-sec {
-  width: 100%;
-  text-align: center;
-  padding: 25px;
-  margin: auto;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
-    url("../images/Habba/10.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
-  /* background-color: #00d9ff; */
-}
-
-.picture-sec .edm-cont {
-  width: 100%;
-}
-
-.picture-sec .edm-cont h1 {
-  background: -webkit-linear-gradient(#ffb881, #ff5500);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: rgba(255, 255, 255, 0) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  font-size: 120px;
-  letter-spacing: 5px;
-  /*font-family: "Exo 2", sans-serif;*/
-  font-family: "Philosopher", sans-serif;
-  margin: 0px 0px 0px 0px;
-}
-
-.picture-sec .edm-cont h2 {
-  width: 100px;
-  font-family: "Syne", sans-serif;
-  text-align: left;
-  font-size: 40px;
-  margin: 30px 0px 10px 37px;
-  color: greenyellow;
-}
-
-.picture-sec .edm-cont .edmh {
-  width: 100px;
-  font-family: "Syne", sans-serif;
-  text-align: left;
-  font-size: 45px;
-  margin: -310px 0px 10px 747px;
-  color: rgb(251, 72, 72);
-}
-
-.picture-sec .edm-cont p {
-  /*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
-  font-family: "Outfit", sans-serif;
-  font-size: 14px;
-  font-weight: 200;
-  line-height: 20px;
-  text-align: justify;
-  width: 45%;
-  margin: 0px 0px 15px 40px;
-  letter-spacing: 1.5px;
-}
-
-.picture-sec .edm-cont .edmp {
-  font-family: "Outfit", sans-serif;
-  font-size: 14px;
-  font-weight: 200;
-  line-height: 20px;
-  text-align: justify;
-  width: 45%;
-  margin: 0px 0px 15px 750px;
-  letter-spacing: 1.5px;
-}
-
-.edm-cont a {
-  margin: 20px;
-}
-
-.hero-btn1 {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  border-radius: 100px;
-  padding: 18px 100px;
-  font-size: 25px;
-  font-weight: 600;
-  font-family: "Outfit", sans-serif;
-  background: silver;
-  position: relative;
-  cursor: pointer;
-  letter-spacing: 2px;
-}
-.hero-btn1:hover {
-  background-color: #2d2d2d;
-  margin: 20px;
-  padding: 18px 100px;
-  color: white;
-  transition: 0.9s;
-}
-
-.picture-sec .edm-night img {
-  width: 35rem;
-  margin: 2rem;
-  border-radius: 10px;
-}
-
-.picture-sec .last-yr-snap h3 {
-  font-size: 80px;
-  letter-spacing: 2px;
-  font-family: "Syne", sans-serif;
-  margin: 50px 0px 0px 0px;
-}
-
-.picture-sec .last-yr-snap .pict img {
-  cursor: pointer;
-  width: 20rem;
-  border-radius: 8px;
-  border: 5px solid white;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  margin: 40px 5px 5px 5px;
-}
-
-.pict {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-/*---------Footer----------*/
-
-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 1;
-  background-color: rgb(255, 255, 255);
-  /*background: url('../images/Habba/beanstalk.webp');*/
-  color: #eea47f;
-  padding: 30px 0 10px;
-  font-size: 13px;
-  line-height: 10px;
-}
-
-.row {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.col {
-  flex-basis: 25%;
-  padding: 10px;
-}
-
-.col p {
-  margin-top: 20px;
-  font-size: 15px;
-  line-height: 2;
-  color: white;
-  letter-spacing: 2px;
-  font-family: "Outfit", sans-serif;
-}
-
-.col i {
-  color: #152cfa;
-}
-
-.col p {
-  font-size: 15px;
-  line-height: 1.5;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  letter-spacing: 1.5px;
-  font-family: "Outfit", sans-serif;
-}
-
-.col:nth-child(2),
-.col:nth-child(3) {
-  flex-basis: 30px;
-}
-
-.col img {
-  width: 250px;
-  border-top-left-radius: 20px;
-}
-
-.col h1 {
-  font-weight: 20px;
-  color: #ff6200;
-  width: fit-content;
-  margin-bottom: 55px;
-  position: relative;
-  font-family: "Syne", sans-serif;
-  font-size: 25px;
-}
-
-.email-id {
-  width: fit-content;
-  margin: 10px 0;
-}
-
-ul li {
-  list-style: none;
-  margin-bottom: 15px;
-}
-.col ul li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 15px;
-  line-height: 0.8;
-  font-weight: 370;
-  font-family: "Outfit", sans-serif;
-  letter-spacing: 1px;
-  margin-left: -2px;
-}
-
-form {
-  padding-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #000000;
-  margin-bottom: 50px;
-  font-family: "Rajdhani", sans-serif;
-}
-
-form i {
-  font-size: 18px;
-  margin-right: 10px;
-  color: #152cfa;
-}
-form input {
-  width: 100%;
-  background: transparent;
-  color: #000000;
-  border: 0;
-  outline: none;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 20px;
-}
-
-form button {
-  background: transparent;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-}
-
-form button i {
-  font-size: 16px;
-  color: #ffffff;
-}
-
-.social-icons a {
-  margin-right: 100%;
-  padding: 0px 40px 0px 20px;
-}
-
-.social-icons a {
-  width: 40px;
-  height: 40px;
-  border-radius: 10%;
-  text-align: left;
-  line-height: 40px;
-  font-size: 30px;
-  margin-right: 13.5px;
-  margin-left: -20px;
-  cursor: pointer;
-}
-
-hr {
-  width: 90%;
-  border: 0;
-  border-bottom: 1px solid #152cfa;
-  margin: 20px auto;
-}
-
-.copyrights {
-  text-align: center;
-  font-family: "Outfit", sans-serif;
-  font-size: 20px;
-  color: #000;
-}
-
-.underline {
-  width: 100%;
-  height: 5px;
-  background: #152cfa;
-  border-radius: 3px;
-  position: absolute;
-  top: 25px;
-  left: 0;
-  overflow: hidden;
-}
-
-.underline span {
-  width: 15px;
-  height: 100%;
-  background: #ffffff;
-  border-radius: 3px;
-  position: absolute;
-  top: 0;
-  left: 10px;
-  animation: moving 2s linear infinite;
-}
-
-@keyframes moving {
-  0% {
-    left: -20px;
+      background-image: linear-gradient(rgba(10,19,30,0.7),rgba(9,18,28,0.5)),url("Photos/Y20.jpg");  
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    
   }
-  100% {
-    left: 100px;
+  .sub-header h1{
+    margin-top: 40px;
+    color: white;
   }
-}
 
-@media only screen and (max-width: 600px) {
+/* Sub Header - for other pages Header CSS end Mobile Part ---------- */
+
+/* Countdown only for Mobile Part */
+  .count {
+    background: url("../images/Habba/beanstalk.webp");
+    padding: 30px;
+  }
+
+  #countdown {
+    font-family: "Syne", sans-serif;
+    letter-spacing: 4px;
+    background-color: #fff;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 1px;
+    color: #0000ff;
+    font-weight: bolder;
+  }
+
+  .stext {
+    color: #ff6e00;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-family: "Codystar", sans-serif;
+  }
+
+/* Countdown CSS end Mobile Part ----------- */
+
+/* About Habba only for Mobile Part */
+  .picture-sec .last-yr-snap .pict img {
+    width: 20rem;
+  }
+
+  .about-habba {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .about-habba-txt {
+    width: 100%;
+  }
+
+  .about-habba-simbha {
+    width: 100%;
+  }
+
+  .about-habba-simbha img {
+    width: 15rem;
+    border-radius: 0% 0% 40% 50%;
+    display: block;
+    margin: auto;
+  }
+
+  .about-habba-simbha1 img {
+    width: 15rem;
+    border-radius: 0% 0% 80% 40%;
+    display: block;
+    margin: auto;
+  }
+
+  .about-habba-txt p {
+	  font-size: 15px;
+	  letter-spacing: 0px;
+	}
+
+/* About Habba CSS end Mobile Part ----------- */
+
+/* EDM Night only for Mobile Part */
+  .picture-sec {
+	  width: 100%;
+	  text-align: center;
+	  padding: 25px;
+	  margin: auto;
+	  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
+		url("../images/Habba/10.jpg");
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  color: #fff;
+	  /* background-color: #00d9ff; */
+	}
+  
+	.picture-sec .edm-cont {
+	  width: 100%;
+	}
+  
+	.picture-sec .edm-cont h1 {
+	  background: -webkit-linear-gradient(#ff913d, #ff5500);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  text-shadow: rgba(255, 255, 255, 0) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	  font-size: 55px;
+	  letter-spacing: 1px;
+	  /*font-family: "Exo 2", sans-serif;*/
+	  font-family: "Philosopher", sans-serif;
+	  margin: 0px 0px 0px 0px;
+	}
+  
+	.picture-sec .edm-cont h2 {
+	  width: 100px;
+	  font-family: "Syne", sans-serif;
+	  text-align: left;
+	  font-size: 30px;
+	  margin: 30px 0px 10px 0px;
+	  color: greenyellow;
+	}
+  
+	.picture-sec .edm-cont .edmh {
+	  width: 0px;
+	  font-family: "Syne", sans-serif;
+	  text-align: left;
+	  font-size: 35px;
+	  margin: 0px 0px 10px 0px;
+	  color: rgb(251, 72, 72);
+	}
+  
+	.picture-sec .edm-cont p {
+	  /*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
+	  font-family: "Outfit", sans-serif;
+	  font-size: 14px;
+	  font-weight: 200;
+	  line-height: 20px;
+	  text-align: justify;
+	  width: 100%;
+	  margin: 0px 0px 15px 0px;
+	  letter-spacing: 1.5px;
+	}
+  
+	.picture-sec .edm-cont .edmp {
+	  font-family: "Outfit", sans-serif;
+	  font-size: 14px;
+	  font-weight: 200;
+	  line-height: 20px;
+	  text-align: justify;
+	  width: 100%;
+	  margin: 0px 0px 15px 0px;
+	  letter-spacing: 1.5px;
+	}
+  
+	.edm-cont a {
+	  margin: 20px;
+	}
+  
+	.hero-btn1 {
+	  display: inline-block;
+	  text-decoration: none;
+	  color: black;
+	  border-radius: 100px;
+	  padding: 7px 54px;
+	  font-size: 15px;
+	  font-weight: 600;
+	  font-family: "Outfit", sans-serif;
+	  background: silver;
+	  position: relative;
+	  cursor: pointer;
+	  letter-spacing: 2px;
+	}
+	.hero-btn1:hover {
+	  background-color: #2d2d2d;
+	  margin: 20px;
+	  padding: 7px 24px;
+	  color: white;
+	  transition: 0.5s;
+	}
+  
+	.picture-sec .edm-night img {
+	  width: 5rem;
+	  margin: 0rem;
+	  border-radius: 10px;
+	}
+  
+	.picture-sec .last-yr-snap h3 {
+	  font-size: 80px;
+	  letter-spacing: 2px;
+	  font-family: "Syne", sans-serif;
+	  margin: 50px 0px 0px 0px;
+	}
+  
+	.picture-sec .last-yr-snap .pict img {
+	  cursor: pointer;
+	  width: 20rem;
+	  border-radius: 8px;
+	  border: 5px solid white;
+	  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	  margin: 40px 5px 5px 5px;
+	}
+  
+	.pict {
+	  display: flex;
+	  justify-content: space-around;
+	  flex-wrap: wrap;
+	}
+
+/* EDM Night CSS end Mobile Part ----------- */
+
+/* Footer Page only for Mobile Part */
   footer {
     background: #fff;
     border-top-right-radius: 125px;
@@ -738,783 +1031,8 @@ hr {
   .copyrights {
     font-size: 13px;
   }
+
+/* Footer Page CSS end Mobile Part ----------- */
+
+/* INDEX CSS Coding part ends here */
 }
-
-/* #Media queries */
-@media only screen and (max-width: 600px) {
-  .picture-sec .last-yr-snap .pict img {
-    width: 20rem;
-  }
-
-  .about-habba {
-    display: block;
-    width: 100%;
-    padding: 20px;
-  }
-
-  .about-habba-txt {
-    width: 100%;
-  }
-
-  .about-habba-simbha {
-    width: 100%;
-  }
-
-  .about-habba-simbha img {
-    width: 15rem;
-    border-radius: 0% 0% 40% 50%;
-    display: block;
-    margin: auto;
-  }
-
-  .about-habba-simbha1 img {
-    width: 15rem;
-    border-radius: 0% 0% 80% 40%;
-    display: block;
-    margin: auto;
-  }
-
-  .sub-footer {
-    display: block;
-  }
-
-  .footer .sub-footer .box {
-    width: 100%;
-    text-align: justify;
-  }
-
-  .footer .sub-footer .shortCut img {
-    width: 8rem;
-    display: flex;
-    margin: 25px auto;
-  }
-
-  .count {
-    background: url("../images/Habba/beanstalk.webp");
-    padding: 30px;
-  }
-
-  #countdown {
-    font-family: "Syne", sans-serif;
-    letter-spacing: 4px;
-    background-color: #fff;
-    justify-content: center;
-    text-align: center;
-    font-size: 15px;
-    border: 3px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 1px;
-    color: #0000ff;
-    font-weight: bolder;
-  }
-
-  .stext {
-    color: #ff6e00;
-    font-size: 20px;
-    letter-spacing: 10px;
-    font-family: "Codystar", sans-serif;
-  }
-
-  /* This section is for mobile nav bar */
-  .dropbtn {
-    background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='526' height='350.7' viewBox='0 0 900 600'%3E%3Cg fill-opacity='0.19'%3E%3Cpath fill='%23FF6400' d='M306.9 210.2c-1.2-22.8-13.5-42.7-40.8-41.1c-18.3 1.1-35.9 3.6-47.5 20.1c-5.2 7.4-10.6 15.6-11.4 24.9c-0.5 5.8 0.2 12 1.2 17.7c9 49.6 85.3 46.7 96.4 0.2C306.6 224.9 307.3 217.4 306.9 210.2z'/%3E%3Cpath fill='%23ff6400' d='M137.2 481.3c-13.2-9.9-31.2-13.3-48.5-3.2c-12.6 7.3-19.1 17.4-21.1 28.2c-0.7 2.4-1.2 4.7-1.5 7c-8.2 35.4 33.7 78.9 72.6 48.6C167.6 539.3 164.4 501.6 137.2 481.3z'/%3E%3Cg fill='%23ff6400' %3E%3Cpath d='M547.9 588.3c-7.1-34.2-61.6-52.7-87.5-16.9c-11.2 11.3-12.7 26.3-7.6 39.7c1.8 7.5 5.5 13.9 10.4 19.1c19.4 20.3 53.4 26.2 72.8 1.9C545.9 619.7 553.9 604.2 547.9 588.3z'/%3E%3Cpath d='M547.9-11.7c-7.1-34.2-61.6-52.7-87.5-16.9c-11.2 11.3-12.7 26.3-7.6 39.7c1.8 7.5 5.5 13.9 10.4 19.1c19.4 20.3 53.4 26.2 72.8 1.9C545.9 19.7 553.9 4.2 547.9-11.7z'/%3E%3C/g%3E%3Cpath fill='%23ff6400' d='M849.7 498c-22.3 1.3-43.2 7.5-52.7 29.5c-3.3 7.7-7.3 15.7-7 24.3c2 55.6 86.1 63.4 98.8 10.1C890.6 554.6 877.3 496.4 849.7 498z'/%3E%3Cpath fill='%23ff6400' d='M762 291.1c-8.2-6.1-19.1-1.9-27.3 2.2c-7.4 3.7-14.4 8.2-21.6 12.1c-6.6 3.6-13.7 7-19.8 11.5c-18.3 13.5-2.5 45.1 10.6 56.4c17 14.6 41.6 15.9 59.6 2.1C794.1 351.8 790.7 312.4 762 291.1z'/%3E%3Cpath fill='%23ff6400' d='M863.3 170.3c-4.5-15.7-17.9-28.8-33.4-34.4c-16.2-5.8-38.4-2.9-51.8 8.1c-14.9 12.2-14.5 31.7-11.4 49c9.6 53.9 84.3 47.7 97-1.3C865.6 184.4 865.3 177.1 863.3 170.3z'/%3E%3Cpath fill='%23ff6400' d='M598.4 86.1c-10.2 15.5-9.3 34.2-0.9 50.4c2.6 5 6.2 9.5 10.4 13.2c14.2 12.6 35.5 17.1 53.2 9.5c14.3-6.1 23.9-19.8 26.7-34.7C707.4 75.6 629.7 38.5 598.4 86.1z'/%3E%3Cpath fill='%23ff6400' d='M509.8 413.3c-17.3 22.6-11.8 59 17.5 75.3c22.6 12.6 52.2 1.7 63.8-20.9c21.4-42-9.2-85-56.5-71C523.8 399.9 515.6 405.8 509.8 413.3z'/%3E%3Cpath fill='%23ff6400' d='M607.4 232.3c-0.5-0.4-1-0.8-1.4-1.2c-16.5-12.8-30.2-22.1-50.3-8.4c-15.5 10.6-29 30.3-31.4 49.1c-4.2 33.6 30.6 46.9 58.6 40.6C619.6 304.2 640.6 259.5 607.4 232.3z'/%3E%3Cpath fill='%23ff6400' d='M410.6 95c-36.5 1.3-74.1 41.8-43.1 74.3c19.8 20.9 54.4 20.7 74.6 0.5c20.5-20.4 18.4-53.1-6.9-68.6C427.7 96.6 419.2 94.7 410.6 95z'/%3E%3Cpath fill='%23ff6400' d='M291.3 23c-0.1-0.1-0.1-0.1-0.2-0.2c-14.2-16.9-38.3-25.6-61.4-12.3c-13.5 7.8-20.5 18.7-22.7 30.2c-5.7 18 1.5 34.2 14.2 44.8c15.4 16.8 40.3 24.1 64.2 5.5c9.6-7.4 15-16.3 17.2-25.4C308.6 48.8 302.7 33.6 291.3 23z'/%3E%3Cpath fill='%23ff6400' d='M419.1 440.6c-16.9-14.5-41.8-21.5-61.7-9.5c-18.3 11.1-1 100.1 32.2 93.5c23.8-4.7 45.3-22.4 48.1-44.3C439.6 466.1 431.5 451.3 419.1 440.6z'/%3E%3Cpath fill='%23ff6400' d='M127 227c-12-4.3-25.4-2.1-38.7 11.4C71 255.9 61.4 286.1 80.4 306c21.3 22.3 86.9 27.5 89.6-14.9c0.5-8.9-2.7-17.9-6.5-25.8C155.1 248.3 142.1 232.5 127 227z'/%3E%3Cpath fill='%23ff6400' d='M281.5 407.6c-0.3-0.4-0.7-0.7-1-1c-19.3-17.6-59.1-0.6-78.1 10.3c-23.8 13.7-8.2 41.1 5.4 55.8c16.3 17.6 42.7 25.2 68 5.8C291.3 466.6 295.5 422.7 281.5 407.6z'/%3E%3Cpath fill='%23ff6400' d='M137.9 110.2c-10.4-25.7-43.3-32.1-67-23.6C60.1 90.4 50 97.8 45.1 108.6c-21.2 47.3 44.9 81.1 78.5 51c9.5-8.5 17.3-18.9 17.4-32.4C141 120.8 139.9 115.1 137.9 110.2z'/%3E%3Cpath fill='%23ff6400' d='M344.3 284.7c-10 14.9-9.2 34.1-0.9 49.5c3.4 6.3 8.6 13.8 16.1 15.8c7.1 1.9 15.1 0.7 22.1-0.6c15.7-3 45.6-10.5 52.3-26.8C453.5 274.4 375.6 237.9 344.3 284.7z'/%3E%3Cg fill='%23ff6400' %3E%3Cpath d='M-29.2 431.8c23.4 12.4 54.1 1.7 66.1-20.6c9.6-17.8 10.4-40.4-3.3-56.5c-10.5-12.4-44.2-25.8-58.5-11.3c-3 3.1-5.1 7.1-6.9 10.9C-41.1 373.2-55 418.1-29.2 431.8z'/%3E%3Cpath d='M870.8 431.8c23.4 12.4 54.1 1.7 66.1-20.6c9.6-17.8 10.4-40.4-3.3-56.5c-10.5-12.4-44.2-25.8-58.5-11.3c-3 3.1-5.1 7.1-6.9 10.9C858.9 373.2 845 418.1 870.8 431.8z'/%3E%3C/g%3E%3Cpath fill='%23FF6400' d='M671.4 460.5c-10.7 1.7-20.2 8.3-26.2 22.2c-21.5 49.5 45.4 84.9 79.4 53.3c16.3-15.2 24-31 6.5-48.1c-5.9-5.8-12.3-11-19.1-15.6C699.5 463.7 684.5 458.4 671.4 460.5z'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    letter-spacing: 0.2rem;
-    color: rgb(0, 0, 0);
-    padding: 16px;
-    font-size: 15px;
-    border: none;
-    margin-top: 0.3rem;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  .dropbtn:hover,
-  .dropbtn:focus {
-    background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='526' height='350.7' viewBox='0 0 900 600'%3E%3Cg fill-opacity='0.19'%3E%3Cpath fill='%23FF6400' d='M306.9 210.2c-1.2-22.8-13.5-42.7-40.8-41.1c-18.3 1.1-35.9 3.6-47.5 20.1c-5.2 7.4-10.6 15.6-11.4 24.9c-0.5 5.8 0.2 12 1.2 17.7c9 49.6 85.3 46.7 96.4 0.2C306.6 224.9 307.3 217.4 306.9 210.2z'/%3E%3Cpath fill='%23ff6400' d='M137.2 481.3c-13.2-9.9-31.2-13.3-48.5-3.2c-12.6 7.3-19.1 17.4-21.1 28.2c-0.7 2.4-1.2 4.7-1.5 7c-8.2 35.4 33.7 78.9 72.6 48.6C167.6 539.3 164.4 501.6 137.2 481.3z'/%3E%3Cg fill='%23ff6400' %3E%3Cpath d='M547.9 588.3c-7.1-34.2-61.6-52.7-87.5-16.9c-11.2 11.3-12.7 26.3-7.6 39.7c1.8 7.5 5.5 13.9 10.4 19.1c19.4 20.3 53.4 26.2 72.8 1.9C545.9 619.7 553.9 604.2 547.9 588.3z'/%3E%3Cpath d='M547.9-11.7c-7.1-34.2-61.6-52.7-87.5-16.9c-11.2 11.3-12.7 26.3-7.6 39.7c1.8 7.5 5.5 13.9 10.4 19.1c19.4 20.3 53.4 26.2 72.8 1.9C545.9 19.7 553.9 4.2 547.9-11.7z'/%3E%3C/g%3E%3Cpath fill='%23ff6400' d='M849.7 498c-22.3 1.3-43.2 7.5-52.7 29.5c-3.3 7.7-7.3 15.7-7 24.3c2 55.6 86.1 63.4 98.8 10.1C890.6 554.6 877.3 496.4 849.7 498z'/%3E%3Cpath fill='%23ff6400' d='M762 291.1c-8.2-6.1-19.1-1.9-27.3 2.2c-7.4 3.7-14.4 8.2-21.6 12.1c-6.6 3.6-13.7 7-19.8 11.5c-18.3 13.5-2.5 45.1 10.6 56.4c17 14.6 41.6 15.9 59.6 2.1C794.1 351.8 790.7 312.4 762 291.1z'/%3E%3Cpath fill='%23ff6400' d='M863.3 170.3c-4.5-15.7-17.9-28.8-33.4-34.4c-16.2-5.8-38.4-2.9-51.8 8.1c-14.9 12.2-14.5 31.7-11.4 49c9.6 53.9 84.3 47.7 97-1.3C865.6 184.4 865.3 177.1 863.3 170.3z'/%3E%3Cpath fill='%23ff6400' d='M598.4 86.1c-10.2 15.5-9.3 34.2-0.9 50.4c2.6 5 6.2 9.5 10.4 13.2c14.2 12.6 35.5 17.1 53.2 9.5c14.3-6.1 23.9-19.8 26.7-34.7C707.4 75.6 629.7 38.5 598.4 86.1z'/%3E%3Cpath fill='%23ff6400' d='M509.8 413.3c-17.3 22.6-11.8 59 17.5 75.3c22.6 12.6 52.2 1.7 63.8-20.9c21.4-42-9.2-85-56.5-71C523.8 399.9 515.6 405.8 509.8 413.3z'/%3E%3Cpath fill='%23ff6400' d='M607.4 232.3c-0.5-0.4-1-0.8-1.4-1.2c-16.5-12.8-30.2-22.1-50.3-8.4c-15.5 10.6-29 30.3-31.4 49.1c-4.2 33.6 30.6 46.9 58.6 40.6C619.6 304.2 640.6 259.5 607.4 232.3z'/%3E%3Cpath fill='%23ff6400' d='M410.6 95c-36.5 1.3-74.1 41.8-43.1 74.3c19.8 20.9 54.4 20.7 74.6 0.5c20.5-20.4 18.4-53.1-6.9-68.6C427.7 96.6 419.2 94.7 410.6 95z'/%3E%3Cpath fill='%23ff6400' d='M291.3 23c-0.1-0.1-0.1-0.1-0.2-0.2c-14.2-16.9-38.3-25.6-61.4-12.3c-13.5 7.8-20.5 18.7-22.7 30.2c-5.7 18 1.5 34.2 14.2 44.8c15.4 16.8 40.3 24.1 64.2 5.5c9.6-7.4 15-16.3 17.2-25.4C308.6 48.8 302.7 33.6 291.3 23z'/%3E%3Cpath fill='%23ff6400' d='M419.1 440.6c-16.9-14.5-41.8-21.5-61.7-9.5c-18.3 11.1-1 100.1 32.2 93.5c23.8-4.7 45.3-22.4 48.1-44.3C439.6 466.1 431.5 451.3 419.1 440.6z'/%3E%3Cpath fill='%23ff6400' d='M127 227c-12-4.3-25.4-2.1-38.7 11.4C71 255.9 61.4 286.1 80.4 306c21.3 22.3 86.9 27.5 89.6-14.9c0.5-8.9-2.7-17.9-6.5-25.8C155.1 248.3 142.1 232.5 127 227z'/%3E%3Cpath fill='%23ff6400' d='M281.5 407.6c-0.3-0.4-0.7-0.7-1-1c-19.3-17.6-59.1-0.6-78.1 10.3c-23.8 13.7-8.2 41.1 5.4 55.8c16.3 17.6 42.7 25.2 68 5.8C291.3 466.6 295.5 422.7 281.5 407.6z'/%3E%3Cpath fill='%23ff6400' d='M137.9 110.2c-10.4-25.7-43.3-32.1-67-23.6C60.1 90.4 50 97.8 45.1 108.6c-21.2 47.3 44.9 81.1 78.5 51c9.5-8.5 17.3-18.9 17.4-32.4C141 120.8 139.9 115.1 137.9 110.2z'/%3E%3Cpath fill='%23ff6400' d='M344.3 284.7c-10 14.9-9.2 34.1-0.9 49.5c3.4 6.3 8.6 13.8 16.1 15.8c7.1 1.9 15.1 0.7 22.1-0.6c15.7-3 45.6-10.5 52.3-26.8C453.5 274.4 375.6 237.9 344.3 284.7z'/%3E%3Cg fill='%23ff6400' %3E%3Cpath d='M-29.2 431.8c23.4 12.4 54.1 1.7 66.1-20.6c9.6-17.8 10.4-40.4-3.3-56.5c-10.5-12.4-44.2-25.8-58.5-11.3c-3 3.1-5.1 7.1-6.9 10.9C-41.1 373.2-55 418.1-29.2 431.8z'/%3E%3Cpath d='M870.8 431.8c23.4 12.4 54.1 1.7 66.1-20.6c9.6-17.8 10.4-40.4-3.3-56.5c-10.5-12.4-44.2-25.8-58.5-11.3c-3 3.1-5.1 7.1-6.9 10.9C858.9 373.2 845 418.1 870.8 431.8z'/%3E%3C/g%3E%3Cpath fill='%23FF6400' d='M671.4 460.5c-10.7 1.7-20.2 8.3-26.2 22.2c-21.5 49.5 45.4 84.9 79.4 53.3c16.3-15.2 24-31 6.5-48.1c-5.9-5.8-12.3-11-19.1-15.6C699.5 463.7 684.5 458.4 671.4 460.5z'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-  }
-
-  .dropdown {
-    position: relative;
-    display: contents;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='526' height='350.7' viewBox='0 0 900 600'%3E%3Cg fill-opacity='0.19'%3E%3Cpath fill='%23FF6400' d='M306.9 210.2c-1.2-22.8-13.5-42.7-40.8-41.1c-18.3 1.1-35.9 3.6-47.5 20.1c-5.2 7.4-10.6 15.6-11.4 24.9c-0.5 5.8 0.2 12 1.2 17.7c9 49.6 85.3 46.7 96.4 0.2C306.6 224.9 307.3 217.4 306.9 210.2z'/%3E%3Cpath fill='%23ff6400' d='M137.2 481.3c-13.2-9.9-31.2-13.3-48.5-3.2c-12.6 7.3-19.1 17.4-21.1 28.2c-0.7 2.4-1.2 4.7-1.5 7c-8.2 35.4 33.7 78.9 72.6 48.6C167.6 539.3 164.4 501.6 137.2 481.3z'/%3E%3Cg fill='%23ff6400' %3E%3Cpath d='M547.9 588.3c-7.1-34.2-61.6-52.7-87.5-16.9c-11.2 11.3-12.7 26.3-7.6 39.7c1.8 7.5 5.5 13.9 10.4 19.1c19.4 20.3 53.4 26.2 72.8 1.9C545.9 619.7 553.9 604.2 547.9 588.3z'/%3E%3Cpath d='M547.9-11.7c-7.1-34.2-61.6-52.7-87.5-16.9c-11.2 11.3-12.7 26.3-7.6 39.7c1.8 7.5 5.5 13.9 10.4 19.1c19.4 20.3 53.4 26.2 72.8 1.9C545.9 19.7 553.9 4.2 547.9-11.7z'/%3E%3C/g%3E%3Cpath fill='%23ff6400' d='M849.7 498c-22.3 1.3-43.2 7.5-52.7 29.5c-3.3 7.7-7.3 15.7-7 24.3c2 55.6 86.1 63.4 98.8 10.1C890.6 554.6 877.3 496.4 849.7 498z'/%3E%3Cpath fill='%23ff6400' d='M762 291.1c-8.2-6.1-19.1-1.9-27.3 2.2c-7.4 3.7-14.4 8.2-21.6 12.1c-6.6 3.6-13.7 7-19.8 11.5c-18.3 13.5-2.5 45.1 10.6 56.4c17 14.6 41.6 15.9 59.6 2.1C794.1 351.8 790.7 312.4 762 291.1z'/%3E%3Cpath fill='%23ff6400' d='M863.3 170.3c-4.5-15.7-17.9-28.8-33.4-34.4c-16.2-5.8-38.4-2.9-51.8 8.1c-14.9 12.2-14.5 31.7-11.4 49c9.6 53.9 84.3 47.7 97-1.3C865.6 184.4 865.3 177.1 863.3 170.3z'/%3E%3Cpath fill='%23ff6400' d='M598.4 86.1c-10.2 15.5-9.3 34.2-0.9 50.4c2.6 5 6.2 9.5 10.4 13.2c14.2 12.6 35.5 17.1 53.2 9.5c14.3-6.1 23.9-19.8 26.7-34.7C707.4 75.6 629.7 38.5 598.4 86.1z'/%3E%3Cpath fill='%23ff6400' d='M509.8 413.3c-17.3 22.6-11.8 59 17.5 75.3c22.6 12.6 52.2 1.7 63.8-20.9c21.4-42-9.2-85-56.5-71C523.8 399.9 515.6 405.8 509.8 413.3z'/%3E%3Cpath fill='%23ff6400' d='M607.4 232.3c-0.5-0.4-1-0.8-1.4-1.2c-16.5-12.8-30.2-22.1-50.3-8.4c-15.5 10.6-29 30.3-31.4 49.1c-4.2 33.6 30.6 46.9 58.6 40.6C619.6 304.2 640.6 259.5 607.4 232.3z'/%3E%3Cpath fill='%23ff6400' d='M410.6 95c-36.5 1.3-74.1 41.8-43.1 74.3c19.8 20.9 54.4 20.7 74.6 0.5c20.5-20.4 18.4-53.1-6.9-68.6C427.7 96.6 419.2 94.7 410.6 95z'/%3E%3Cpath fill='%23ff6400' d='M291.3 23c-0.1-0.1-0.1-0.1-0.2-0.2c-14.2-16.9-38.3-25.6-61.4-12.3c-13.5 7.8-20.5 18.7-22.7 30.2c-5.7 18 1.5 34.2 14.2 44.8c15.4 16.8 40.3 24.1 64.2 5.5c9.6-7.4 15-16.3 17.2-25.4C308.6 48.8 302.7 33.6 291.3 23z'/%3E%3Cpath fill='%23ff6400' d='M419.1 440.6c-16.9-14.5-41.8-21.5-61.7-9.5c-18.3 11.1-1 100.1 32.2 93.5c23.8-4.7 45.3-22.4 48.1-44.3C439.6 466.1 431.5 451.3 419.1 440.6z'/%3E%3Cpath fill='%23ff6400' d='M127 227c-12-4.3-25.4-2.1-38.7 11.4C71 255.9 61.4 286.1 80.4 306c21.3 22.3 86.9 27.5 89.6-14.9c0.5-8.9-2.7-17.9-6.5-25.8C155.1 248.3 142.1 232.5 127 227z'/%3E%3Cpath fill='%23ff6400' d='M281.5 407.6c-0.3-0.4-0.7-0.7-1-1c-19.3-17.6-59.1-0.6-78.1 10.3c-23.8 13.7-8.2 41.1 5.4 55.8c16.3 17.6 42.7 25.2 68 5.8C291.3 466.6 295.5 422.7 281.5 407.6z'/%3E%3Cpath fill='%23ff6400' d='M137.9 110.2c-10.4-25.7-43.3-32.1-67-23.6C60.1 90.4 50 97.8 45.1 108.6c-21.2 47.3 44.9 81.1 78.5 51c9.5-8.5 17.3-18.9 17.4-32.4C141 120.8 139.9 115.1 137.9 110.2z'/%3E%3Cpath fill='%23ff6400' d='M344.3 284.7c-10 14.9-9.2 34.1-0.9 49.5c3.4 6.3 8.6 13.8 16.1 15.8c7.1 1.9 15.1 0.7 22.1-0.6c15.7-3 45.6-10.5 52.3-26.8C453.5 274.4 375.6 237.9 344.3 284.7z'/%3E%3Cg fill='%23ff6400' %3E%3Cpath d='M-29.2 431.8c23.4 12.4 54.1 1.7 66.1-20.6c9.6-17.8 10.4-40.4-3.3-56.5c-10.5-12.4-44.2-25.8-58.5-11.3c-3 3.1-5.1 7.1-6.9 10.9C-41.1 373.2-55 418.1-29.2 431.8z'/%3E%3Cpath d='M870.8 431.8c23.4 12.4 54.1 1.7 66.1-20.6c9.6-17.8 10.4-40.4-3.3-56.5c-10.5-12.4-44.2-25.8-58.5-11.3c-3 3.1-5.1 7.1-6.9 10.9C858.9 373.2 845 418.1 870.8 431.8z'/%3E%3C/g%3E%3Cpath fill='%23FF6400' d='M671.4 460.5c-10.7 1.7-20.2 8.3-26.2 22.2c-21.5 49.5 45.4 84.9 79.4 53.3c16.3-15.2 24-31 6.5-48.1c-5.9-5.8-12.3-11-19.1-15.6C699.5 463.7 684.5 458.4 671.4 460.5z'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  }
-
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-
-  .show {
-    display: block;
-  }
-
-  .about-habba-txt p {
-    font-size: 15px;
-    letter-spacing: 0px;
-  }
-
-  .picture-sec {
-    width: 100%;
-    text-align: center;
-    padding: 25px;
-    margin: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
-      url("../images/Habba/10.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    /* background-color: #00d9ff; */
-  }
-
-  .picture-sec .edm-cont {
-    width: 100%;
-  }
-
-  .picture-sec .edm-cont h1 {
-    background: -webkit-linear-gradient(#ff913d, #ff5500);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: rgba(255, 255, 255, 0) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    font-size: 55px;
-    letter-spacing: 1px;
-    /*font-family: "Exo 2", sans-serif;*/
-    font-family: "Philosopher", sans-serif;
-    margin: 0px 0px 0px 0px;
-  }
-
-  .picture-sec .edm-cont h2 {
-    width: 100px;
-    font-family: "Syne", sans-serif;
-    text-align: left;
-    font-size: 30px;
-    margin: 30px 0px 10px 0px;
-    color: greenyellow;
-  }
-
-  .picture-sec .edm-cont .edmh {
-    width: 0px;
-    font-family: "Syne", sans-serif;
-    text-align: left;
-    font-size: 35px;
-    margin: 0px 0px 10px 0px;
-    color: rgb(251, 72, 72);
-  }
-
-  .picture-sec .edm-cont p {
-    /*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
-    font-family: "Outfit", sans-serif;
-    font-size: 14px;
-    font-weight: 200;
-    line-height: 20px;
-    text-align: justify;
-    width: 100%;
-    margin: 0px 0px 15px 0px;
-    letter-spacing: 1.5px;
-  }
-
-  .picture-sec .edm-cont .edmp {
-    font-family: "Outfit", sans-serif;
-    font-size: 14px;
-    font-weight: 200;
-    line-height: 20px;
-    text-align: justify;
-    width: 100%;
-    margin: 0px 0px 15px 0px;
-    letter-spacing: 1.5px;
-  }
-
-  .edm-cont a {
-    margin: 20px;
-  }
-
-  .hero-btn1 {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    border-radius: 100px;
-    padding: 7px 54px;
-    font-size: 15px;
-    font-weight: 600;
-    font-family: "Outfit", sans-serif;
-    background: silver;
-    position: relative;
-    cursor: pointer;
-    letter-spacing: 2px;
-  }
-  .hero-btn1:hover {
-    background-color: #2d2d2d;
-    margin: 20px;
-    padding: 7px 24px;
-    color: white;
-    transition: 0.5s;
-  }
-
-  .picture-sec .edm-night img {
-    width: 5rem;
-    margin: 0rem;
-    border-radius: 10px;
-  }
-
-  .picture-sec .last-yr-snap h3 {
-    font-size: 80px;
-    letter-spacing: 2px;
-    font-family: "Syne", sans-serif;
-    margin: 50px 0px 0px 0px;
-  }
-
-  .picture-sec .last-yr-snap .pict img {
-    cursor: pointer;
-    width: 20rem;
-    border-radius: 8px;
-    border: 5px solid white;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    margin: 40px 5px 5px 5px;
-  }
-
-  .pict {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-}
-
-
-
-/*---------Footer----------*/
-
-footer{
-	width: 100%;
-	position: absolute;
-	bottom: 1;
-    background-color: rgb(255, 255, 255);
-    /*background: url('../images/Habba/beanstalk.webp');*/	
-    color:#EEA47F;
-	padding: 30px 0 10px;
-	font-size: 13px;
-	line-height: 10px;
-}
-
-.row{
-	width: 95%;
-	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: space-between;
-}
-
-.col{
-	flex-basis: 25%;
-	padding: 10px;
-}
-
-.col p{
-	margin-top: 20px;
-	font-size: 15px;
-	line-height: 2;
-	color: white;
-	letter-spacing: 2px;
-	font-family: "Outfit", sans-serif;
-}
-
-.col i{
-	color: #152cfa;
-}
-
-.col p{
-	font-size: 15px;
-	line-height: 1.5;
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-	letter-spacing: 1.5px;
-	font-family: "Outfit", sans-serif;
-}
-
-.col:nth-child(2), .col:nth-child(3){
-	flex-basis: 30px;
-}
-
-.col img{
-	width: 250px;
-	border-top-left-radius: 20px;
-}
-
-.col h1{
-	font-weight: 20px;
-	color: #ff6200;
-	width: fit-content;
-	margin-bottom: 55px;
-	position: relative;
-	font-family: "Syne", sans-serif;
-	font-size: 25px;
-}
-
-.email-id{
-	width: fit-content;
-	margin: 10px 0;
-}
-
-ul li{
-	list-style: none;
-	margin-bottom: 15px;
-}
-.col ul li a{
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-	font-size: 15px;
-    line-height: 0.8;
-    font-weight: 370;
-	font-family: "Outfit", sans-serif;
-	letter-spacing: 1px;
-	margin-left: -2px;
-}
-
-form{
-	padding-bottom: 15px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-bottom: 1px solid #000000;
-	margin-bottom: 50px;
-	font-family: 'Rajdhani', sans-serif;
-}
-
-form i{
-	font-size: 18px;
-	margin-right: 10px;
-	color: #152cfa;
-}
-form input{
-	width: 100%;
-	background: transparent;
-	color: #000000;
-	border: 0;
-	outline: none;
-	font-family: 'Rajdhani', sans-serif;
-	font-size: 20px;
-}
-
-form button{
-	background: transparent;
-	border: 0;
-	outline: none;
-	cursor: pointer;
-}
-
-form button i{
-	font-size: 16px;
-	color: #ffffff;
-}
-
-.social-icons a{
-	margin-right: 100%;
-	padding: 0px 40px 0px 20px;
-}
-
-.social-icons a{
-	width: 40px;
-	height: 40px;
-	border-radius: 10%;
-	text-align: left;
-	line-height: 40px;
-	font-size: 30px;
-	margin-right: 13.5px;
-    margin-left: -20px;
-	cursor: pointer;
-}
-
-hr{
-	width: 90%;
-	border: 0;
-	border-bottom: 1px solid #152cfa;
-	margin: 20px auto;
-}
-
-.copyrights{
-	text-align: center;
-	font-family: "Outfit", sans-serif;
-	font-size: 20px;
-    color: #000;
-}
-
-.underline{
-	width: 100%;
-	height: 5px;
-	background: #152cfa;
-	border-radius: 3px;
-	position: absolute;
-	top: 25px;
-	left: 0;
-	overflow: hidden;
-}
-
-.underline span{
-	width: 15px;
-	height: 100%;
-	background: #152cfa;
-	border-radius: 3px;
-	position: absolute;
-	top: 0;
-	left: 100px;
-	animation: moving 2s linear infinite;
-}
-
-@keyframes moving{
-	0%{
-	left: -20px;
-	}
-	100% {
-	left: 100px;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	footer{
-	background: #fff;
-	border-top-right-radius: 125px;
-	border-top-left-radius: 20px;
-	bottom: unset;
-	}
-
-	.col img{
-	border-top-right-radius: 20px;
-	border-top-left-radius: 0px;
-    }
-
-	.col{
-		flex-basis: 100%;
-	}
-	.col h1{
-		padding-top: 20px;
-		padding-bottom: 0px;
-		margin-bottom: 50px;
-	}
-	.col:nth-child(2), .col:nth-child(3){
-		flex-basis: 100%;
-	}
-	.copyrights{
-		text-align: center;
-		font-family: 'Kanit', sans-serif;
-		font-size: 15px;
-		line-height: 1;
-	}
-	.underline{
-		top: 45px;
-	}
-	ul li{
-		margin-bottom: 15px;
-	}
-	.col ul li a{
-		text-decoration: none;
-		color: rgb(0, 0, 0);
-		font-size: 15px;
-        font-weight: 420;
-		font-family: "Outfit", sans-serif;
-		letter-spacing: 1px;
-		margin-left: -0px;
-	}
-	.social-icons a{
-		width: 2px;
-		height: 40px;
-		border-radius: 10%;
-		text-align: center;
-		line-height: 0px;
-		font-size: 30px;
-		margin-left: 25px;
-		cursor: pointer;
-		padding: 0px 10px 0px 0px;
-	}
-    .copyrights{
-        font-size: 13px;
-    }
-}
-
-/* #Media queries */
-@media only screen and (max-width: 600px) {
-
-    .picture-sec .last-yr-snap .pict img {
-        width: 20rem;
-    }
-
-    .about-habba {
-        display: block;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .about-habba-txt {
-        width: 100%;
-    }
-
-    .about-habba-simbha {
-        width: 100%;
-    }
-
-    .about-habba-simbha img {
-        width: 15rem;
-        border-radius: 0% 0% 40% 50%;
-        display: block;
-        margin: auto;
-    }
-
-    .about-habba-simbha1 img {
-        width: 15rem;
-        border-radius: 0% 0% 80% 40%;
-        display: block;
-        margin: auto;
-    }
-
-    .sub-footer {
-        display: block;
-    }
-
-    .footer .sub-footer .box {
-        width: 100%;
-        text-align: justify;
-
-    }
-
-    .footer .sub-footer .shortCut img {
-        width: 8rem;
-        display: flex;
-        margin: 25px auto;
-    }
-
-    .count {
-        background: url('../images/Habba/beanstalk.webp');
-        padding: 30px;
-    }
-    
-    #countdown {
-        font-family: "Syne", sans-serif;
-        letter-spacing: 4px;
-        background-color: #fff;
-        justify-content: center;
-        text-align: center;
-        font-size: 15px;
-        border: 3px solid rgb(0, 0, 0);
-        border-radius: 10px;
-        padding: 1px;
-        color: #0000ff;
-        font-weight: bolder;
-    }
-    
-    .stext {
-        color: #ff6E00;
-        font-size: 20px;
-        letter-spacing: 10px;
-        font-family: "Codystar", sans-serif;
-    }
-    
-
-    /* This section is for mobile nav bar */
-    .dropbtn {
-        background-color: #FFFFFF;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='526' height='350.7' viewBox='0 0 900 600'%3E%3Cg fill-opacity='0.19'%3E%3Cpath fill='%23FF6400' d='M306.9 210.2c-1.2-22.8-13.5-42.7-40.8-41.1c-18.3 1.1-35.9 3.6-47.5 20.1c-5.2 7.4-10.6 15.6-11.4 24.9c-0.5 5.8 0.2 12 1.2 17.7c9 49.6 85.3 46.7 96.4 0.2C306.6 224.9 307.3 217.4 306.9 210.2z'/%3E%3Cpath fill='%23ff6400' d='M137.2 481.3c-13.2-9.9-31.2-13.3-48.5-3.2c-12.6 7.3-19.1 17.4-21.1 28.2c-0.7 2.4-1.2 4.7-1.5 7c-8.2 35.4 33.7 78.9 72.6 48.6C167.6 539.3 164.4 501.6 137.2 481.3z'/%3E%3Cg fill='%23ff6400' %3E%3Cpath d='M547.9 588.3c-7.1-34.2-61.6-52.7-87.5-16.9c-11.2 11.3-12.7 26.3-7.6 39.7c1.8 7.5 5.5 13.9 10.4 19.1c19.4 20.3 53.4 26.2 72.8 1.9C545.9 619.7 553.9 604.2 547.9 588.3z'/%3E%3Cpath d='M547.9-11.7c-7.1-34.2-61.6-52.7-87.5-16.9c-11.2 11.3-12.7 26.3-7.6 39.7c1.8 7.5 5.5 13.9 10.4 19.1c19.4 20.3 53.4 26.2 72.8 1.9C545.9 19.7 553.9 4.2 547.9-11.7z'/%3E%3C/g%3E%3Cpath fill='%23ff6400' d='M849.7 498c-22.3 1.3-43.2 7.5-52.7 29.5c-3.3 7.7-7.3 15.7-7 24.3c2 55.6 86.1 63.4 98.8 10.1C890.6 554.6 877.3 496.4 849.7 498z'/%3E%3Cpath fill='%23ff6400' d='M762 291.1c-8.2-6.1-19.1-1.9-27.3 2.2c-7.4 3.7-14.4 8.2-21.6 12.1c-6.6 3.6-13.7 7-19.8 11.5c-18.3 13.5-2.5 45.1 10.6 56.4c17 14.6 41.6 15.9 59.6 2.1C794.1 351.8 790.7 312.4 762 291.1z'/%3E%3Cpath fill='%23ff6400' d='M863.3 170.3c-4.5-15.7-17.9-28.8-33.4-34.4c-16.2-5.8-38.4-2.9-51.8 8.1c-14.9 12.2-14.5 31.7-11.4 49c9.6 53.9 84.3 47.7 97-1.3C865.6 184.4 865.3 177.1 863.3 170.3z'/%3E%3Cpath fill='%23ff6400' d='M598.4 86.1c-10.2 15.5-9.3 34.2-0.9 50.4c2.6 5 6.2 9.5 10.4 13.2c14.2 12.6 35.5 17.1 53.2 9.5c14.3-6.1 23.9-19.8 26.7-34.7C707.4 75.6 629.7 38.5 598.4 86.1z'/%3E%3Cpath fill='%23ff6400' d='M509.8 413.3c-17.3 22.6-11.8 59 17.5 75.3c22.6 12.6 52.2 1.7 63.8-20.9c21.4-42-9.2-85-56.5-71C523.8 399.9 515.6 405.8 509.8 413.3z'/%3E%3Cpath fill='%23ff6400' d='M607.4 232.3c-0.5-0.4-1-0.8-1.4-1.2c-16.5-12.8-30.2-22.1-50.3-8.4c-15.5 10.6-29 30.3-31.4 49.1c-4.2 33.6 30.6 46.9 58.6 40.6C619.6 304.2 640.6 259.5 607.4 232.3z'/%3E%3Cpath fill='%23ff6400' d='M410.6 95c-36.5 1.3-74.1 41.8-43.1 74.3c19.8 20.9 54.4 20.7 74.6 0.5c20.5-20.4 18.4-53.1-6.9-68.6C427.7 96.6 419.2 94.7 410.6 95z'/%3E%3Cpath fill='%23ff6400' d='M291.3 23c-0.1-0.1-0.1-0.1-0.2-0.2c-14.2-16.9-38.3-25.6-61.4-12.3c-13.5 7.8-20.5 18.7-22.7 30.2c-5.7 18 1.5 34.2 14.2 44.8c15.4 16.8 40.3 24.1 64.2 5.5c9.6-7.4 15-16.3 17.2-25.4C308.6 48.8 302.7 33.6 291.3 23z'/%3E%3Cpath fill='%23ff6400' d='M419.1 440.6c-16.9-14.5-41.8-21.5-61.7-9.5c-18.3 11.1-1 100.1 32.2 93.5c23.8-4.7 45.3-22.4 48.1-44.3C439.6 466.1 431.5 451.3 419.1 440.6z'/%3E%3Cpath fill='%23ff6400' d='M127 227c-12-4.3-25.4-2.1-38.7 11.4C71 255.9 61.4 286.1 80.4 306c21.3 22.3 86.9 27.5 89.6-14.9c0.5-8.9-2.7-17.9-6.5-25.8C155.1 248.3 142.1 232.5 127 227z'/%3E%3Cpath fill='%23ff6400' d='M281.5 407.6c-0.3-0.4-0.7-0.7-1-1c-19.3-17.6-59.1-0.6-78.1 10.3c-23.8 13.7-8.2 41.1 5.4 55.8c16.3 17.6 42.7 25.2 68 5.8C291.3 466.6 295.5 422.7 281.5 407.6z'/%3E%3Cpath fill='%23ff6400' d='M137.9 110.2c-10.4-25.7-43.3-32.1-67-23.6C60.1 90.4 50 97.8 45.1 108.6c-21.2 47.3 44.9 81.1 78.5 51c9.5-8.5 17.3-18.9 17.4-32.4C141 120.8 139.9 115.1 137.9 110.2z'/%3E%3Cpath fill='%23ff6400' d='M344.3 284.7c-10 14.9-9.2 34.1-0.9 49.5c3.4 6.3 8.6 13.8 16.1 15.8c7.1 1.9 15.1 0.7 22.1-0.6c15.7-3 45.6-10.5 52.3-26.8C453.5 274.4 375.6 237.9 344.3 284.7z'/%3E%3Cg fill='%23ff6400' %3E%3Cpath d='M-29.2 431.8c23.4 12.4 54.1 1.7 66.1-20.6c9.6-17.8 10.4-40.4-3.3-56.5c-10.5-12.4-44.2-25.8-58.5-11.3c-3 3.1-5.1 7.1-6.9 10.9C-41.1 373.2-55 418.1-29.2 431.8z'/%3E%3Cpath d='M870.8 431.8c23.4 12.4 54.1 1.7 66.1-20.6c9.6-17.8 10.4-40.4-3.3-56.5c-10.5-12.4-44.2-25.8-58.5-11.3c-3 3.1-5.1 7.1-6.9 10.9C858.9 373.2 845 418.1 870.8 431.8z'/%3E%3C/g%3E%3Cpath fill='%23FF6400' d='M671.4 460.5c-10.7 1.7-20.2 8.3-26.2 22.2c-21.5 49.5 45.4 84.9 79.4 53.3c16.3-15.2 24-31 6.5-48.1c-5.9-5.8-12.3-11-19.1-15.6C699.5 463.7 684.5 458.4 671.4 460.5z'/%3E%3C/g%3E%3C/svg%3E");
-        background-attachment: fixed;
-        letter-spacing: 0.2rem;
-        color: rgb(0, 0, 0);
-        padding: 16px;
-        font-size: 15px;
-        border: none;
-        margin-top: 0.3rem;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-
-    .dropbtn:hover,
-    .dropbtn:focus {
-        background-color: #FFFFFF;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='526' height='350.7' viewBox='0 0 900 600'%3E%3Cg fill-opacity='0.19'%3E%3Cpath fill='%23FF6400' d='M306.9 210.2c-1.2-22.8-13.5-42.7-40.8-41.1c-18.3 1.1-35.9 3.6-47.5 20.1c-5.2 7.4-10.6 15.6-11.4 24.9c-0.5 5.8 0.2 12 1.2 17.7c9 49.6 85.3 46.7 96.4 0.2C306.6 224.9 307.3 217.4 306.9 210.2z'/%3E%3Cpath fill='%23ff6400' d='M137.2 481.3c-13.2-9.9-31.2-13.3-48.5-3.2c-12.6 7.3-19.1 17.4-21.1 28.2c-0.7 2.4-1.2 4.7-1.5 7c-8.2 35.4 33.7 78.9 72.6 48.6C167.6 539.3 164.4 501.6 137.2 481.3z'/%3E%3Cg fill='%23ff6400' %3E%3Cpath d='M547.9 588.3c-7.1-34.2-61.6-52.7-87.5-16.9c-11.2 11.3-12.7 26.3-7.6 39.7c1.8 7.5 5.5 13.9 10.4 19.1c19.4 20.3 53.4 26.2 72.8 1.9C545.9 619.7 553.9 604.2 547.9 588.3z'/%3E%3Cpath d='M547.9-11.7c-7.1-34.2-61.6-52.7-87.5-16.9c-11.2 11.3-12.7 26.3-7.6 39.7c1.8 7.5 5.5 13.9 10.4 19.1c19.4 20.3 53.4 26.2 72.8 1.9C545.9 19.7 553.9 4.2 547.9-11.7z'/%3E%3C/g%3E%3Cpath fill='%23ff6400' d='M849.7 498c-22.3 1.3-43.2 7.5-52.7 29.5c-3.3 7.7-7.3 15.7-7 24.3c2 55.6 86.1 63.4 98.8 10.1C890.6 554.6 877.3 496.4 849.7 498z'/%3E%3Cpath fill='%23ff6400' d='M762 291.1c-8.2-6.1-19.1-1.9-27.3 2.2c-7.4 3.7-14.4 8.2-21.6 12.1c-6.6 3.6-13.7 7-19.8 11.5c-18.3 13.5-2.5 45.1 10.6 56.4c17 14.6 41.6 15.9 59.6 2.1C794.1 351.8 790.7 312.4 762 291.1z'/%3E%3Cpath fill='%23ff6400' d='M863.3 170.3c-4.5-15.7-17.9-28.8-33.4-34.4c-16.2-5.8-38.4-2.9-51.8 8.1c-14.9 12.2-14.5 31.7-11.4 49c9.6 53.9 84.3 47.7 97-1.3C865.6 184.4 865.3 177.1 863.3 170.3z'/%3E%3Cpath fill='%23ff6400' d='M598.4 86.1c-10.2 15.5-9.3 34.2-0.9 50.4c2.6 5 6.2 9.5 10.4 13.2c14.2 12.6 35.5 17.1 53.2 9.5c14.3-6.1 23.9-19.8 26.7-34.7C707.4 75.6 629.7 38.5 598.4 86.1z'/%3E%3Cpath fill='%23ff6400' d='M509.8 413.3c-17.3 22.6-11.8 59 17.5 75.3c22.6 12.6 52.2 1.7 63.8-20.9c21.4-42-9.2-85-56.5-71C523.8 399.9 515.6 405.8 509.8 413.3z'/%3E%3Cpath fill='%23ff6400' d='M607.4 232.3c-0.5-0.4-1-0.8-1.4-1.2c-16.5-12.8-30.2-22.1-50.3-8.4c-15.5 10.6-29 30.3-31.4 49.1c-4.2 33.6 30.6 46.9 58.6 40.6C619.6 304.2 640.6 259.5 607.4 232.3z'/%3E%3Cpath fill='%23ff6400' d='M410.6 95c-36.5 1.3-74.1 41.8-43.1 74.3c19.8 20.9 54.4 20.7 74.6 0.5c20.5-20.4 18.4-53.1-6.9-68.6C427.7 96.6 419.2 94.7 410.6 95z'/%3E%3Cpath fill='%23ff6400' d='M291.3 23c-0.1-0.1-0.1-0.1-0.2-0.2c-14.2-16.9-38.3-25.6-61.4-12.3c-13.5 7.8-20.5 18.7-22.7 30.2c-5.7 18 1.5 34.2 14.2 44.8c15.4 16.8 40.3 24.1 64.2 5.5c9.6-7.4 15-16.3 17.2-25.4C308.6 48.8 302.7 33.6 291.3 23z'/%3E%3Cpath fill='%23ff6400' d='M419.1 440.6c-16.9-14.5-41.8-21.5-61.7-9.5c-18.3 11.1-1 100.1 32.2 93.5c23.8-4.7 45.3-22.4 48.1-44.3C439.6 466.1 431.5 451.3 419.1 440.6z'/%3E%3Cpath fill='%23ff6400' d='M127 227c-12-4.3-25.4-2.1-38.7 11.4C71 255.9 61.4 286.1 80.4 306c21.3 22.3 86.9 27.5 89.6-14.9c0.5-8.9-2.7-17.9-6.5-25.8C155.1 248.3 142.1 232.5 127 227z'/%3E%3Cpath fill='%23ff6400' d='M281.5 407.6c-0.3-0.4-0.7-0.7-1-1c-19.3-17.6-59.1-0.6-78.1 10.3c-23.8 13.7-8.2 41.1 5.4 55.8c16.3 17.6 42.7 25.2 68 5.8C291.3 466.6 295.5 422.7 281.5 407.6z'/%3E%3Cpath fill='%23ff6400' d='M137.9 110.2c-10.4-25.7-43.3-32.1-67-23.6C60.1 90.4 50 97.8 45.1 108.6c-21.2 47.3 44.9 81.1 78.5 51c9.5-8.5 17.3-18.9 17.4-32.4C141 120.8 139.9 115.1 137.9 110.2z'/%3E%3Cpath fill='%23ff6400' d='M344.3 284.7c-10 14.9-9.2 34.1-0.9 49.5c3.4 6.3 8.6 13.8 16.1 15.8c7.1 1.9 15.1 0.7 22.1-0.6c15.7-3 45.6-10.5 52.3-26.8C453.5 274.4 375.6 237.9 344.3 284.7z'/%3E%3Cg fill='%23ff6400' %3E%3Cpath d='M-29.2 431.8c23.4 12.4 54.1 1.7 66.1-20.6c9.6-17.8 10.4-40.4-3.3-56.5c-10.5-12.4-44.2-25.8-58.5-11.3c-3 3.1-5.1 7.1-6.9 10.9C-41.1 373.2-55 418.1-29.2 431.8z'/%3E%3Cpath d='M870.8 431.8c23.4 12.4 54.1 1.7 66.1-20.6c9.6-17.8 10.4-40.4-3.3-56.5c-10.5-12.4-44.2-25.8-58.5-11.3c-3 3.1-5.1 7.1-6.9 10.9C858.9 373.2 845 418.1 870.8 431.8z'/%3E%3C/g%3E%3Cpath fill='%23FF6400' d='M671.4 460.5c-10.7 1.7-20.2 8.3-26.2 22.2c-21.5 49.5 45.4 84.9 79.4 53.3c16.3-15.2 24-31 6.5-48.1c-5.9-5.8-12.3-11-19.1-15.6C699.5 463.7 684.5 458.4 671.4 460.5z'/%3E%3C/g%3E%3C/svg%3E");
-        background-attachment: fixed;
-
-    }
-
-    .dropdown {
-        position: relative;
-        display: contents;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #FFFFFF;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='526' height='350.7' viewBox='0 0 900 600'%3E%3Cg fill-opacity='0.19'%3E%3Cpath fill='%23FF6400' d='M306.9 210.2c-1.2-22.8-13.5-42.7-40.8-41.1c-18.3 1.1-35.9 3.6-47.5 20.1c-5.2 7.4-10.6 15.6-11.4 24.9c-0.5 5.8 0.2 12 1.2 17.7c9 49.6 85.3 46.7 96.4 0.2C306.6 224.9 307.3 217.4 306.9 210.2z'/%3E%3Cpath fill='%23ff6400' d='M137.2 481.3c-13.2-9.9-31.2-13.3-48.5-3.2c-12.6 7.3-19.1 17.4-21.1 28.2c-0.7 2.4-1.2 4.7-1.5 7c-8.2 35.4 33.7 78.9 72.6 48.6C167.6 539.3 164.4 501.6 137.2 481.3z'/%3E%3Cg fill='%23ff6400' %3E%3Cpath d='M547.9 588.3c-7.1-34.2-61.6-52.7-87.5-16.9c-11.2 11.3-12.7 26.3-7.6 39.7c1.8 7.5 5.5 13.9 10.4 19.1c19.4 20.3 53.4 26.2 72.8 1.9C545.9 619.7 553.9 604.2 547.9 588.3z'/%3E%3Cpath d='M547.9-11.7c-7.1-34.2-61.6-52.7-87.5-16.9c-11.2 11.3-12.7 26.3-7.6 39.7c1.8 7.5 5.5 13.9 10.4 19.1c19.4 20.3 53.4 26.2 72.8 1.9C545.9 19.7 553.9 4.2 547.9-11.7z'/%3E%3C/g%3E%3Cpath fill='%23ff6400' d='M849.7 498c-22.3 1.3-43.2 7.5-52.7 29.5c-3.3 7.7-7.3 15.7-7 24.3c2 55.6 86.1 63.4 98.8 10.1C890.6 554.6 877.3 496.4 849.7 498z'/%3E%3Cpath fill='%23ff6400' d='M762 291.1c-8.2-6.1-19.1-1.9-27.3 2.2c-7.4 3.7-14.4 8.2-21.6 12.1c-6.6 3.6-13.7 7-19.8 11.5c-18.3 13.5-2.5 45.1 10.6 56.4c17 14.6 41.6 15.9 59.6 2.1C794.1 351.8 790.7 312.4 762 291.1z'/%3E%3Cpath fill='%23ff6400' d='M863.3 170.3c-4.5-15.7-17.9-28.8-33.4-34.4c-16.2-5.8-38.4-2.9-51.8 8.1c-14.9 12.2-14.5 31.7-11.4 49c9.6 53.9 84.3 47.7 97-1.3C865.6 184.4 865.3 177.1 863.3 170.3z'/%3E%3Cpath fill='%23ff6400' d='M598.4 86.1c-10.2 15.5-9.3 34.2-0.9 50.4c2.6 5 6.2 9.5 10.4 13.2c14.2 12.6 35.5 17.1 53.2 9.5c14.3-6.1 23.9-19.8 26.7-34.7C707.4 75.6 629.7 38.5 598.4 86.1z'/%3E%3Cpath fill='%23ff6400' d='M509.8 413.3c-17.3 22.6-11.8 59 17.5 75.3c22.6 12.6 52.2 1.7 63.8-20.9c21.4-42-9.2-85-56.5-71C523.8 399.9 515.6 405.8 509.8 413.3z'/%3E%3Cpath fill='%23ff6400' d='M607.4 232.3c-0.5-0.4-1-0.8-1.4-1.2c-16.5-12.8-30.2-22.1-50.3-8.4c-15.5 10.6-29 30.3-31.4 49.1c-4.2 33.6 30.6 46.9 58.6 40.6C619.6 304.2 640.6 259.5 607.4 232.3z'/%3E%3Cpath fill='%23ff6400' d='M410.6 95c-36.5 1.3-74.1 41.8-43.1 74.3c19.8 20.9 54.4 20.7 74.6 0.5c20.5-20.4 18.4-53.1-6.9-68.6C427.7 96.6 419.2 94.7 410.6 95z'/%3E%3Cpath fill='%23ff6400' d='M291.3 23c-0.1-0.1-0.1-0.1-0.2-0.2c-14.2-16.9-38.3-25.6-61.4-12.3c-13.5 7.8-20.5 18.7-22.7 30.2c-5.7 18 1.5 34.2 14.2 44.8c15.4 16.8 40.3 24.1 64.2 5.5c9.6-7.4 15-16.3 17.2-25.4C308.6 48.8 302.7 33.6 291.3 23z'/%3E%3Cpath fill='%23ff6400' d='M419.1 440.6c-16.9-14.5-41.8-21.5-61.7-9.5c-18.3 11.1-1 100.1 32.2 93.5c23.8-4.7 45.3-22.4 48.1-44.3C439.6 466.1 431.5 451.3 419.1 440.6z'/%3E%3Cpath fill='%23ff6400' d='M127 227c-12-4.3-25.4-2.1-38.7 11.4C71 255.9 61.4 286.1 80.4 306c21.3 22.3 86.9 27.5 89.6-14.9c0.5-8.9-2.7-17.9-6.5-25.8C155.1 248.3 142.1 232.5 127 227z'/%3E%3Cpath fill='%23ff6400' d='M281.5 407.6c-0.3-0.4-0.7-0.7-1-1c-19.3-17.6-59.1-0.6-78.1 10.3c-23.8 13.7-8.2 41.1 5.4 55.8c16.3 17.6 42.7 25.2 68 5.8C291.3 466.6 295.5 422.7 281.5 407.6z'/%3E%3Cpath fill='%23ff6400' d='M137.9 110.2c-10.4-25.7-43.3-32.1-67-23.6C60.1 90.4 50 97.8 45.1 108.6c-21.2 47.3 44.9 81.1 78.5 51c9.5-8.5 17.3-18.9 17.4-32.4C141 120.8 139.9 115.1 137.9 110.2z'/%3E%3Cpath fill='%23ff6400' d='M344.3 284.7c-10 14.9-9.2 34.1-0.9 49.5c3.4 6.3 8.6 13.8 16.1 15.8c7.1 1.9 15.1 0.7 22.1-0.6c15.7-3 45.6-10.5 52.3-26.8C453.5 274.4 375.6 237.9 344.3 284.7z'/%3E%3Cg fill='%23ff6400' %3E%3Cpath d='M-29.2 431.8c23.4 12.4 54.1 1.7 66.1-20.6c9.6-17.8 10.4-40.4-3.3-56.5c-10.5-12.4-44.2-25.8-58.5-11.3c-3 3.1-5.1 7.1-6.9 10.9C-41.1 373.2-55 418.1-29.2 431.8z'/%3E%3Cpath d='M870.8 431.8c23.4 12.4 54.1 1.7 66.1-20.6c9.6-17.8 10.4-40.4-3.3-56.5c-10.5-12.4-44.2-25.8-58.5-11.3c-3 3.1-5.1 7.1-6.9 10.9C858.9 373.2 845 418.1 870.8 431.8z'/%3E%3C/g%3E%3Cpath fill='%23FF6400' d='M671.4 460.5c-10.7 1.7-20.2 8.3-26.2 22.2c-21.5 49.5 45.4 84.9 79.4 53.3c16.3-15.2 24-31 6.5-48.1c-5.9-5.8-12.3-11-19.1-15.6C699.5 463.7 684.5 458.4 671.4 460.5z'/%3E%3C/g%3E%3C/svg%3E");
-        background-attachment: fixed;
-        min-width: 160px;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    }
-
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-
-    .dropdown-content a:hover {
-        background-color: #f1f1f1
-    }
-
-    .show {
-        display: block;
-    }
-
-    .about-habba-txt p{
-        font-size: 15px;
-        letter-spacing: 0px;
-    }
-
-    .picture-sec {
-        width: 100%;
-        text-align: center;
-        padding: 25px;
-        margin: auto;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)), url('../images/Habba/10.jpg');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: #fff;
-        /* background-color: #00d9ff; */
-    }
-    
-    .picture-sec .edm-cont {
-        width: 100%;
-    }
-    
-    .picture-sec .edm-cont h1{
-        background: -webkit-linear-gradient(#ff913d, #ff5500);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: rgba(255, 255, 255, 0) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        font-size: 55px;
-        letter-spacing: 1px;
-        /*font-family: "Exo 2", sans-serif;*/
-        font-family: "Philosopher", sans-serif;
-        margin: 0px 0px 0px 0px;
-    }
-    
-    .picture-sec .edm-cont h2{
-        width: 100px;
-        font-family: "Syne",sans-serif;
-        text-align: left;
-        font-size: 30px;
-        margin: 30px 0px 10px 0px;
-        color: greenyellow;
-    }
-    
-    .picture-sec .edm-cont .edmh{
-        width: 0px;
-        font-family: "Syne",sans-serif;
-        text-align: left;
-        font-size: 35px;
-        margin: 0px 0px 10px 0px;
-        color: rgb(251, 72, 72);
-    }
-    
-    .picture-sec .edm-cont p{
-        /*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
-        font-family: "Outfit", sans-serif;
-        font-size: 14px;
-        font-weight: 200;
-        line-height: 20px;
-        text-align: justify;
-        width: 100%;
-        margin: 0px 0px 15px 0px;
-        letter-spacing: 1.5px;
-    }
-    
-    .picture-sec .edm-cont .edmp{
-        font-family: "Outfit", sans-serif;
-        font-size: 14px;
-        font-weight: 200;
-        line-height: 20px;
-        text-align: justify;
-        width: 100%;
-        margin: 0px 0px 15px 0px;
-        letter-spacing: 1.5px;
-    }
-    
-    .edm-cont a{
-        margin: 20px;
-    }
-    
-    .hero-btn1{
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        border-radius: 100px;
-        padding: 7px 54px;
-        font-size: 15px;
-        font-weight: 600;
-        font-family: "Outfit", sans-serif;
-        background: silver;
-        position: relative;
-        cursor: pointer;
-        letter-spacing: 2px;
-    }
-    .hero-btn1:hover{
-        background-color: #2d2d2d;
-        margin: 20px;
-        padding: 7px 24px;
-        color: white;
-        transition: 0.5s;
-    }
-    
-    .picture-sec .edm-night img {
-        width: 5rem;
-        margin: 0rem;
-        border-radius: 10px;
-    }
-    
-    .picture-sec .last-yr-snap h3{
-        font-size: 80px;
-        letter-spacing: 2px;
-        font-family: "Syne", sans-serif;
-        margin: 50px 0px 0px 0px;
-    }
-    
-    .picture-sec .last-yr-snap .pict img {
-        cursor: pointer;
-        width: 20rem;
-        border-radius: 8px;
-        border: 5px solid white;
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-        margin: 40px 5px 5px 5px;
-    }
-    
-    .pict {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    
-
-}
-
