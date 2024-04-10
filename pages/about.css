@@ -1,0 +1,45 @@
+body{
+    background: linear-gradient(to right,  #1c1d1f, #000000);
+}
+
+/* ------------- Desktop Part Coding Starts From Here --------- */
+
+.years{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 60px 0px 60px 0px;
+}
+
+.years h1{
+    background: linear-gradient(to left, #ffb765, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Tapestry", serif;
+    font-size: 80px;
+    font-weight: 100;
+    text-align: center;
+}
+/* .yearsp{
+    background-image: linear-gradient(rgba(10, 19, 30, 0.7), rgba(9, 18, 28, 0.5)),url("../images/Habba/39.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    display: flex;
+    flex-direction: row;
+}
+
+.yearsp p{
+    color: white;
+    font-size: 15px;
+    margin: 50px 30px 10px 30px;
+    text-align: justify;
+    letter-spacing: 1.5px; */
+}
+/*--------------- Coding part for Desktop Part Ends Here ------------- */
+
+/*---------------- Mobile screen coding Starts From Here ----------------*/
+
+@media only screen and (max-width: 600px) {
+
+
+}
