@@ -1,242 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- This one is for favicon logo -->
-    <link rel="shortcut icon" href="./images/HabbaLogo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./images/HabbaLogo.png"
+      type="image/x-icon"
+    />
 
     <!-- ##### StyleSheet ##### -->
-    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/stylesheet.css" />
 
     <!-- ##### Google Fonts ##### -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap"
-        rel="stylesheet">
-        
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rochester&family=Sacramento&family=Sail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rochester&family=Sacramento&family=Sail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Sail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceland&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <!---Updated Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet" />
 
     <!-- ##### Font awesome ##### -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- ##### AOS Scroll Animation ##### -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Acharya Habba 2024</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        
-    <!-- Home Screen - Starting Page -->
+      <!-- Home Screen - Starting Page -->
 
-        <section class="header">
-            <nav>
-                <a href="index.html"><img src="../images/HabbaLogo.png"></a>
-                <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../pages/about.html">About</a></li>
-                        <li><a href="../pages/event.html">Events</a></li>
-                        <li><a href="../pages/team.html">Teams</a></li>
-                        <li><a href="../pages/sponsor.html">Sponsor</a></li>
-                        <li><a href="../pages/faq.html">Faq</a></li>	
-                        <li><a href="../pages/contatus.html">Contact Us</a></li>				
-                    </ul>
-                </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
-            </nav>
-                
-            <div class="text-box">
-                <h1> ACHARYA </h1>
-                <h2>HABBA'24</h2>
-                <span>20 May 2024 HABBA LAUNCH</span>
-                <p>Get ready for Bengaluru's biggest Techno Cultural fest</p>
-                <div class="button">
-                    <a href="../pages/text.html" class="button-home">Dj Night Tickets</a>
-                <a href="pages/event.html" class="button-home">Events Regetiration</a>
-                </div>
-            </div>
-        </section>
-        
-    <!-- CountDown for remaining Days -->
+      <section class="header">
+        <nav>
+          <a href="index.html"><img src="../images/HabbaLogo.png" /></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../pages/about.html">About</a></li>
+              <li><a href="../pages/event.html">Events</a></li>
+              <li><a href="../pages/team.html">Teams</a></li>
+              <li><a href="../pages/sponsor.html">Sponsor</a></li>
+              <li><a href="../pages/faq.html">Faq</a></li>
+              <li><a href="../pages/contatus.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
 
-    <div class="count">
+        <div class="text-box">
+          <h1>ACHARYA</h1>
+          <h2>HABBA'24</h2>
+          <span>20 May 2024 Habba Launch</span>
+          <p>Get ready for Bengaluru's biggest Techno Cultural fest</p>
+          <div class="button">
+            <a href="../pages/text.html" class="button-home"
+              >Dj Night Tickets</a
+            >
+            <a href="pages/event.html" class="button-home"
+              >Events Regetiration</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- CountDown for remaining Days -->
+
+      <div class="count">
         <div id="countdown"></div>
         <script src="script1.js"></script>
-    </div>
+      </div>
 
-    <!-- About Habba -->
+      <!-- About Habba -->
 
-    <section class="about-habba about-habba-1  flex">
+      <section class="about-habba about-habba-1 flex">
         <div class="about-habba-txt">
-            <h1>About Habba</h1>
-            <p>
-                Acharya Habba is a Kaleidoscope of talent, expressed through a spectrum of performances which
-                involves
-                music, dance, drama, sports, technological prodigies with a tinge of competitive air and lots of
-                cheer,
-                diligence and ecstacy all around us. The fest harbours silver, gold or platinum sponsor titles with
-                perks being provided accordingly, along with onlookers standing steadfast with awe and admiration at
-                the splendid sight before them.
-                <br><br>
-                With events such as Battle of Bands, Fashion Show, and Choreo Night, each having unique themes,
-                Acharya Habba glues all of its audience in their spots, making sure they never want it to end! It's
-                that extraordinary time of the year where people from all over the country come to celebrate and
-                create memories that last a lifetime.
-                Drawing in a crowd of over 25000 students, more than half of them being in-house, it's the perfect
-                time and place to meet new people and be alive in every sense of the word.
-            </p>
+          <h1>About Habba</h1>
+          <p>
+            Acharya Habba is a Kaleidoscope of talent, expressed through a
+            spectrum of performances which involves music, dance, drama, sports,
+            technological prodigies with a tinge of competitive air and lots of
+            cheer, diligence and ecstacy all around us. The fest harbours
+            silver, gold or platinum sponsor titles with perks being provided
+            accordingly, along with onlookers standing steadfast with awe and
+            admiration at the splendid sight before them.
+            <br /><br />
+            With events such as Battle of Bands, Fashion Show, and Choreo Night,
+            each having unique themes, Acharya Habba glues all of its audience
+            in their spots, making sure they never want it to end! It's that
+            extraordinary time of the year where people from all over the
+            country come to celebrate and create memories that last a lifetime.
+            Drawing in a crowd of over 25000 students, more than half of them
+            being in-house, it's the perfect time and place to meet new people
+            and be alive in every sense of the word.
+          </p>
         </div>
-        <div class="about-habba-simbha" data-aos="fade-up" data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000">
-            <img src="./images/simbha/simba11.png" alt="Simbha">
+        <div
+          class="about-habba-simbha"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
+          <img src="./images/simbha/simba11.png" alt="Simbha" />
         </div>
-    </section>
+      </section>
 
-    <section class="about-habba about-habba-2 flex">
-        <div class="about-habba-simbha1" data-aos="fade-up" data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000">
-            <img src="./images/simbha/simba9.png" alt="Simbha">
+      <section class="about-habba about-habba-2 flex">
+        <div
+          class="about-habba-simbha1"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
+          <img src="./images/simbha/simba9.png" alt="Simbha" />
         </div>
         <div class="about-habba-txt">
-            <h1 style="color: #717ffc;">Cultural Mosaic Habba 2024</h1>
-            <p style="color: rgb(255, 255, 255);">
-                Welcome to the most anticipated event of the year Acharya Habba'24. Acharya Habba is the ultimate
-                celebration of cultural diversity that brings together students from different parts of the world to
-                celebrate and showcase their Unique culture in any form, be it dance, drama, music, art or even
-                food!. With the theme of
-                multiculturalism at its core, Acharya Habba provides a platform for students to express themselves
-                and share their cultural heritage in a festive and welcoming atmosphere.
-                <br>
-                <br>
+          <h1 style="color: #717ffc">Cultural Mosaic Habba 2024</h1>
+          <p style="color: rgb(255, 255, 255)">
+            Welcome to the most anticipated event of the year Acharya Habba'24.
+            Acharya Habba is the ultimate celebration of cultural diversity that
+            brings together students from different parts of the world to
+            celebrate and showcase their Unique culture in any form, be it
+            dance, drama, music, art or even food!. With the theme of
+            multiculturalism at its core, Acharya Habba provides a platform for
+            students to express themselves and share their cultural heritage in
+            a festive and welcoming atmosphere.
+            <br />
+            <br />
 
-                The festival is a melting pot of cultures with students performing traditional dances, music, and
-                theater acts from various parts of the globe. As you step onto the vibrant campus, you'll be
-                transported to a kaleidoscope of colors and sounds, each one representing a unique culture. The
-                beats of the African Drums mingle with the lilting melodies of Indian Classical music, where Hip-hop
-                meets Kathak, Raps form a jugalbandi with Sargams and everything comes together in a beautiful
-                fusion to give you an experience like no other!
-                <br><br>
+            The festival is a melting pot of cultures with students performing
+            traditional dances, music, and theater acts from various parts of
+            the globe. As you step onto the vibrant campus, you'll be
+            transported to a kaleidoscope of colors and sounds, each one
+            representing a unique culture. The beats of the African Drums mingle
+            with the lilting melodies of Indian Classical music, where Hip-hop
+            meets Kathak, Raps form a jugalbandi with Sargams and everything
+            comes together in a beautiful fusion to give you an experience like
+            no other!
+            <br /><br />
 
-                The Acharya Habba is more than just a celebration of cultures; it's a celebration of human diversity
-                and the power of unity. Students of all backgrounds come together, forging new friendships, and
-                learning from each other, as they embrace the rich tapestry of the world's many cultures.
-            </p>
+            The Acharya Habba is more than just a celebration of cultures; it's
+            a celebration of human diversity and the power of unity. Students of
+            all backgrounds come together, forging new friendships, and learning
+            from each other, as they embrace the rich tapestry of the world's
+            many cultures.
+          </p>
         </div>
-    </section>
+      </section>
 
-    <!-- EDM Night -->
+      <!-- EDM Night -->
 
-    <section class="picture-sec">
-
+      <section class="picture-sec">
         <div class="last-yr-snap">
-            
-            <div class="edm-night">
-                <!--<img src="./images/demoimg.jpg" alt="EDM Night">-->
-                <div class="edm-cont">
-                    <h1>Dj Night 10 May 2024</h1>
-                    <a href="/pages/registration.html" class="hero-btn1">Get your E-Pass<br></a>
-                    <h2>Do's</h2>
-                    <p><b>Plan your day accordingly:</b> Be on time and support your participating friends in their respective events have a look at the schedule 
-                        and plan accordingly.</p>
-                    <p><b>Dress to chill:</b> The weather is very kind and its May, hence wear comfortable clothes & stay hydrated.</p>
-                    <p><b>Entry and Exit:</b> Entry is only through Gate no. 3 and Exit through Gate no. 1 & 2. Kindly co-operate with security 
-                        and Habba crew & NCC Cadets.</p>
-                    <p><b>Identify Check:</b> Security personnel & Habba crew & NCC Cadets will be deployed across acharya campus, Please make sure to 
-                        carry your physical ID cards of students (Driving License/ Aadhar card: For Outsiders).</p>
+          <div class="edm-night">
+            <!--<img src="./images/demoimg.jpg" alt="EDM Night">-->
+            <div class="edm-cont">
+              <h1>Dj Night 10 May 2024</h1>
+              <a href="/pages/registration.html" class="hero-btn1"
+                >Get your E-Pass<br
+              /></a>
+              <h2>Do's</h2>
+              <p>
+                <b>Plan your day accordingly:</b> Be on time and support your
+                participating friends in their respective events have a look at
+                the schedule and plan accordingly.
+              </p>
+              <p>
+                <b>Dress to chill:</b> The weather is very kind and its May,
+                hence wear comfortable clothes & stay hydrated.
+              </p>
+              <p>
+                <b>Entry and Exit:</b> Entry is only through Gate no. 3 and Exit
+                through Gate no. 1 & 2. Kindly co-operate with security and
+                Habba crew & NCC Cadets.
+              </p>
+              <p>
+                <b>Identify Check:</b> Security personnel & Habba crew & NCC
+                Cadets will be deployed across acharya campus, Please make sure
+                to carry your physical ID cards of students (Driving License/
+                Aadhar card: For Outsiders).
+              </p>
 
-                    <h2 class="edmh">Dont's</h2>
-                    <p class="edmp"><b>Not allowed:</b> Vanity bags, Cosmetics, Keychains with sharp ends, Sharp objects or weapons 
-                        (e.g.Nail cutter), Pepper sprays, Bangles or Kadas, Carrying liquid or edibles, including water bottles.</p>
-                    <p class="edmp"><b>Dont be cheeky:</b> Any kind of suspicious activites/ peace distruptions/ illegal activities will result 
-                        in immediate suspension from the campus and the individual will be subjected to required actions.</p>
-                    <p class="edmp"><b>We're watching you:</b> Police, security personnel & habba crew & NCC Cadets will be deployed across the 
-                        campus & have the right to detain any individual involved in any kind of activity that leads to disruption 
-                        of peace within the venue.</p>
-                    <p class="edmp"><b>Be Responsible:</b> Management is not responsible for any kind of loss. We DO NOT provide any 
-                        cloak room facility.</p>
-                </div>
+              <h2 class="edmh">Dont's</h2>
+              <p class="edmp">
+                <b>Not allowed:</b> Vanity bags, Cosmetics, Keychains with sharp
+                ends, Sharp objects or weapons (e.g.Nail cutter), Pepper sprays,
+                Bangles or Kadas, Carrying liquid or edibles, including water
+                bottles.
+              </p>
+              <p class="edmp">
+                <b>Dont be cheeky:</b> Any kind of suspicious activites/ peace
+                distruptions/ illegal activities will result in immediate
+                suspension from the campus and the individual will be subjected
+                to required actions.
+              </p>
+              <p class="edmp">
+                <b>We're watching you:</b> Police, security personnel & habba
+                crew & NCC Cadets will be deployed across the campus & have the
+                right to detain any individual involved in any kind of activity
+                that leads to disruption of peace within the venue.
+              </p>
+              <p class="edmp">
+                <b>Be Responsible:</b> Management is not responsible for any
+                kind of loss. We DO NOT provide any cloak room facility.
+              </p>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Footer Page -->
+      <!-- Footer Page -->
 
-    <footer>
-		<div class="row">
-			<div class="col">
-				<img src="images/acharyalogo.png" class="logo1">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Suspendisse tortor risus, tempor vel nulla quis, laoreet pharetra ex. 
-                    Nunc tempor faucibus tempor. Aenean viverra, est sit amet vulputate tincidunt, 
-                    nisi erat eleifend massa, vel luctus eros enim at tellus. 
-                </p>
-			</div>
-			<div class="col">
-				<h1>Reach Us <div class="underline"><span></span></div> </h1>
-				<!---<p><i style="line-height: 2;" class="fa-solid fa-phone-volume"></i><br>012-345-6789</p>---->
-				<p class="email-id"><i style="line-height: 2;" class="fa-solid fa-square-envelope"></i><br>acharyahabba@acharya.ac.in</p>
-				<p><i style="line-height: 2;" class="fa-solid fa-location-dot"></i><br>Acharya Dr. Sarvepalli Radhakrishnan Road Acharya Post, 
-                    Soladevanahalli Bangalore, Karnataka 560 107</p>
-			</div>
-			<div class="col">
-				<h1>Links <div class="underline"><span></span></div> </h1>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-                    <li><a href="about.html">Events</a></li>
-					<li><a href="admission.html">Teams</a></li>
-					<li><a href="contact.html">FAQ</a></li>
-					<li><a href="login.html">Contact</a></li>
-				</ul>
-			</div>
-			<div class="col">
-				<h1>Enquiry <div class="underline"><span></span></div> </h1>
-				<form>
-					<i class="fa-solid fa-envelope"></i>
-					<input type="email" placeholder="Enter your email id" required>
-					<button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-				</form>
-				<div class="social-icons">
-					<a href="" target="_blank"><i style="color:#717ffc;" class="fa-brands fa-square-facebook"></i></a>
-					<a href="" target="_blank"><i style="color:#717ffc;" class="fa-brands fa-square-instagram"></i></a>
-					<a href="" target="_blank"><i style="color:#717ffc;" class="fa-brands fa-square-whatsapp"></i></a>
-					<a href="" target="_blank"><i style="color:#717ffc;" class="fa-brands fa-square-youtube"></i></a>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<p class="copyrights">© 2024 Designed and Developed by Habba Technical Team</p>
-	</footer>
-
+      <footer>
+        <div class="row">
+          <div class="col">
+            <img src="images/acharyalogo.png" class="logo1" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse tortor risus, tempor vel nulla quis, laoreet pharetra
+              ex. Nunc tempor faucibus tempor. Aenean viverra, est sit amet
+              vulputate tincidunt, nisi erat eleifend massa, vel luctus eros
+              enim at tellus.
+            </p>
+          </div>
+          <div class="col">
+            <h1>
+              Reach Us
+              <div class="underline"><span></span></div>
+            </h1>
+            <!---<p><i style="line-height: 2;" class="fa-solid fa-phone-volume"></i><br>012-345-6789</p>---->
+            <p class="email-id">
+              <i style="line-height: 2" class="fa-solid fa-square-envelope"></i
+              ><br />acharyahabba@acharya.ac.in
+            </p>
+            <p>
+              <i style="line-height: 2" class="fa-solid fa-location-dot"></i
+              ><br />Acharya Dr. Sarvepalli Radhakrishnan Road Acharya Post,
+              Soladevanahalli Bangalore, Karnataka 560 107
+            </p>
+          </div>
+          <div class="col">
+            <h1>
+              Links
+              <div class="underline"><span></span></div>
+            </h1>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="about.html">Events</a></li>
+              <li><a href="admission.html">Teams</a></li>
+              <li><a href="contact.html">FAQ</a></li>
+              <li><a href="login.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>
+              Enquiry
+              <div class="underline"><span></span></div>
+            </h1>
+            <form>
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Enter your email id" required />
+              <button type="submit">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+            <div class="social-icons">
+              <a href="" target="_blank"
+                ><i
+                  style="color: #717ffc"
+                  class="fa-brands fa-square-facebook"
+                ></i
+              ></a>
+              <a href="" target="_blank"
+                ><i
+                  style="color: #717ffc"
+                  class="fa-brands fa-square-instagram"
+                ></i
+              ></a>
+              <a href="" target="_blank"
+                ><i
+                  style="color: #717ffc"
+                  class="fa-brands fa-square-whatsapp"
+                ></i
+              ></a>
+              <a href="" target="_blank"
+                ><i
+                  style="color: #717ffc"
+                  class="fa-brands fa-square-youtube"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="copyrights">
+          © 2024 Designed and Developed by Habba Technical Team
+        </p>
+      </footer>
     </main>
 
     <!-- ##### Java Script #####  -->
@@ -244,24 +398,19 @@
     <script src="./script1.js"></script>
 
     <script>
-
-        var navLinks = document.getElementById("navLinks");	
-        function showMenu(){
-            navLinks.style.right = "0px";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-        
-    </script> 
-    
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
 
     <!-- ##### AOS Scroll Animation ##### -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-        
-</body>
-
+  </body>
 </html>
