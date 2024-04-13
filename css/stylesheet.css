@@ -38,7 +38,7 @@ body{
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(10, 19, 30, 0.7), rgba(9, 18, 28, 0.5)),url("../images/Habba/34.jpg");
+  background-image: linear-gradient(rgba(10, 19, 30, 0.7), rgba(9, 18, 28, 0.5)),url("../images/Backdround/bg1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -183,28 +183,6 @@ nav .fa {
 
 /* Header - Starting Page CSS end ----------- */
 
-/* Sub Header - for other pages Header only for Desktop Part */
-.sub-header {
-  height: 50vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.758)),url("../images/Habba/21.jpg");
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  padding: 0px 20px;
-}
-.sub-header h1 {
-  font-family: "Monoton", sans-serif;
-  font-size: 50px;
-  font-weight: 100;
-  letter-spacing: 10px;
-  margin-top: 10px;
-  color: white;
-}
-
-/* Sub Header - for other pages Header CSS end ---------- */
-
 /* Countdown only for Desktop Part */
 .count {
 	/* background: url("../images/Habba/beanstalk.webp"); */
@@ -244,7 +222,7 @@ nav .fa {
 }
   
 .about-habba-1 {
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../images/abtbg.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../images/Backdround/bg2.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -301,7 +279,7 @@ nav .fa {
 	padding: 25px;
 	margin: auto;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
-	  url("../images/Habba/10.jpg");
+	  url("../images/Backdround/bg3.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -431,7 +409,7 @@ footer {
 	width: 100%;
 	position: absolute;
 	bottom: 1;
-	background-color: rgba(255, 255, 255, 0);
+	background: linear-gradient(to right, #000000, #1c1d1f);
 	/*background: url('../images/Habba/beanstalk.webp');*/
 	color: #eea47f;
 	padding: 30px 0 10px;
@@ -785,18 +763,18 @@ hr {
 
 /* Countdown only for Mobile Part */
   .count {
-    background: url("../images/Habba/beanstalk.webp");
+    /* background: url("../images/Habba/beanstalk.webp"); */
     padding: 30px;
   }
 
   #countdown {
     font-family: "Syne", sans-serif;
     letter-spacing: 4px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.448);
     justify-content: center;
     text-align: center;
     font-size: 15px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
     padding: 1px;
     color: #0000ff;
@@ -859,7 +837,7 @@ hr {
 	  padding: 25px;
 	  margin: auto;
 	  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
-		url("../images/Habba/10.jpg");
+		url("../images/Backdround/bg3.jpg");
 	  background-attachment: fixed;
 	  background-position: center;
 	  background-repeat: no-repeat;
@@ -985,7 +963,7 @@ hr {
 
 /* Footer Page only for Mobile Part */
   footer {
-    background: #fff;
+    background: #ffffff00;
     border-top-right-radius: 125px;
     border-top-left-radius: 20px;
     bottom: unset;
@@ -1022,7 +1000,7 @@ hr {
   }
   .col ul li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 15px;
     font-weight: 420;
     font-family: "Outfit", sans-serif;
