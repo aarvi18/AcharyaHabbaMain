@@ -284,416 +284,468 @@ nav .fa {
 
 /* Header - Starting Page CSS end ----------- */
 
+/* Sub Header - for other pages Header only for Desktop Part */
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.758)),
+    url("../images/Habba/21.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 0px 20px;
+}
+.sub-header h1 {
+  font-family: "Monoton", sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+/* Sub Header - for other pages Header CSS end ---------- */
+
 /* Countdown only for Desktop Part */
 .count {
-	/* background: url("../images/Habba/beanstalk.webp"); */
-	padding: 50px;
-  }
-  
-#countdown {
-	font-family: "Syne", sans-serif;
-	letter-spacing: 2px;
-	background-color: rgba(255, 255, 255, 0.448);
-	letter-spacing: 5px;
-	justify-content: center;
-	text-align: center;
-	font-size: 2em;
-	border: 3px solid rgb(255, 255, 255);
-	border-radius: 10px;
-	padding: 5px;
-	color: #0000ff;
-	font-weight: bolder;
+  /* background: url("../images/Habba/beanstalk.webp"); */
+  padding: 50px;
 }
-  
+
+#countdown {
+  font-family: "Syne", sans-serif;
+  letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, 0.448);
+  letter-spacing: 5px;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px;
+  color: #0000ff;
+  font-weight: bolder;
+}
+
 .stext {
-	color: #ff6e00;
-	font-size: 100px;
-	letter-spacing: 10px;
-	font-family: "Codystar", sans-serif;
+  color: #ff6e00;
+  font-size: 100px;
+  letter-spacing: 10px;
+  font-family: "Codystar", sans-serif;
 }
 
 /* Countdown CSS end ---------- */
 
 /* About Habba only for Desktop Part */
 .about-habba {
-	width: 100%;
-	margin: auto;
-	padding: 50px;
-	justify-content: space-around;
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+  justify-content: space-around;
 }
-  
+
 .about-habba-1 {
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../images/Backdround/bg2.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: #ff5500;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/Backdround/bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ff5500;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/abtbg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ff5500;
 }
-  
+
 .about-habba-2 {
-	background-color: #ffffff00;
+  background-color: #ffffff00;
 }
-  
+
 .about-habba-txt {
-	width: 50%;
-	text-align: justify;
+  width: 50%;
+  text-align: justify;
 }
-  
+
 .about-habba-txt p {
-	font-family: "Outfit", sans-serif;
-	font-size: 18px;
-	font-weight: 200;
-	color: #fff;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: #fff;
 }
-  
+
 .about-habba-simbha {
-	width: 40%;
+  width: 40%;
 }
-  
+
 .about-habba-txt h1 {
-	font-family: "Syne", sans-serif;
-	letter-spacing: 2px;
-	font-size: 2rem;
-	margin: 15px 0;
+  font-family: "Syne", sans-serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin: 15px 0;
 }
-  
+
 .about-habba-simbha img {
-	width: 100%;
-	border-radius: 0%;
-	margin-bottom: -56px;
-	filter: drop-shadow(10px 5px 10px rgba(0, 0, 0, 0.5));
+  width: 100%;
+  border-radius: 0%;
+  margin-bottom: -56px;
+  filter: drop-shadow(10px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
 .about-habba-simbha1 img {
-	width: 500px;
-	margin-bottom: -93px;
-	border-radius: 0%;
-	filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+  width: 500px;
+  margin-bottom: -93px;
+  border-radius: 0%;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
 /* About Habba CSS end ---------- */
 
 /* EDM Night only for Desktop Part */
 .picture-sec {
-	width: 100%;
-	text-align: center;
-	padding: 25px;
-	margin: auto;
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
-	  url("../images/Backdround/bg3.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: #fff;
-	/* background-color: #00d9ff; */
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  margin: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
+    url("../images/Backdround/bg3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  /* background-color: #00d9ff; */
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  margin: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
+    url("../images/Habba/10.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  /* background-color: #00d9ff; */
 }
-  
+
 .picture-sec .edm-cont {
-	width: 100%;
+  width: 100%;
 }
-  
+
 .picture-sec .edm-cont h1 {
-	background: -webkit-linear-gradient(#ffb881, #ff5500);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-shadow: rgba(255, 255, 255, 0) 0px 54px 55px,
-	  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-	  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	font-size: 120px;
-	letter-spacing: 5px;
-	/*font-family: "Exo 2", sans-serif;*/
-	font-family: "Philosopher", sans-serif;
-	margin: 0px 0px 0px 0px;
+  background: -webkit-linear-gradient(#ffb881, #ff5500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: rgba(255, 255, 255, 0) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-size: 120px;
+  letter-spacing: 5px;
+  /*font-family: "Exo 2", sans-serif;*/
+  font-family: "Philosopher", sans-serif;
+  margin: 0px 0px 0px 0px;
 }
-  
+
 .picture-sec .edm-cont h2 {
-	width: 100px;
-	font-family: "Syne", sans-serif;
-	text-align: left;
-	font-size: 40px;
-	margin: 30px 0px 10px 37px;
-	color: greenyellow;
+  width: 100px;
+  font-family: "Syne", sans-serif;
+  text-align: left;
+  font-size: 40px;
+  margin: 30px 0px 10px 37px;
+  color: greenyellow;
 }
-  
+
 .picture-sec .edm-cont .edmh {
-	width: 100px;
-	font-family: "Syne", sans-serif;
-	text-align: left;
-	font-size: 45px;
-	margin: -310px 0px 10px 747px;
-	color: rgb(251, 72, 72);
+  width: 100px;
+  font-family: "Syne", sans-serif;
+  text-align: left;
+  font-size: 45px;
+  margin: -310px 0px 10px 747px;
+  color: rgb(251, 72, 72);
 }
-  
+
 .picture-sec .edm-cont p {
-	/*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
-	font-family: "Outfit", sans-serif;
-	font-size: 14px;
-	font-weight: 200;
-	line-height: 20px;
-	text-align: justify;
-	width: 45%;
-	margin: 0px 0px 15px 40px;
-	letter-spacing: 1.5px;
+  /*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 20px;
+  text-align: justify;
+  width: 45%;
+  margin: 0px 0px 15px 40px;
+  letter-spacing: 1.5px;
 }
-  
+
 .picture-sec .edm-cont .edmp {
-	font-family: "Outfit", sans-serif;
-	font-size: 14px;
-	font-weight: 200;
-	line-height: 20px;
-	text-align: justify;
-	width: 45%;
-	margin: 0px 0px 15px 750px;
-	letter-spacing: 1.5px;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 20px;
+  text-align: justify;
+  width: 45%;
+  margin: 0px 0px 15px 750px;
+  letter-spacing: 1.5px;
 }
-  
+
 .edm-cont a {
-	margin: 20px;
+  margin: 20px;
 }
-  
+
 .hero-btn1 {
-	display: inline-block;
-	text-decoration: none;
-	color: black;
-	border-radius: 100px;
-	padding: 18px 100px;
-	font-size: 25px;
-	font-weight: 600;
-	font-family: "Outfit", sans-serif;
-	background: silver;
-	position: relative;
-	cursor: pointer;
-	letter-spacing: 2px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border-radius: 100px;
+  padding: 18px 100px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Outfit", sans-serif;
+  background: silver;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 2px;
 }
 
 .hero-btn1:hover {
-	background-color: #2d2d2d;
-	margin: 20px;
-	padding: 18px 100px;
-	color: white;
-	transition: 0.9s;
+  background-color: #2d2d2d;
+  margin: 20px;
+  padding: 18px 100px;
+  color: white;
+  transition: 0.9s;
 }
-  
+
 .picture-sec .edm-night img {
-	width: 35rem;
-	margin: 2rem;
-	border-radius: 10px;
+  width: 35rem;
+  margin: 2rem;
+  border-radius: 10px;
 }
-  
+
 .picture-sec .last-yr-snap h3 {
-	font-size: 80px;
-	letter-spacing: 2px;
-	font-family: "Syne", sans-serif;
-	margin: 50px 0px 0px 0px;
+  font-size: 80px;
+  letter-spacing: 2px;
+  font-family: "Syne", sans-serif;
+  margin: 50px 0px 0px 0px;
 }
-  
+
 .picture-sec .last-yr-snap .pict img {
-	cursor: pointer;
-	width: 20rem;
-	border-radius: 8px;
-	border: 5px solid white;
-	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-	margin: 40px 5px 5px 5px;
+  cursor: pointer;
+  width: 20rem;
+  border-radius: 8px;
+  border: 5px solid white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin: 40px 5px 5px 5px;
 }
-  
+
 .pict {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* EDM Night CSS end ---------- */
 
 /* Footer page only for Desktop Part */
 footer {
-	width: 100%;
-	position: absolute;
-	bottom: 1;
-	background: linear-gradient(to right, #000000, #1c1d1f);
-	/*background: url('../images/Habba/beanstalk.webp');*/
-	color: #eea47f;
-	padding: 30px 0 10px;
-	font-size: 13px;
-	line-height: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 1;
+  background: linear-gradient(to right, #000000, #1c1d1f);
+  /*background: url('../images/Habba/beanstalk.webp');*/
+  color: #eea47f;
+  padding: 30px 0 10px;
+  font-size: 13px;
+  line-height: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 1;
+  background-color: rgba(255, 255, 255, 0);
+  /*background: url('../images/Habba/beanstalk.webp');*/
+  color: #eea47f;
+  padding: 30px 0 10px;
+  font-size: 13px;
+  line-height: 10px;
 }
-  
+
 .row {
-	width: 95%;
-	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-  
+
 .col {
-	flex-basis: 25%;
-	padding: 10px;
+  flex-basis: 25%;
+  padding: 10px;
 }
-  
+
 .col p {
-	margin-top: 20px;
-	font-size: 15px;
-	line-height: 2;
-	color: white;
-	letter-spacing: 2px;
-	font-family: "Outfit", sans-serif;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 2;
+  color: white;
+  letter-spacing: 2px;
+  font-family: "Outfit", sans-serif;
 }
-  
+
 .col i {
-	color: #717ffc;
+  color: #717ffc;
 }
-  
+
 .col p {
-	font-size: 15px;
-	line-height: 1.5;
-	color: rgb(255, 255, 255);
-	text-decoration: none;
-	letter-spacing: 1.5px;
-	font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  font-family: "Outfit", sans-serif;
 }
-  
+
 .col:nth-child(2),
 .col:nth-child(3) {
-	flex-basis: 30px;
+  flex-basis: 30px;
 }
-  
+
 .col img {
-	width: 250px;
-	border-top-left-radius: 20px;
+  width: 250px;
+  border-top-left-radius: 20px;
 }
-  
+
 .col h1 {
-	font-weight: 20px;
-	color: #ff934f;
-	width: fit-content;
-	margin-bottom: 55px;
-	position: relative;
-	font-family: "Syne", sans-serif;
-	font-size: 25px;
+  font-weight: 20px;
+  color: #ff934f;
+  width: fit-content;
+  margin-bottom: 55px;
+  position: relative;
+  font-family: "Syne", sans-serif;
+  font-size: 25px;
 }
-  
+
 .email-id {
-	width: fit-content;
-	margin: 10px 0;
+  width: fit-content;
+  margin: 10px 0;
 }
-  
+
 ul li {
-	list-style: none;
-	margin-bottom: 15px;
+  list-style: none;
+  margin-bottom: 15px;
 }
 
 .col ul li a {
-	text-decoration: none;
-	color: rgb(255, 255, 255);
-	font-size: 15px;
-	line-height: 0.8;
-	font-weight: 370;
-	font-family: "Outfit", sans-serif;
-	letter-spacing: 1px;
-	margin-left: -2px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  line-height: 0.8;
+  font-weight: 370;
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 1px;
+  margin-left: -2px;
 }
-  
+
 form {
-	padding-bottom: 15px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-bottom: 1px solid #ffffff;
-	margin-bottom: 50px;
-	font-family: "Rajdhani", sans-serif;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 50px;
+  font-family: "Rajdhani", sans-serif;
 }
-  
+
 form i {
-	font-size: 18px;
-	margin-right: 10px;
-	color: #717ffc;
+  font-size: 18px;
+  margin-right: 10px;
+  color: #717ffc;
 }
 
 form input {
-	width: 100%;
-	background: transparent;
-	color: #000000;
-	border: 0;
-	outline: none;
-	font-family: "Rajdhani", sans-serif;
-	font-size: 20px;
+  width: 100%;
+  background: transparent;
+  color: #000000;
+  border: 0;
+  outline: none;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
 }
-  
+
 form button {
-	background: transparent;
-	border: 0;
-	outline: none;
-	cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
-  
+
 form button i {
-	font-size: 16px;
-	color: #ffffff;
+  font-size: 16px;
+  color: #ffffff;
 }
-  
+
 .social-icons a {
-	margin-right: 100%;
-	padding: 0px 40px 0px 20px;
+  margin-right: 100%;
+  padding: 0px 40px 0px 20px;
 }
-  
+
 .social-icons a {
-	width: 40px;
-	height: 40px;
-	border-radius: 10%;
-	text-align: left;
-	line-height: 40px;
-	font-size: 30px;
-	margin-right: 13.5px;
-	margin-left: -20px;
-	cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  text-align: left;
+  line-height: 40px;
+  font-size: 30px;
+  margin-right: 13.5px;
+  margin-left: -20px;
+  cursor: pointer;
 }
-  
+
 hr {
-	width: 90%;
-	border: 0;
-	border-bottom: 1px solid #717ffc;
-	margin: 20px auto;
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #717ffc;
+  margin: 20px auto;
 }
-  
+
 .copyrights {
-	text-align: center;
-	font-family: "Outfit", sans-serif;
-	font-size: 20px;
-	color: #ffffff;
-	margin-bottom: 10px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
-  
+
 .underline {
-	width: 100%;
-	height: 5px;
-	background: #152cfa00;
-	border-radius: 3px;
-	position: absolute;
-	top: 25px;
-	left: 0;
-	overflow: hidden;
+  width: 100%;
+  height: 5px;
+  background: #152cfa00;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
 }
-  
+
 .underline span {
-	width: px;
-	height: 100%;
-	background: #ffffff;
-	border-radius: 3px;
-	position: absolute;
-	top: 0;
-	left: 10px;
-	animation: moving 2s linear infinite;
+  width: px;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
 }
-  
+
 @keyframes moving {
-	0% {
-	  left: -20px;
-	}
-	100% {
-	  left: 100px;
-	}
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100px;
+  }
 }
 
 /* Footer page CSS end ---------- */
@@ -703,370 +755,501 @@ hr {
 /*---------------- Mobile screen coding Starts From Here ----------------*/
 
 @media only screen and (max-width: 600px) {
-
   /* Header - Starting Page only for Mobile Part */
-	.header {
-    min-height: 90vh;
+
+  .header {
+    .header {
+      min-height: 90vh;
+      width: 100%;
+      background-image: linear-gradient(
+          rgba(10, 19, 30, 0.7),
+          rgba(9, 18, 28, 0.5)
+        ),
+        url("../images/Habba/34.jpg");
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+
+    nav {
+      display: flex;
+      padding: 2% 4%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links ul li {
+      display: block;
+    }
+
+    .nav-links ul li a {
+      color: #00008b;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 1000;
+      line-height: 0px;
+    }
+
+    .nav-links {
+      position: fixed;
+      background: #f44336;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 2s;
+      background: silver;
+    }
+
+    nav .fa {
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 25px;
+    }
+
+    .nav-links ul {
+      padding: 30px;
+    }
+
+    .button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .button-home {
+      text-decoration: none;
+      color: black;
+      padding: 12px 70px;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: "Kanit", sans-serif;
+      background: silver;
+      position: relative;
+      cursor: pointer;
+      border-radius: 10px;
+      margin: 10px 0px 0px 0px;
+    }
+
+    .button-home:hover {
+      box-shadow: 0 0 5px 0;
+      border-radius: 50px;
+      background: black;
+      padding: 12px 70px;
+      color: white;
+    }
+
+    .header img {
+      width: 50px;
+      cursor: pointer;
+      border-radius: 10px;
+      margin: 40% 0% 0% 30%;
+    }
+
+    .text-box {
+      top: 65%;
+    }
+
+    .text-box h1 {
+      text-align: center;
+      font-family: "Expletus Sans", sans-serif;
+      font-size: 30px;
+      font-weight: 800px;
+      letter-spacing: 8px;
+      margin: -100px 0px 0px 0px;
+    }
+
+    .text-box h2 {
+      padding: 20px 0px 25px 0px;
+      /*font-family: 'Cinzel Decorative', cursive;*/
+      font-family: "Monoton", sans-serif;
+      letter-spacing: 5px;
+      font-size: 48px;
+      font-weight: 100;
+      margin: -20px 0px 0px 0px;
+    }
+
+    .text-box span {
+      margin: 100px 0px 0px 0px;
+      font-size: 30px;
+    }
+
+    .text-box p {
+      padding: 0px;
+      font-size: 15px;
+      line-height: 150%;
+      font-weight: 300;
+    }
+
+    /* Header - Starting Page CSS end Mobile Part ------------ */
+
+    /* Sub Header - for other pages Header only for Mobile Part */
+    .sub-header {
+      height: 50vh;
+      width: 100%;
+      background-image: linear-gradient(
+          rgba(10, 19, 30, 0.7),
+          rgba(9, 18, 28, 0.5)
+        ),
+        url("../images/Habba/21.jpg");
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      padding: 1% 1%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sub-header img {
+      width: 60px;
+      margin: 10px 0px 0px 0px;
+    }
+
+    .sub-header h1 {
+      color: white;
+      letter-spacing: 3px;
+      font-size: 30px;
+    }
+
+    /* Sub Header - for other pages Header CSS end Mobile Part ---------- */
+
+    /* Countdown only for Mobile Part */
+    .count {
+      /* background: url("../images/Habba/beanstalk.webp"); */
+      padding: 30px;
+    }
+
+    #countdown {
+      font-family: "Syne", sans-serif;
+      letter-spacing: 4px;
+      background-color: rgba(255, 255, 255, 0.448);
+      justify-content: center;
+      text-align: center;
+      font-size: 15px;
+      border: 3px solid rgb(255, 255, 255);
+      border-radius: 10px;
+      padding: 1px;
+      color: #0000ff;
+      font-weight: bolder;
+    }
+
+    .stext {
+      color: #ff6e00;
+      font-size: 20px;
+      letter-spacing: 10px;
+      font-family: "Codystar", sans-serif;
+    }
+
+    /* Countdown CSS end Mobile Part ----------- */
+
+    /* About Habba only for Mobile Part */
+    .picture-sec .last-yr-snap .pict img {
+      width: 20rem;
+    }
+
+    .about-habba {
+      display: block;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .about-habba-txt {
+      width: 100%;
+    }
+
+    .about-habba-simbha {
+      width: 100%;
+    }
+
+    .about-habba-simbha img {
+      width: 15rem;
+      border-radius: 0% 0% 40% 50%;
+      display: block;
+      margin: auto;
+    }
+
+    .about-habba-simbha1 img {
+      width: 15rem;
+      border-radius: 0% 0% 80% 40%;
+      display: block;
+      margin: auto;
+    }
+
+    .about-habba-txt p {
+      font-size: 15px;
+      letter-spacing: 0px;
+    }
+
+    /* About Habba CSS end Mobile Part ----------- */
+
+    /* EDM Night only for Mobile Part */
+    .picture-sec {
+      width: 100%;
+      text-align: center;
+      padding: 25px;
+      margin: auto;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
+        url("../images/Backdround/bg3.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      /* background-color: #00d9ff; */
+    }
+
+    .picture-sec .edm-cont {
+      width: 100%;
+    }
+
+    .picture-sec .edm-cont h1 {
+      background: -webkit-linear-gradient(#ff913d, #ff5500);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: rgba(255, 255, 255, 0) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      font-size: 55px;
+      letter-spacing: 1px;
+      /*font-family: "Exo 2", sans-serif;*/
+      font-family: "Philosopher", sans-serif;
+      margin: 0px 0px 0px 0px;
+    }
+
+    .picture-sec .edm-cont h2 {
+      width: 100px;
+      font-family: "Syne", sans-serif;
+      text-align: left;
+      font-size: 30px;
+      margin: 30px 0px 10px 0px;
+      color: greenyellow;
+    }
+
+    .picture-sec .edm-cont .edmh {
+      width: 0px;
+      font-family: "Syne", sans-serif;
+      text-align: left;
+      font-size: 35px;
+      margin: 0px 0px 10px 0px;
+      color: rgb(251, 72, 72);
+    }
+
+    .picture-sec .edm-cont p {
+      /*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
+      font-family: "Outfit", sans-serif;
+      font-size: 14px;
+      font-weight: 200;
+      line-height: 20px;
+      text-align: justify;
+      width: 100%;
+      margin: 0px 0px 15px 0px;
+      letter-spacing: 1.5px;
+    }
+
+    .picture-sec .edm-cont .edmp {
+      font-family: "Outfit", sans-serif;
+      font-size: 14px;
+      font-weight: 200;
+      line-height: 20px;
+      text-align: justify;
+      width: 100%;
+      margin: 0px 0px 15px 0px;
+      letter-spacing: 1.5px;
+    }
+
+    .edm-cont a {
+      margin: 20px;
+    }
+
+    .hero-btn1 {
+      display: inline-block;
+      text-decoration: none;
+      color: black;
+      border-radius: 100px;
+      padding: 7px 54px;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: "Outfit", sans-serif;
+      background: silver;
+      position: relative;
+      cursor: pointer;
+      letter-spacing: 2px;
+    }
+    .hero-btn1:hover {
+      background-color: #2d2d2d;
+      margin: 20px;
+      padding: 7px 24px;
+      color: white;
+      transition: 0.5s;
+    }
+
+    .picture-sec .edm-night img {
+      width: 5rem;
+      margin: 0rem;
+      border-radius: 10px;
+    }
+
+    .picture-sec .last-yr-snap h3 {
+      font-size: 80px;
+      letter-spacing: 2px;
+      font-family: "Syne", sans-serif;
+      margin: 50px 0px 0px 0px;
+    }
+
+    .picture-sec .last-yr-snap .pict img {
+      cursor: pointer;
+      width: 20rem;
+      border-radius: 8px;
+      border: 5px solid white;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      margin: 40px 5px 5px 5px;
+    }
+
+    .pict {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
     width: 100%;
-    background-image: linear-gradient(
-        rgba(10, 19, 30, 0.7),
-        rgba(9, 18, 28, 0.5)
-      ),
-      url("../images/Habba/34.jpg");
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
+      url("../images/Habba/10.jpg");
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-  }
-
-  nav {
-    display: flex;
-    padding: 2% 4%;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-links ul li {
-    display: block;
-  }
-
-  .nav-links ul li a {
-    color: #00008b;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 1000;
-    line-height: 0px;
-  }
-
-  .nav-links {
-    position: fixed;
-    background: #f44336;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 2s;
-    background: silver;
-  }
-
-  nav .fa {
-    display: block;
     color: #fff;
-    margin: 10px;
-    font-size: 25px;
+    /* background-color: #00d9ff; */
   }
 
-  .nav-links ul {
-    padding: 30px;
+  .picture-sec .edm-cont {
+    width: 100%;
   }
 
-  .button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
+  .picture-sec .edm-cont h1 {
+    background: -webkit-linear-gradient(#ff913d, #ff5500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgba(255, 255, 255, 0) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 55px;
+    letter-spacing: 1px;
+    /*font-family: "Exo 2", sans-serif;*/
+    font-family: "Philosopher", sans-serif;
+    margin: 0px 0px 0px 0px;
   }
 
-  .button-home {
+  .picture-sec .edm-cont h2 {
+    width: 100px;
+    font-family: "Syne", sans-serif;
+    text-align: left;
+    font-size: 30px;
+    margin: 30px 0px 10px 0px;
+    color: greenyellow;
+  }
+
+  .picture-sec .edm-cont .edmh {
+    width: 0px;
+    font-family: "Syne", sans-serif;
+    text-align: left;
+    font-size: 35px;
+    margin: 0px 0px 10px 0px;
+    color: rgb(251, 72, 72);
+  }
+
+  .picture-sec .edm-cont p {
+    /*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+    text-align: justify;
+    width: 100%;
+    margin: 0px 0px 15px 0px;
+    letter-spacing: 1.5px;
+  }
+
+  .picture-sec .edm-cont .edmp {
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+    text-align: justify;
+    width: 100%;
+    margin: 0px 0px 15px 0px;
+    letter-spacing: 1.5px;
+  }
+
+  .edm-cont a {
+    margin: 20px;
+  }
+
+  .hero-btn1 {
+    display: inline-block;
     text-decoration: none;
     color: black;
-    padding: 12px 70px;
+    border-radius: 100px;
+    padding: 7px 54px;
     font-size: 15px;
-    font-weight: 700;
-    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
     background: silver;
     position: relative;
     cursor: pointer;
-    border-radius: 10px;
-    margin: 10px 0px 0px 0px;
+    letter-spacing: 2px;
   }
-
-  .button-home:hover {
-    box-shadow: 0 0 5px 0;
-    border-radius: 50px;
-    background: black;
-    padding: 12px 70px;
+  .hero-btn1:hover {
+    background-color: #2d2d2d;
+    margin: 20px;
+    padding: 7px 24px;
     color: white;
+    transition: 0.5s;
   }
 
-  .header img {
-    width: 50px;
-    cursor: pointer;
+  .picture-sec .edm-night img {
+    width: 5rem;
+    margin: 0rem;
     border-radius: 10px;
-    margin: 40% 0% 0% 30%;
   }
 
-  .text-box {
-    top: 65%;
-  }
-
-  .text-box h1 {
-    text-align: center;
-    font-family: "Expletus Sans", sans-serif;
-    font-size: 30px;
-    font-weight: 800px;
-    letter-spacing: 8px;
-    margin: -100px 0px 0px 0px;
-  }
-
-  .text-box h2 {
-    padding: 20px 0px 25px 0px;
-    /*font-family: 'Cinzel Decorative', cursive;*/
-    font-family: "Monoton", sans-serif;
-    letter-spacing: 5px;
-    font-size: 48px;
-    font-weight: 100;
-    margin: -20px 0px 0px 0px;
-  }
-
-  .text-box span {
-    margin: 100px 0px 0px 0px;
-    font-size: 30px;
-  }
-
-  .text-box p {
-    padding: 0px;
-    font-size: 15px;
-    line-height: 150%;
-    font-weight: 300;
-  }
-
-/* Header - Starting Page CSS end Mobile Part ------------ */
-
-/* Sub Header - for other pages Header only for Mobile Part */
-.sub-header{
-    height: 50vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(10,19,30,0.7),rgba(9,18,28,0.5)),url("../images/Habba/21.jpg");  
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    
-  }
-
-  nav{
-    display: flex;
-    padding: 1% 1%;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .sub-header img{
-    width: 60px;
-    margin: 10px 0px 0px 0px;
-  }
-
-  .sub-header h1{
-    color: white;
-    letter-spacing: 3px;
-    font-size: 30px;
-  }
-
-/* Sub Header - for other pages Header CSS end Mobile Part ---------- */
-
-/* Countdown only for Mobile Part */
-  .count {
-    /* background: url("../images/Habba/beanstalk.webp"); */
-    padding: 30px;
-  }
-
-  #countdown {
+  .picture-sec .last-yr-snap h3 {
+    font-size: 80px;
+    letter-spacing: 2px;
     font-family: "Syne", sans-serif;
-    letter-spacing: 4px;
-    background-color: rgba(255, 255, 255, 0.448);
-    justify-content: center;
-    text-align: center;
-    font-size: 15px;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    padding: 1px;
-    color: #0000ff;
-    font-weight: bolder;
+    margin: 50px 0px 0px 0px;
   }
 
-  .stext {
-    color: #ff6e00;
-    font-size: 20px;
-    letter-spacing: 10px;
-    font-family: "Codystar", sans-serif;
-  }
-
-/* Countdown CSS end Mobile Part ----------- */
-
-/* About Habba only for Mobile Part */
   .picture-sec .last-yr-snap .pict img {
+    cursor: pointer;
     width: 20rem;
+    border-radius: 8px;
+    border: 5px solid white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: 40px 5px 5px 5px;
   }
 
-  .about-habba {
-    display: block;
-    width: 100%;
-    padding: 20px;
+  .pict {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
-  .about-habba-txt {
-    width: 100%;
-  }
+  /* EDM Night CSS end Mobile Part ----------- */
 
-  .about-habba-simbha {
-    width: 100%;
-  }
-
-  .about-habba-simbha img {
-    width: 15rem;
-    border-radius: 0% 0% 40% 50%;
-    display: block;
-    margin: auto;
-  }
-
-  .about-habba-simbha1 img {
-    width: 15rem;
-    border-radius: 0% 0% 80% 40%;
-    display: block;
-    margin: auto;
-  }
-
-  .about-habba-txt p {
-	  font-size: 15px;
-	  letter-spacing: 0px;
-	}
-
-/* About Habba CSS end Mobile Part ----------- */
-
-/* EDM Night only for Mobile Part */
-  .picture-sec {
-	  width: 100%;
-	  text-align: center;
-	  padding: 25px;
-	  margin: auto;
-	  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
-		url("../images/Backdround/bg3.jpg");
-	  background-attachment: fixed;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  color: #fff;
-	  /* background-color: #00d9ff; */
-	}
-  
-	.picture-sec .edm-cont {
-	  width: 100%;
-	}
-  
-	.picture-sec .edm-cont h1 {
-	  background: -webkit-linear-gradient(#ff913d, #ff5500);
-	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
-	  text-shadow: rgba(255, 255, 255, 0) 0px 54px 55px,
-		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	  font-size: 55px;
-	  letter-spacing: 1px;
-	  /*font-family: "Exo 2", sans-serif;*/
-	  font-family: "Philosopher", sans-serif;
-	  margin: 0px 0px 0px 0px;
-	}
-  
-	.picture-sec .edm-cont h2 {
-	  width: 100px;
-	  font-family: "Syne", sans-serif;
-	  text-align: left;
-	  font-size: 30px;
-	  margin: 30px 0px 10px 0px;
-	  color: greenyellow;
-	}
-  
-	.picture-sec .edm-cont .edmh {
-	  width: 0px;
-	  font-family: "Syne", sans-serif;
-	  text-align: left;
-	  font-size: 35px;
-	  margin: 0px 0px 10px 0px;
-	  color: rgb(251, 72, 72);
-	}
-  
-	.picture-sec .edm-cont p {
-	  /*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
-	  font-family: "Outfit", sans-serif;
-	  font-size: 14px;
-	  font-weight: 200;
-	  line-height: 20px;
-	  text-align: justify;
-	  width: 100%;
-	  margin: 0px 0px 15px 0px;
-	  letter-spacing: 1.5px;
-	}
-  
-	.picture-sec .edm-cont .edmp {
-	  font-family: "Outfit", sans-serif;
-	  font-size: 14px;
-	  font-weight: 200;
-	  line-height: 20px;
-	  text-align: justify;
-	  width: 100%;
-	  margin: 0px 0px 15px 0px;
-	  letter-spacing: 1.5px;
-	}
-  
-	.edm-cont a {
-	  margin: 20px;
-	}
-  
-	.hero-btn1 {
-	  display: inline-block;
-	  text-decoration: none;
-	  color: black;
-	  border-radius: 100px;
-	  padding: 7px 54px;
-	  font-size: 15px;
-	  font-weight: 600;
-	  font-family: "Outfit", sans-serif;
-	  background: silver;
-	  position: relative;
-	  cursor: pointer;
-	  letter-spacing: 2px;
-	}
-	.hero-btn1:hover {
-	  background-color: #2d2d2d;
-	  margin: 20px;
-	  padding: 7px 24px;
-	  color: white;
-	  transition: 0.5s;
-	}
-  
-	.picture-sec .edm-night img {
-	  width: 5rem;
-	  margin: 0rem;
-	  border-radius: 10px;
-	}
-  
-	.picture-sec .last-yr-snap h3 {
-	  font-size: 80px;
-	  letter-spacing: 2px;
-	  font-family: "Syne", sans-serif;
-	  margin: 50px 0px 0px 0px;
-	}
-  
-	.picture-sec .last-yr-snap .pict img {
-	  cursor: pointer;
-	  width: 20rem;
-	  border-radius: 8px;
-	  border: 5px solid white;
-	  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-	  margin: 40px 5px 5px 5px;
-	}
-  
-	.pict {
-	  display: flex;
-	  justify-content: space-around;
-	  flex-wrap: wrap;
-	}
-
-/* EDM Night CSS end Mobile Part ----------- */
-
-/* Footer Page only for Mobile Part */
+  /* Footer Page only for Mobile Part */
   footer {
     background: #ffffff00;
     border-top-right-radius: 125px;
@@ -1127,7 +1310,7 @@ hr {
     font-size: 13px;
   }
 
-/* Footer Page CSS end Mobile Part ----------- */
+  /* Footer Page CSS end Mobile Part ----------- */
 
-/* INDEX CSS Coding part ends here */
+  /* INDEX CSS Coding part ends here */
 }
