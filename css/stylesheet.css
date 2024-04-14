@@ -1,3 +1,20 @@
+@font-face {
+  font-family: Glorich;
+  src: url("../Glorich\ Semi\ Bold.otf");
+}
+@font-face {
+  font-family: GlorichExtraBold;
+  src: url("../GlorichExtraBold.otf");
+}
+@font-face {
+  font-family: RecklessNueueLight;
+  src: url("../RecklessNeue-Thin.ttf");
+}
+@font-face {
+  font-family: RecklessNueueItalic;
+  src: url("../RecklessNeue-ThinItalic.woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +22,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   overflow-x: hidden;
   background: linear-gradient(to right, #000000, #1c1d1f);
 }
@@ -38,7 +55,8 @@ body{
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(10, 19, 30, 0.7), rgba(9, 18, 28, 0.5)),url("../images/Backdround/bg1.jpg");
+  background-image: linear-gradient(rgba(10, 19, 30, 0.7), rgba(9, 18, 28, 0.5)),
+    url("../images/Habba/34.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -114,67 +132,150 @@ nav img {
   background: -webkit-linear-gradient(#3a3ad8, #b5b7ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Expletus Sans", sans-serif;
+  /* font-family: "Expletus Sans", sans-serif; */
+  font-family: Glorich;
   margin-top: 100px;
   margin-bottom: -15px;
-  letter-spacing: 20px;
+  /* letter-spacing: 20px; */
 }
 
 .text-box h2 {
   font-size: 125px;
-  background: -webkit-linear-gradient(#ffaf72, #ff6e00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /*font-family: 'Cinzel Decorative', cursive;*/
-  font-family: "Monoton", sans-serif;
-  letter-spacing: 15px;
+  color: #ff6e00;
+  /* font-family: "Cinzel Decorative", cursive; */
+  font-family: GlorichExtraBold;
+  /* font-family: "Public Sans", sans-serif; */
+  letter-spacing: 6px;
   margin-bottom: 3%;
   font-weight: 100;
 }
 
 .text-box span {
-  font-family: "Bungee Spice", sans-serif;
+  /* font-family: "Bungee Spice", sans-serif; */
+  background: -webkit-linear-gradient(#3a3ad8, #b5b7ff);
+  background: -webkit-linear-gradient(#ffaf72, #ff6e00);
+  -webkit-background-clip: text;
+  /* font-family: "Rochester", cursive; */
+  font-family: RecklessNueueLight;
+  font-weight: 700;
+  color: #717ffc;
+
   font-size: 50px;
   letter-spacing: 4px;
 }
 
 .text-box p {
   margin: 10px 0px 20px 0px;
-  font-family: "Josefin Sans", sans-serif;
   letter-spacing: 2px;
+  font-family: RecklessNueueItalic;
   font-weight: 100;
-  font-style: italic;
   font-size: 30px;
   color: #fff;
 }
 
-.button{
+.button {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.button-home{
-	text-decoration: none;
-	color: black;
-	padding: 12px 70px;
-	font-size: 20px;
-  font-weight: 700;
-	font-family: 'Kanit', sans-serif;
-	background: silver;
-	position: relative;
-	cursor: pointer;
-  border-radius: 10px;
+.button-home {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: black;
+  align-items: center;
+  padding: 12px 70px;
+  font-size: 22px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-family: "Rochester", sans-serif;
+  background: #717ffc;
+  position: relative;
+  cursor: pointer;
   margin: 10px 0px 0px 0px;
 }
 
-.button-home:hover{
-	box-shadow: 0 0 5px 0;
-  border-radius: 50px;
-	background: black;
+.button-home button {
+  color: black;
+  font-family: "Rochester", sans-serif;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  font-weight: 100;
+  border: none;
+  font-size: 22px;
+  background: transparent;
+}
+
+.button-home:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: white;
+  transition: all 0.35s;
+}
+
+.button-home:hover {
+  color: #fff;
+}
+
+.button-home:hover:after {
+  color: white;
+  width: 100%;
+}
+
+.button-home-right {
+  display: block;
+  text-decoration: none;
+  color: black;
   padding: 12px 70px;
-	color: white;
-	transition: 1s;
+  font-size: 18px;
+  background: transparent;
+  color: #ff913d;
+  border: 1px solid white;
+  position: relative;
+  cursor: pointer;
+  margin: 10px 0px 0px 0px;
+  transition: 0.4s ease-in-out;
+}
+
+.button-home-right button {
+  font-family: "Rochester", sans-serif;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  font-weight: 100;
+  border: none;
+  color: white;
+  font-size: 22px;
+  background: transparent;
+}
+
+.button-home-right:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff6e00;
+  transition: all 0.35s;
+}
+
+.button-home-right:hover {
+  border: none;
+  color: #fff;
+}
+
+.button-home-right:hover:after {
+  color: white;
+  width: 100%;
 }
 
 nav .fa {
@@ -604,16 +705,20 @@ hr {
 @media only screen and (max-width: 600px) {
 
   /* Header - Starting Page only for Mobile Part */
-	.header{
-		min-height: 90vh;
-		width: 100%; 
-		background-image: linear-gradient(rgba(10,19,30,0.7),rgba(9,18,28,0.5)),url("../images/Habba/34.jpg");  
-		background-position: center;
-		background-size: cover;
-		position: relative;
-	}
+	.header {
+    min-height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(10, 19, 30, 0.7),
+        rgba(9, 18, 28, 0.5)
+      ),
+      url("../images/Habba/34.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
 
-  nav{
+  nav {
     display: flex;
     padding: 2% 4%;
     justify-content: space-between;
@@ -656,20 +761,20 @@ hr {
     padding: 30px;
   }
 
-  .button{
+  .button {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
   }
-  
-  .button-home{
+
+  .button-home {
     text-decoration: none;
     color: black;
     padding: 12px 70px;
     font-size: 15px;
     font-weight: 700;
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
     background: silver;
     position: relative;
     cursor: pointer;
@@ -677,7 +782,7 @@ hr {
     margin: 10px 0px 0px 0px;
   }
 
-  .button-home:hover{
+  .button-home:hover {
     box-shadow: 0 0 5px 0;
     border-radius: 50px;
     background: black;
