@@ -8,7 +8,7 @@ body{
 .sub-header {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.758)),url("../images/Backdround/bg4.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.758)),url("../images/Habba/21.jpg");
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -24,7 +24,7 @@ body{
     color: white;
   }
   
-  /* Sub Header - for other pages Header CSS end ---------- */
+/* Sub Header - for other pages Header CSS end ---------- */
   
 
 .year{
@@ -391,6 +391,39 @@ hr {
 /*---------------- Mobile screen coding Starts From Here ----------------*/
 
 @media only screen and (max-width: 600px) {
+    .sub-header {
+        height: 50vh;
+        width: 100%;
+        background-image: linear-gradient(
+            rgba(10, 19, 30, 0.7),
+            rgba(9, 18, 28, 0.5)
+          ),
+          url("../images/Habba/21.jpg");
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+      }
+    
+      nav {
+        display: flex;
+        padding: 1% 1%;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .sub-header img {
+        width: 60px;
+        margin: 10px 0px 0px 0px;
+      }
+    
+      .sub-header h1 {
+        color: white;
+        letter-spacing: 3px;
+        font-size: 30px;
+      }
+    
+
     .year{
         background-color: rgba(255, 255, 255, 0);
         padding: 60px 0px 0px 0px;
