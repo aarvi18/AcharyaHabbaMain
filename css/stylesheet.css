@@ -252,7 +252,7 @@ nav .fa {
 /* Header - Starting Page CSS end ----------- */
 
 /* Sub Header - for other pages Header only for Desktop Part */
-.sub-header {
+/* .sub-header {
   height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.758)),
@@ -270,7 +270,7 @@ nav .fa {
   letter-spacing: 10px;
   margin-top: 10px;
   color: white;
-}
+} */
 
 /* Sub Header - for other pages Header CSS end ---------- */
 
