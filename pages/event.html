@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- This one is for favicon logo -->
-    <link rel="shortcut icon" href="/images/HabbaLogo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/images/HabbaLogo.png"
+      type="image/x-icon"
+    />
 
     <!-- ##### StyleSheet ##### -->
-    <link rel="stylesheet" href="/css/stylesheet.css">
-    <link rel="stylesheet" href="/pages/faq.css">
-    <link rel="stylesheet" href="/pages/event.css">
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <link rel="stylesheet" href="/pages/faq.css" />
+    <link rel="stylesheet" href="/pages/event.css" />
 
     <!-- ##### Google Fonts ##### -->
-    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- ##### Font awesome ##### -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- ##### AOS Scroll Animation ##### -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <title>Habba'24 | Events</title>
+  </head>
 
-    <title>Habba'23 | Events</title>
-</head>
-
-<body>
+  <body>
     <section class="sub-header">
         <nav>
             <a href="index.html"><img src="/images/HabbaLogo.png"></a>
@@ -51,122 +69,109 @@
         </nav> 
         <div class="font">
             <h1>Events</h1>
+      <nav>
+        <a href="index.html"><img src="/images/HabbaLogo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/event.html">Events</a></li>
+            <li><a href="../pages/team.html">Teams</a></li>
+            <li><a href="../pages/sponsor.html">Sponsor</a></li>
+            <li><a href="../pages/faq.html">Faq</a></li>
+            <li><a href="../pages/contatus.html">Contact Us</a></li>
+          </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="font">
+        <h1>Events</h1>
+      </div>
     </section>
-    
-
-
 
     <section class="events">
-        <h1>Truly Amazing Events</h1>
-        <div class="events-sec">
-            <div class="event-box">
-                <a href="./sub-events/dance.html">
-                    <img src="/images/Habba/22.jpg" alt="event">
-                </a>
-                <h2>Dance</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-            <div class="event-box">
-                <a href="./sub-events/music.html">
-                    <img src="/images/Habba/31.jpg" alt="event">
-                </a>
-                <h2>Music</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-            <div class="event-box">
-                <a href="./sub-events/lifestyle.html">
-                    <img src="/images/Habba/3.jpg" alt="event">
-                </a>
-                <h2>Life Style</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-            <div class="event-box">
-                <a href="./sub-events/LandD.html">
-                    <img src="/images/Habba/4.jpg" alt="event">
-                </a>
-                <h2>Dramatics</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-            <div class="event-box">
-                <a href="./sub-events/technical.html">
-                    <img src="/images/Habba/19.jpg" alt="event">
-                </a>
-                <h2>Technical</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-            <div class="event-box">
-                <a href="./sub-events/miscellanous.html">
-                    <img src="/images/Habba/27.jpg" alt="event">
-                </a>
-                <h2>Miscellanous</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-            <div class="event-box">
-                <a href="./sub-events/adventure.html">
-                    <img src="/images/Habba/41.jpg" alt="event">
-                </a>
-                <h2>Adventure Sports</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-            <div class="event-box">
-                <a href="./sub-events/intracollege.html">
-                    <img src="/images/Habba/30.jpg" alt="event">
-                </a>
-                <h2>Intra College</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-            <div class="event-box">
-                <a href="./sub-events/gaming.html">
-                    <img src="/images/Habba/29.jpg" alt="event">
-                </a>
-                <h2>Gaming</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-            <div class="event-box">
-                <a href="./sub-events/centeralised.html">
-                    <img src="/images/Habba/26.jpg" alt="event">
-                </a>
-                <h2>Centeralised</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-            <div class="event-box">
-                <a href="./sub-events/finearts.html">
-                    <img src="/images/Habba/47.jpg" alt="event">
-                </a>
-                <h2>Fine Arts</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-            <div class="event-box">
-                <a href="./sub-events/DandDarts.html">
-                    <img src="/images/Habba/40.jpg" alt="event">
-                </a>
-                <h2>Design & Digital Arts</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-            <div class="event-box">
-                <a href="./sub-events/akv.html">
-                    <img src="/images/Habba/15.jpg" alt="event">
-                </a>
-                <h2>AKV</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor risus, tempor vel nulla quis, 
-                    laoreet pharetra ex. Nunc tempor faucibus tempor.</p>
-            </div>
-
-
+      <h1>Truly Amazing Events</h1>
+      <div class="events-sec">
+        <div class="event-box">
+          <a href="./sub-events/dance.html">
+            <img src="/images/Habba/22.jpg" alt="event" />
+          </a>
+          <h2>Dance</h2>
         </div>
+        <div class="event-box">
+          <a href="./sub-events/music.html">
+            <img src="/images/Habba/31.jpg" alt="event" />
+          </a>
+          <h2>Music</h2>
+        </div>
+        <div class="event-box">
+          <a href="./sub-events/lifestyle.html">
+            <img src="/images/Habba/3.jpg" alt="event" />
+          </a>
+          <h2>Life Style</h2>
+        </div>
+        <div class="event-box">
+          <a href="./sub-events/LandD.html">
+            <img src="/images/Habba/4.jpg" alt="event" />
+          </a>
+          <h2>Dramatics</h2>
+        </div>
+        <div class="event-box">
+          <a href="./sub-events/technical.html">
+            <img src="/images/Habba/19.jpg" alt="event" />
+          </a>
+          <h2>Technical</h2>
+        </div>
+        <div class="event-box">
+          <a href="./sub-events/miscellanous.html">
+            <img src="/images/Habba/27.jpg" alt="event" />
+          </a>
+          <h2>Miscellaneous</h2>
+        </div>
+        <div class="event-box">
+          <a href="./sub-events/adventure.html">
+            <img src="/images/Habba/41.jpg" alt="event" />
+          </a>
+          <h2>Adventure Sports</h2>
+        </div>
+        <div class="event-box">
+          <a href="./sub-events/intracollege.html">
+            <img src="/images/Habba/30.jpg" alt="event" />
+          </a>
+          <h2>Intra College</h2>
+        </div>
+        <div class="event-box">
+          <a href="./sub-events/gaming.html">
+            <img src="/images/Habba/29.jpg" alt="event" />
+          </a>
+          <h2>Gaming</h2>
+        </div>
+        <div class="event-box">
+          <a href="./sub-events/centeralised.html">
+            <img src="/images/Habba/26.jpg" alt="event" />
+          </a>
+          <h2>Centeralised</h2>
+        </div>
+        <div class="event-box">
+          <a href="./sub-events/finearts.html">
+            <img src="/images/Habba/47.jpg" alt="event" />
+          </a>
+          <h2>Fine Arts</h2>
+        </div>
+        <div class="event-box">
+          <a href="./sub-events/DandDarts.html">
+            <img src="/images/Habba/40.jpg" alt="event" />
+          </a>
+          <h2>Design & Digital Arts</h2>
+        </div>
+        <div class="event-box">
+          <a href="./sub-events/akv.html">
+            <img src="/images/Habba/15.jpg" alt="event" />
+          </a>
+          <h2>AKV</h2>
+        </div>
+      </div>
     </section>
 
     <!-- Sponsor Logo -->
@@ -231,6 +236,90 @@
 		<hr>
 		<p class="copyrights">© 2024 Designed and Developed by Habba Technical Team</p>
 	</footer>
+=======
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="images/acharyalogo.png" class="logo1" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            tortor risus, tempor vel nulla quis, laoreet pharetra ex. Nunc
+            tempor faucibus tempor. Aenean viverra, est sit amet vulputate
+            tincidunt, nisi erat eleifend massa, vel luctus eros enim at tellus.
+          </p>
+        </div>
+        <div class="col">
+          <h1>
+            Reach Us
+            <div class="underline"><span></span></div>
+          </h1>
+          <!---<p><i style="line-height: 2;" class="fa-solid fa-phone-volume"></i><br>012-345-6789</p>---->
+          <p class="email-id">
+            <i style="line-height: 2" class="fa-solid fa-message"></i
+            ><br />acharyahabba@acharya.ac.in
+          </p>
+          <p>
+            <i style="line-height: 2" class="fa-solid fa-map-location-dot"></i
+            ><br />Acharya Dr. Sarvepalli Radhakrishnan Road Acharya Post,
+            Soladevanahalli Bangalore, Karnataka 560 107
+          </p>
+        </div>
+        <div class="col">
+          <h1>
+            Links
+            <div class="underline"><span></span></div>
+          </h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Events</a></li>
+            <li><a href="admission.html">Teams</a></li>
+            <li><a href="contact.html">FAQ</a></li>
+            <li><a href="login.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>
+            Enquiry
+            <div class="underline"><span></span></div>
+          </h1>
+          <form>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Enter your email id" required />
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+          <div class="social-icons">
+            <a href="" target="_blank"
+              ><i
+                style="color: #152cfa"
+                class="fa-brands fa-square-facebook"
+              ></i
+            ></a>
+            <a href="" target="_blank"
+              ><i
+                style="color: #152cfa"
+                class="fa-brands fa-square-instagram"
+              ></i
+            ></a>
+            <a href="" target="_blank"
+              ><i
+                style="color: #152cfa"
+                class="fa-brands fa-square-whatsapp"
+              ></i
+            ></a>
+            <a href="" target="_blank"
+              ><i style="color: #152cfa" class="fa-brands fa-square-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyrights">
+        © 2024 Designed and Developed by Habba Technical Team
+      </p>
+    </footer>
 
     <!-- ##### Java Script #####  -->
     <script src="/script.js"></script>
@@ -249,4 +338,6 @@
 
 </body>
 
+</html>
+  </body>
 </html>

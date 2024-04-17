@@ -11,6 +11,10 @@
   src: url("../RecklessNeue-Thin.ttf");
 }
 @font-face {
+  font-family: RecklessNueue;
+  src: url("../RecklessNeue-SemiBold.woff2");
+}
+@font-face {
   font-family: RecklessNueueItalic;
   src: url("../RecklessNeue-ThinItalic.woff2");
 }
@@ -36,7 +40,7 @@ body {
 }
 
 .text-box p {
-  font-family: "Josefin sans";
+  font-family: "Josefin sans", sans-serif;
 }
 
 .center {
@@ -101,10 +105,14 @@ nav img {
   content: "";
   width: 0%;
   height: 3px;
-  background: #eea47f;
+  background: white;
   display: block;
   margin: auto;
-  transition: 1s;
+  transition: 0.3s ease-in-out;
+}
+
+.fa {
+  cursor: pointer;
 }
 
 .nav-links ul li:hover::after {
@@ -145,7 +153,7 @@ nav img {
   /* font-family: "Cinzel Decorative", cursive; */
   font-family: GlorichExtraBold;
   /* font-family: "Public Sans", sans-serif; */
-  letter-spacing: 6px;
+  /* letter-spacing: 6px; */
   margin-bottom: 3%;
   font-weight: 100;
 }
@@ -179,85 +187,44 @@ nav img {
   gap: 10px;
 }
 
-.button-home {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  color: black;
-  align-items: center;
-  padding: 12px 70px;
-  font-size: 22px;
-  word-spacing: 5px;
-  letter-spacing: 2px;
-  font-family: "Rochester", sans-serif;
-  background: #717ffc;
-  position: relative;
-  cursor: pointer;
-  margin: 10px 0px 0px 0px;
-}
-
-.button-home button {
-  color: black;
-  font-family: "Rochester", sans-serif;
-  position: relative;
-  z-index: 2;
-  letter-spacing: 2px;
-  word-spacing: 4px;
-  font-weight: 100;
-  border: none;
-  font-size: 22px;
-  background: transparent;
-}
-
-.button-home:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: white;
-  transition: all 0.35s;
-}
-
-.button-home:hover {
-  color: #fff;
-}
-
-.button-home:hover:after {
-  color: white;
-  width: 100%;
-}
-
 .button-home-right {
-  display: block;
+  /* display: block;
   text-decoration: none;
   color: black;
   padding: 12px 70px;
   font-size: 18px;
-  background: transparent;
-  color: #ff913d;
-  border: 1px solid white;
+  background: #ff913d;
   position: relative;
   cursor: pointer;
   margin: 10px 0px 0px 0px;
-  transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out; */
+
+  background: linear-gradient(to right, #ff8c00, #e66b00); /* Orange gradient */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
 }
 
 .button-home-right button {
-  font-family: "Rochester", sans-serif;
+  font-family: "JetBrains mono", monospace;
   position: relative;
   z-index: 2;
-  letter-spacing: 2px;
-  word-spacing: 4px;
-  font-weight: 100;
+  font-weight: 500;
   border: none;
-  color: white;
+  color: black;
   font-size: 22px;
   background: transparent;
 }
 
-.button-home-right:after {
+.button-home-right:hover {
+  /* background: linear-gradient(to top, #ff8c00, #e66b00); Shift direction */
+}
+
+/* .button-home-right:after {
   position: absolute;
   content: "";
   top: 0;
@@ -266,9 +233,9 @@ nav img {
   height: 100%;
   background: #ff6e00;
   transition: all 0.35s;
-}
+} */
 
-.button-home-right:hover {
+/* .button-home-right:hover {
   border: none;
   color: #fff;
 }
@@ -276,7 +243,7 @@ nav img {
 .button-home-right:hover:after {
   color: white;
   width: 100%;
-}
+} */
 
 nav .fa {
   display: none;
@@ -339,6 +306,7 @@ nav .fa {
 
 /* About Habba only for Desktop Part */
 .about-habba {
+  font-family: "Courier New", Courier, monospace;
   width: 100%;
   margin: auto;
   padding: 50px;
@@ -807,136 +775,147 @@ hr {
 
 @media only screen and (max-width: 600px) {
   /* Header - Starting Page only for Mobile Part */
-    .header {
-      min-height: 90vh;
-      width: 100%;
-      background-image: linear-gradient(
-          rgba(10, 19, 30, 0.7),
-          rgba(9, 18, 28, 0.5)
-        ),
-        url("../images/Habba/34.jpg");
-      background-position: center;
-      background-size: cover;
-      position: relative;
-    }
+  .header {
+    min-height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(10, 19, 30, 0.7),
+        rgba(9, 18, 28, 0.5)
+      ),
+      url("../images/Habba/34.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
 
-    nav {
-      display: flex;
-      padding: 2% 4%;
-      justify-content: space-between;
-      align-items: center;
-    }
+  nav {
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .nav-links ul li {
-      display: block;
-    }
+  .nav-links ul li {
+    display: block;
+  }
 
-    .nav-links ul li a {
-      color: #00008b;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: 1000;
-      line-height: 0px;
-    }
+  .nav-links ul li a {
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 0px;
+  }
 
-    .nav-links {
-      position: fixed;
-      background: #f44336;
-      height: 100vh;
-      width: 200px;
-      top: 0;
-      right: -200px;
-      text-align: left;
-      z-index: 2;
-      transition: 2s;
-      background: silver;
-    }
+  .nav-links {
+    position: fixed;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.3s ease-in-out;
+    background: black;
+  }
 
-    nav .fa {
-      display: block;
-      color: #fff;
-      margin: 10px;
-      font-size: 25px;
-    }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 25px;
+  }
 
-    .nav-links ul {
-      padding: 30px;
-    }
+  .nav-links ul {
+    padding: 30px;
+  }
 
-    .button {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 10px;
-    }
+  .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
 
-    .button-home {
-      text-decoration: none;
-      color: black;
-      padding: 12px 70px;
-      font-size: 15px;
-      font-weight: 700;
-      font-family: "Kanit", sans-serif;
-      background: silver;
-      position: relative;
-      cursor: pointer;
-      border-radius: 10px;
-      margin: 10px 0px 0px 0px;
-    }
+  /* .button-home {
+    text-decoration: none;
+    color: black;
+    padding: 12px 70px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Kanit", sans-serif;
+    background: silver;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px 0px 0px 0px;
+  }
 
-    .button-home:hover {
-      box-shadow: 0 0 5px 0;
-      border-radius: 50px;
-      background: black;
-      padding: 12px 70px;
-      color: white;
-    }
+  .button-home:hover {
+    box-shadow: 0 0 5px 0;
+    border-radius: 50px;
+    background: black;
+    padding: 12px 70px;
+    color: white;
+  } */
 
-    .header img {
-      width: 50px;
-      cursor: pointer;
-      border-radius: 10px;
-      margin: 40% 0% 0% 30%;
-    }
+  .header img {
+    width: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 40% 0% 0% 30%;
+  }
 
-    .text-box {
-      top: 65%;
-    }
+  .text-box {
+    top: 60%;
+  }
 
-    .text-box h1 {
-      text-align: center;
-      font-family: "Expletus Sans", sans-serif;
-      font-size: 30px;
-      font-weight: 800px;
-      letter-spacing: 8px;
-      margin: -100px 0px 0px 0px;
-    }
+  .heading-section {
+    position: relative;
+    top: -60px;
+  }
 
-    .text-box h2 {
-      padding: 20px 0px 25px 0px;
-      /*font-family: 'Cinzel Decorative', cursive;*/
-      font-family: "Monoton", sans-serif;
-      letter-spacing: 5px;
-      font-size: 48px;
-      font-weight: 100;
-      margin: -20px 0px 0px 0px;
-    }
+  .button-section {
+    position: relative;
+    top: 100px;
+  }
 
-    .text-box span {
-      margin: 100px 0px 0px 0px;
-      font-size: 30px;
-    }
+  .text-box h1 {
+    text-align: center;
+    /* font-family: "Expletus Sans", sans-serif; */
+    font-size: 30px;
+    font-weight: 800px;
+    /* letter-spacing: 8px; */
+    margin: -100px 0px 0px 0px;
+  }
 
-    .text-box p {
-      padding: 0px;
-      font-size: 15px;
-      line-height: 150%;
-      font-weight: 300;
-    }
+  .text-box h2 {
+    padding: 20px 0px 25px 0px;
+    /*font-family: 'Cinzel Decorative', cursive;*/
+    /* font-family: "Monoton", sans-serif; */
+    letter-spacing: 5px;
+    font-size: 48px;
+    font-weight: 100;
+    margin: -20px 0px 0px 0px;
+  }
 
-    /* Header - Starting Page CSS end Mobile Part ------------ */
+  .text-box span {
+    margin: 100px 0px 0px 0px;
+    font-size: 30px;
+  }
 
-    /* Countdown only for Mobile Part */
+  .text-box p {
+    padding: 0px;
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 300;
+  }
+
+  /* Header - Starting Page CSS end Mobile Part ------------ */
+
+  /* Countdown only for Mobile Part */
   .count {
     /* background: url("../images/Habba/beanstalk.webp"); */
     padding: 30px;
@@ -963,9 +942,9 @@ hr {
     font-family: "Codystar", sans-serif;
   }
 
-/* Countdown CSS end Mobile Part ----------- */
+  /* Countdown CSS end Mobile Part ----------- */
 
-/* About Habba only for Mobile Part */
+  /* About Habba only for Mobile Part */
   .picture-sec .last-yr-snap .pict img {
     width: 20rem;
   }
@@ -999,144 +978,144 @@ hr {
   }
 
   .about-habba-txt p {
-	  font-size: 15px;
-	  letter-spacing: 0px;
-	}
+    font-size: 15px;
+    letter-spacing: 0px;
+  }
 
-/* About Habba CSS end Mobile Part ----------- */
+  /* About Habba CSS end Mobile Part ----------- */
 
-/* EDM Night only for Mobile Part */
+  /* EDM Night only for Mobile Part */
   .picture-sec {
-	  width: 100%;
-	  text-align: center;
-	  padding: 25px;
-	  margin: auto;
-	  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
-		url("../images/Backdround/bg3.jpg");
-	  background-attachment: fixed;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  color: #fff;
-	  /* background-color: #00d9ff; */
-	}
-  
-	.picture-sec .edm-cont {
-	  width: 100%;
-	}
-  
-	.picture-sec .edm-cont h1 {
-	  background: -webkit-linear-gradient(#ff913d, #ff5500);
-	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
-	  text-shadow: rgba(255, 255, 255, 0) 0px 54px 55px,
-		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	  font-size: 55px;
-	  letter-spacing: 1px;
-	  /*font-family: "Exo 2", sans-serif;*/
-	  font-family: "Philosopher", sans-serif;
-	  margin: 0px 0px 0px 0px;
-	}
-  
-	.picture-sec .edm-cont h2 {
-	  width: 100px;
-	  font-family: "Syne", sans-serif;
-	  text-align: left;
-	  font-size: 30px;
-	  margin: 30px 0px 10px 0px;
-	  color: greenyellow;
-	}
-  
-	.picture-sec .edm-cont .edmh {
-	  width: 0px;
-	  font-family: "Syne", sans-serif;
-	  text-align: left;
-	  font-size: 35px;
-	  margin: 0px 0px 10px 0px;
-	  color: rgb(251, 72, 72);
-	}
-  
-	.picture-sec .edm-cont p {
-	  /*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
-	  font-family: "Outfit", sans-serif;
-	  font-size: 14px;
-	  font-weight: 200;
-	  line-height: 20px;
-	  text-align: justify;
-	  width: 100%;
-	  margin: 0px 0px 15px 0px;
-	  letter-spacing: 1.5px;
-	}
-  
-	.picture-sec .edm-cont .edmp {
-	  font-family: "Outfit", sans-serif;
-	  font-size: 14px;
-	  font-weight: 200;
-	  line-height: 20px;
-	  text-align: justify;
-	  width: 100%;
-	  margin: 0px 0px 15px 0px;
-	  letter-spacing: 1.5px;
-	}
-  
-	.edm-cont a {
-	  margin: 20px;
-	}
-  
-	.hero-btn1 {
-	  display: inline-block;
-	  text-decoration: none;
-	  color: black;
-	  border-radius: 100px;
-	  padding: 7px 54px;
-	  font-size: 15px;
-	  font-weight: 600;
-	  font-family: "Outfit", sans-serif;
-	  background: silver;
-	  position: relative;
-	  cursor: pointer;
-	  letter-spacing: 2px;
-	}
-	.hero-btn1:hover {
-	  background-color: #2d2d2d;
-	  margin: 20px;
-	  padding: 7px 24px;
-	  color: white;
-	  transition: 0.5s;
-	}
-  
-	.picture-sec .edm-night img {
-	  width: 5rem;
-	  margin: 0rem;
-	  border-radius: 10px;
-	}
-  
-	.picture-sec .last-yr-snap h3 {
-	  font-size: 80px;
-	  letter-spacing: 2px;
-	  font-family: "Syne", sans-serif;
-	  margin: 50px 0px 0px 0px;
-	}
-  
-	.picture-sec .last-yr-snap .pict img {
-	  cursor: pointer;
-	  width: 20rem;
-	  border-radius: 8px;
-	  border: 5px solid white;
-	  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-	  margin: 40px 5px 5px 5px;
-	}
-  
-	.pict {
-	  display: flex;
-	  justify-content: space-around;
-	  flex-wrap: wrap;
-	}
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
+      url("../images/Backdround/bg3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    /* background-color: #00d9ff; */
+  }
 
-/* EDM Night CSS end Mobile Part ----------- */
+  .picture-sec .edm-cont {
+    width: 100%;
+  }
 
-/* Footer Page only for Mobile Part */
+  .picture-sec .edm-cont h1 {
+    background: -webkit-linear-gradient(#ff913d, #ff5500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgba(255, 255, 255, 0) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 55px;
+    letter-spacing: 1px;
+    /*font-family: "Exo 2", sans-serif;*/
+    font-family: "Philosopher", sans-serif;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .picture-sec .edm-cont h2 {
+    width: 100px;
+    font-family: "Syne", sans-serif;
+    text-align: left;
+    font-size: 30px;
+    margin: 30px 0px 10px 0px;
+    color: greenyellow;
+  }
+
+  .picture-sec .edm-cont .edmh {
+    width: 0px;
+    font-family: "Syne", sans-serif;
+    text-align: left;
+    font-size: 35px;
+    margin: 0px 0px 10px 0px;
+    color: rgb(251, 72, 72);
+  }
+
+  .picture-sec .edm-cont p {
+    /*text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.427);*/
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+    text-align: justify;
+    width: 100%;
+    margin: 0px 0px 15px 0px;
+    letter-spacing: 1.5px;
+  }
+
+  .picture-sec .edm-cont .edmp {
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+    text-align: justify;
+    width: 100%;
+    margin: 0px 0px 15px 0px;
+    letter-spacing: 1.5px;
+  }
+
+  .edm-cont a {
+    margin: 20px;
+  }
+
+  .hero-btn1 {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 100px;
+    padding: 7px 54px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+    background: silver;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+  .hero-btn1:hover {
+    background-color: #2d2d2d;
+    margin: 20px;
+    padding: 7px 24px;
+    color: white;
+    transition: 0.5s;
+  }
+
+  .picture-sec .edm-night img {
+    width: 5rem;
+    margin: 0rem;
+    border-radius: 10px;
+  }
+
+  .picture-sec .last-yr-snap h3 {
+    font-size: 80px;
+    letter-spacing: 2px;
+    font-family: "Syne", sans-serif;
+    margin: 50px 0px 0px 0px;
+  }
+
+  .picture-sec .last-yr-snap .pict img {
+    cursor: pointer;
+    width: 20rem;
+    border-radius: 8px;
+    border: 5px solid white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: 40px 5px 5px 5px;
+  }
+
+  .pict {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  /* EDM Night CSS end Mobile Part ----------- */
+
+  /* Footer Page only for Mobile Part */
   footer {
     background: #ffffff00;
     border-top-right-radius: 125px;
@@ -1197,7 +1176,7 @@ hr {
     font-size: 13px;
   }
 
-/* Footer Page CSS end Mobile Part ----------- */
+  /* Footer Page CSS end Mobile Part ----------- */
 
-/* INDEX CSS Coding part ends here */
+  /* INDEX CSS Coding part ends here */
 }
