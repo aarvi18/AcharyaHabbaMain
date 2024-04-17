@@ -12,7 +12,6 @@
     <!-- ##### StyleSheet ##### -->
     <link rel="stylesheet" href="/css/stylesheet.css">
     <link rel="stylesheet" href="/pages/faq.css">
-    <link rel="stylesheet" href="/pages/event.css">
 
     <!-- ##### Google Fonts ##### -->
     <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap" rel="stylesheet">
@@ -175,13 +174,51 @@
 	</footer>
 
     <!-- ##### Java Script #####  -->
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
+    <script src="./script1.js"></script>
 
-    <!-- #### Sponsor Logo Animation #### -->
+    <!-- Nav Bar -->
     <script>
-        var copy = document.querySelector(".logos-slide").cloneNode(true);
-        document.querySelector(".logos").appendChild(copy);
+
+        var navLinks = document.getElementById("navLinks");	
+        function showMenu(){
+            navLinks.style.right = "0px";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        
+    </script> 
+    
+
+    <!-- ##### AOS Scroll Animation ##### -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
+
+    <!-- Image Slider Script -->
+    <script>
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        let slider = document.querySelector('.slider');
+
+        next.addEventListener('click', function(){
+        let slides = document.querySelectorAll('.slides');
+        slider.appendChild(slides[0]);
+        })
+        prev.addEventListener('click', function(){
+        let slides = document.querySelectorAll('.slides');
+        slider.prepend(slides[slides.length - 1]);
+        })
+    </script>
+
+<!-- #### Sponsor Logo Animation #### -->
+<script>
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+</script>
+    
 </body>
 
 </html>
