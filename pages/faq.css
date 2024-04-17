@@ -1,3 +1,9 @@
+body{
+    background: linear-gradient(to right, #000000, #1c1d1f);
+}
+
+/* ------------- Desktop Part Coding Starts From Here --------- */
+
 main {
     /* background: url('/images/Contact-us-bg.jpg'); */
     /* background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url('/images/Cultural-characters.jpg');
@@ -10,25 +16,27 @@ main {
 
 }
 
-.sub-header{
-	height: 50vh;
-	width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.758)),url("../images/Habba/21.jpg");  
-	background-position: center;
-	background-size: cover;
-	text-align: center;
-	color: #fff;
+/* Sub Header - for other pages Header only for Desktop Part */
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.479)),url("../images/background/bg7.JPG");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
     padding: 0px 20px;
-	
-}
-.sub-header h1{
+  }
+  .sub-header h1 {
     font-family: "Monoton", sans-serif;
     font-size: 50px;
     font-weight: 100;
     letter-spacing: 10px;
-	margin-top: 10px;
-	color: white;
-}
+    margin-top: 10px;
+    color: white;
+  }
+  
+/* Sub Header - for other pages Header CSS end ---------- */
 
 .faq-heading {
     text-align: center;
@@ -80,6 +88,35 @@ summary {
 
 
 @media only screen and (max-width: 600px) {
+    .sub-header {
+        height: 50vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(10, 19, 30, 0.7),rgba(9, 18, 28, 0.5)),url("../images/background/bg7.jpg");
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+      }
+    
+      nav {
+        display: flex;
+        padding: 1% 1%;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .sub-header img {
+        width: 60px;
+        margin: 10px 0px 0px 0px;
+      }
+    
+      .sub-header h1 {
+        color: white;
+        letter-spacing: 5px;
+        font-size: 45px;
+        margin-top: 50px;
+      }
+
     .faq-cnt {
         width: 100%;
         margin: auto;

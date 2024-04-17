@@ -178,37 +178,79 @@ body{
 }
 
 .Keypoints{
-  background-color: #eea47f;
-  margin: 700px 50px 0px 50px;
+  margin: 700px 100px 0px 150px;
   display: flex;
   justify-content: center;
 }
 
-.keypoints-title{
-  background-color: #717ffc;
+.keypoints-head h1{
+  color: #fff;
+  font-size: 40px;
+}
+
+.keypoints-head p{
+  color: #fff;
+  padding: 5px 0px 30px 0px;
 }
 
 .keypoints-title-1{
-  background-color: red;
   display: flex;
   flex-direction: row;
 }
 
+.keypoints-title-1 i{
+  font-size: 30px;
+  margin: 10px 10px 10px 0px;
+  color: #eea47f;
+}
+
+.keypoints-title-1 h2{
+  font-size: 25px;
+  font-family: "Syne", sans-serif;
+  font-weight: 650;
+  color: #717ffc;
+}
+
+.keypoints-title-1 p{
+  width: 90%;
+  font-size: 15px;
+  margin: 10px 10px 10px 0px;
+  color: #fff;
+}
+
+.keypoints-title-2{
+  display: flex;
+  flex-direction: row;
+}
+
+.keypoints-title-2 i{
+  font-size: 30px;
+  margin: 10px 10px 10px 0px;
+  color: #eea47f;
+}
+
+.keypoints-title-2 h2{
+  font-size: 25px;
+  font-family: "Syne", sans-serif;
+  font-weight: 650;
+  color: #717ffc;
+}
+
+.keypoints-title-2 p{
+  width: 80%;
+  font-size: 15px;
+  margin: 10px 10px 10px 0px;
+  color: #fff;
+}
+
 .keypoints-point{
-  background-color: green;
   display: flex;
   flex-direction: column ;
 }
 
-.keypoints-title-2{
-  background-color: red;
-  display: flex;
-  flex-direction: row;
-}
-
 .logos {
   overflow: hidden;
-  padding: 100px 0;
+  padding: 50px 0;
   background: rgba(255, 255, 255, 0);
   white-space: nowrap;
   position: relative;
@@ -279,29 +321,23 @@ footer {
 .col {
 	flex-basis: 25%;
 	padding: 10px;
+  text-decoration: none;
 }
   
 .col p {
 	margin-top: 20px;
 	font-size: 15px;
 	line-height: 2;
-	color: white;
+	color: rgb(255, 255, 255);;
 	letter-spacing: 2px;
 	font-family: "Outfit", sans-serif;
+  text-decoration: none;
 }
   
 .col i {
 	color: #717ffc;
 }
   
-.col p {
-	font-size: 15px;
-	line-height: 1.5;
-	color: rgb(255, 255, 255);
-	text-decoration: none;
-	letter-spacing: 1.5px;
-	font-family: "Outfit", sans-serif;
-}
   
 .col:nth-child(2),
 .col:nth-child(3) {
@@ -326,6 +362,7 @@ footer {
 .email-id {
 	width: fit-content;
 	margin: 10px 0;
+  text-decoration: none;
 }
   
 ul li {
@@ -452,11 +489,7 @@ hr {
     .sub-header {
         height: 50vh;
         width: 100%;
-        background-image: linear-gradient(
-            rgba(10, 19, 30, 0.7),
-            rgba(9, 18, 28, 0.5)
-          ),
-          url("../images/Habba/21.jpg");
+        background-image: linear-gradient(rgba(10, 19, 30, 0.7),rgba(9, 18, 28, 0.5)),url("../images/background/bg4.JPG");
         background-position: center;
         background-size: cover;
         text-align: center;
@@ -477,8 +510,9 @@ hr {
     
       .sub-header h1 {
         color: white;
-        letter-spacing: 3px;
-        font-size: 30px;
+        letter-spacing: 5px;
+        font-size: 45px;
+        margin-top: 50px;
       }
     
 
@@ -562,14 +596,82 @@ hr {
         left: 360px;
     }
 
-    .habba-keypoints{
-        display: flexbox;
-        width: 90%;
-        font-size: 20px;
-        margin: 800px 30px 0px 30px;
-        text-align: initial;
-        color: #fff;
+    .Keypoints{
+      margin: 800px 13px 0px 13px;
+      display: flex;
+      justify-content: center;
     }
+    
+    .keypoints-head h1{
+      color: #fff;
+      font-size: 30px;
+    }
+    
+    .keypoints-head p{
+      color: #fff;
+      padding: 5px 0px 30px 0px;
+      font-size: 15px;
+    }
+    
+    .keypoints-title-1{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 10px 0px 0px 10px;
+    }
+    
+    .keypoints-title-1 i{
+      font-size: 30px;
+      margin: 10px 0px 10px 0px;
+      color: #eea47f;
+    }
+    
+    .keypoints-title-1 h2{
+      font-size: 23px;
+      font-family: "Syne", sans-serif;
+      font-weight: 650;
+      color: #717ffc;
+    }
+    
+    .keypoints-title-1 p{
+      width: 90%;
+      font-size: 13px;
+      margin: 10px 10px 10px 0px;
+      color: #fff;
+    }
+    
+    .keypoints-title-2{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 10px 0px 0px 10px;
+    }
+    
+    .keypoints-title-2 i{
+      font-size: 30px;
+      margin: 10px 0px 10px 0px;
+      color: #eea47f;
+    }
+    
+    .keypoints-title-2 h2{
+      font-size: 23px;
+      font-family: "Syne", sans-serif;
+      font-weight: 650;
+      color: #717ffc;
+    }
+    
+    .keypoints-title-2 p{
+      width: 90%;
+      font-size: 13px;
+      margin: 10px 10px 10px 0px;
+      color: #fff;
+    }
+    
+    .keypoints-point{
+      display: flex;
+      flex-direction: column ;
+    }
+    
 
     footer {
         background: #ffffff00;

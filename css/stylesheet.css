@@ -251,29 +251,6 @@ nav .fa {
 
 /* Header - Starting Page CSS end ----------- */
 
-/* Sub Header - for other pages Header only for Desktop Part */
-.sub-header {
-  height: 50vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.758)),
-    url("../images/Habba/21.jpg");
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  padding: 0px 20px;
-}
-.sub-header h1 {
-  font-family: "Monoton", sans-serif;
-  font-size: 50px;
-  font-weight: 100;
-  letter-spacing: 10px;
-  margin-top: 10px;
-  color: white;
-}
-
-/* Sub Header - for other pages Header CSS end ---------- */
-
 /* Countdown only for Desktop Part */
 .count {
   /* background: url("../images/Habba/beanstalk.webp"); */

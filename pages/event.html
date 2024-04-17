@@ -176,10 +176,7 @@
 		<div class="row">
 			<div class="col">
 				<img src="../images/acharyalogo.png" class="logo1">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Suspendisse tortor risus, tempor vel nulla quis, laoreet pharetra ex. 
-                    Nunc tempor faucibus tempor. Aenean viverra, est sit amet vulputate tincidunt, 
-                    nisi erat eleifend massa, vel luctus eros enim at tellus. 
+				<p>Acharya Habba, launched in 2005, is an annual college fest known for its diverse social and cultural experiences, featuring talent displays, music, sports, and collaborative events. With over 50 inter-collegiate competitions, it's one of Bangalore's top festivals, attracting students from various colleges. Over the years, it has expanded its size and reputation, drawing top performers and renowned figures from the music industry to its expansive campus.
                 </p>
 			</div>
 			<div class="col">
@@ -218,102 +215,52 @@
 		<hr>
 		<p class="copyrights">© 2024 Designed and Developed by Habba Technical Team</p>
 	</footer>
-=======
-    <footer>
-      <div class="row">
-        <div class="col">
-          <img src="images/acharyalogo.png" class="logo1" />
-          <p>
-            Acharya Habba, launched in 2005, is an annual college fest known for its diverse social and cultural experiences, featuring talent displays, music, sports, and collaborative events. With over 50 inter-collegiate competitions, it's one of Bangalore's top festivals, attracting students from various colleges. Over the years, it has expanded its size and reputation, drawing top performers and renowned figures from the music industry to its expansive campus.
-          </p>
-        </div>
-        <div class="col">
-          <h1>
-            Reach Us
-            <div class="underline"><span></span></div>
-          </h1>
-          <!---<p><i style="line-height: 2;" class="fa-solid fa-phone-volume"></i><br>012-345-6789</p>---->
-          <p class="email-id">
-            <i style="line-height: 2" class="fa-solid fa-message"></i
-            ><br />acharyahabba@acharya.ac.in
-          </p>
-          <p>
-            <i style="line-height: 2" class="fa-solid fa-map-location-dot"></i
-            ><br />Acharya Dr. Sarvepalli Radhakrishnan Road Acharya Post,
-            Soladevanahalli Bangalore, Karnataka 560 107
-          </p>
-        </div>
-        <div class="col">
-          <h1>
-            Links
-            <div class="underline"><span></span></div>
-          </h1>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="about.html">Events</a></li>
-            <li><a href="admission.html">Teams</a></li>
-            <li><a href="contact.html">FAQ</a></li>
-            <li><a href="login.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <h1>
-            Enquiry
-            <div class="underline"><span></span></div>
-          </h1>
-          <form>
-            <i class="fa-solid fa-envelope"></i>
-            <input type="email" placeholder="Enter your email id" required />
-            <button type="submit">
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </form>
-          <div class="social-icons">
-            <a href="" target="_blank"
-              ><i
-                style="color: #152cfa"
-                class="fa-brands fa-square-facebook"
-              ></i
-            ></a>
-            <a href="" target="_blank"
-              ><i
-                style="color: #152cfa"
-                class="fa-brands fa-square-instagram"
-              ></i
-            ></a>
-            <a href="" target="_blank"
-              ><i
-                style="color: #152cfa"
-                class="fa-brands fa-square-whatsapp"
-              ></i
-            ></a>
-            <a href="" target="_blank"
-              ><i style="color: #152cfa" class="fa-brands fa-square-youtube"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <p class="copyrights">
-        © 2024 Designed and Developed by Habba Technical Team
-      </p>
-    </footer>
+   
+  <!-- ##### Java Script #####  -->
+  <script src="./script.js"></script>
+  <script src="./script1.js"></script>
 
-    <!-- ##### Java Script #####  -->
-    <script src="/script.js"></script>
+  <!-- Nav Bar -->
+  <script>
 
-    <!-- ##### AOS Scroll Animation ##### -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+      var navLinks = document.getElementById("navLinks");	
+      function showMenu(){
+          navLinks.style.right = "0px";
+      }
+      function hideMenu(){
+          navLinks.style.right = "-200px";
+      }
+      
+  </script> 
+  
 
-    <!-- #### Sponsor Logo Animation #### -->
-    <script>
-        var copy = document.querySelector(".logos-slide").cloneNode(true);
-        document.querySelector(".logos").appendChild(copy);
-    </script>
+  <!-- ##### AOS Scroll Animation ##### -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+
+  <!-- Image Slider Script -->
+  <script>
+      let next = document.querySelector('.next');
+      let prev = document.querySelector('.prev');
+      let slider = document.querySelector('.slider');
+
+      next.addEventListener('click', function(){
+      let slides = document.querySelectorAll('.slides');
+      slider.appendChild(slides[0]);
+      })
+      prev.addEventListener('click', function(){
+      let slides = document.querySelectorAll('.slides');
+      slider.prepend(slides[slides.length - 1]);
+      })
+  </script>
+
+<!-- #### Sponsor Logo Animation #### -->
+<script>
+  var copy = document.querySelector(".logos-slide").cloneNode(true);
+  document.querySelector(".logos").appendChild(copy);
+</script>
 
 </body>
 
