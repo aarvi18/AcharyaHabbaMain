@@ -111,6 +111,10 @@ nav img {
   transition: 0.3s ease-in-out;
 }
 
+.fa {
+  cursor: pointer;
+}
+
 .nav-links ul li:hover::after {
   width: 100%;
 }
