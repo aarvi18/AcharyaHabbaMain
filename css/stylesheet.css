@@ -105,10 +105,10 @@ nav img {
   content: "";
   width: 0%;
   height: 3px;
-  background: #eea47f;
+  background: white;
   display: block;
   margin: auto;
-  transition: 1s;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-links ul li:hover::after {
@@ -149,7 +149,7 @@ nav img {
   /* font-family: "Cinzel Decorative", cursive; */
   font-family: GlorichExtraBold;
   /* font-family: "Public Sans", sans-serif; */
-  letter-spacing: 6px;
+  /* letter-spacing: 6px; */
   margin-bottom: 3%;
   font-weight: 100;
 }
@@ -183,84 +183,44 @@ nav img {
   gap: 10px;
 }
 
-.button-home {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  color: black;
-  align-items: center;
-  padding: 12px 70px;
-  font-size: 22px;
-  word-spacing: 5px;
-  letter-spacing: 2px;
-  background: #717ffc;
-  position: relative;
-  cursor: pointer;
-  margin: 10px 0px 0px 0px;
-}
-
-.button-home button {
-  color: black;
-  font-family: "JetBrains Mono", monospace;
-  position: relative;
-  z-index: 2;
-  /* letter-spacing: 2px; */
-  /* word-spacing: 4px; */
-  font-weight: 500;
-  border: none;
-  font-size: 22px;
-  background: transparent;
-}
-
-.button-home:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: white;
-  transition: all 0.35s;
-}
-
-.button-home:hover {
-  color: #fff;
-}
-
-.button-home:hover:after {
-  color: white;
-  width: 100%;
-}
-
 .button-home-right {
-  display: block;
+  /* display: block;
   text-decoration: none;
   color: black;
   padding: 12px 70px;
   font-size: 18px;
-  background: transparent;
-  color: #ff913d;
-  border: 1px solid white;
+  background: #ff913d;
   position: relative;
   cursor: pointer;
   margin: 10px 0px 0px 0px;
-  transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out; */
+
+  background: linear-gradient(to right, #ff8c00, #e66b00); /* Orange gradient */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
 }
 
 .button-home-right button {
   font-family: "JetBrains mono", monospace;
   position: relative;
   z-index: 2;
-  /* letter-spacing: 2px; */
-  /* word-spacing: 4px; */
-  font-weight: 100;
+  font-weight: 500;
   border: none;
-  color: white;
+  color: black;
   font-size: 22px;
   background: transparent;
 }
 
-.button-home-right:after {
+.button-home-right:hover {
+  /* background: linear-gradient(to top, #ff8c00, #e66b00); Shift direction */
+}
+
+/* .button-home-right:after {
   position: absolute;
   content: "";
   top: 0;
@@ -269,9 +229,9 @@ nav img {
   height: 100%;
   background: #ff6e00;
   transition: all 0.35s;
-}
+} */
 
-.button-home-right:hover {
+/* .button-home-right:hover {
   border: none;
   color: #fff;
 }
@@ -279,7 +239,7 @@ nav img {
 .button-home-right:hover:after {
   color: white;
   width: 100%;
-}
+} */
 
 nav .fa {
   display: none;
@@ -342,6 +302,7 @@ nav .fa {
 
 /* About Habba only for Desktop Part */
 .about-habba {
+  font-family: "Courier New", Courier, monospace;
   width: 100%;
   margin: auto;
   padding: 50px;
@@ -775,10 +736,11 @@ hr {
   }
 
   .nav-links ul li a {
-    color: #00008b;
+    font-family: "JetBrains Mono", monospace;
+    color: white;
     text-decoration: none;
     font-size: 20px;
-    font-weight: 1000;
+    font-weight: 100;
     line-height: 0px;
   }
 
@@ -791,8 +753,8 @@ hr {
     right: -200px;
     text-align: left;
     z-index: 2;
-    transition: 2s;
-    background: silver;
+    transition: 0.3s ease-in-out;
+    background: black;
   }
 
   nav .fa {
@@ -843,7 +805,17 @@ hr {
   }
 
   .text-box {
-    top: 65%;
+    top: 60%;
+  }
+
+  .heading-section {
+    position: relative;
+    top: -60px;
+  }
+
+  .button-section {
+    position: relative;
+    top: 100px;
   }
 
   .text-box h1 {
