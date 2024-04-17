@@ -1,11 +1,11 @@
 main {
     /* background: url('/images/Contact-us-bg.jpg'); */
-    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url('/images/Cultural-characters.jpg');
+    /* background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url('/images/Cultural-characters.jpg');
     background-color: rgb(70, 70, 224);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     height: 45vh;
 
 }
@@ -46,12 +46,12 @@ main {
 .faq {
     width: 100%;
     margin: auto;
-    background: url('/images/Habba/2.jpg');
+    /* background: url('/images/Habba/2.jpg');
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/images/Contact-us-bg.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 
 }
 

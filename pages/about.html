@@ -49,9 +49,8 @@
                     <li><a href="../pages/about.html">About</a></li>
                     <li><a href="../pages/event.html">Events</a></li>
                     <li><a href="../pages/team.html">Teams</a></li>
-                    <li><a href="../pages/sponsor.html">Sponsor</a></li>
                     <li><a href="../pages/faq.html">Faq</a></li>	
-                    <li><a href="../pages/contatus.html">Contact Us</a></li>				
+                    <li><a href="../pages/contatus.html">Contact</a></li>				
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -125,14 +124,65 @@
     </div>
 
     <!-- Keypoints -->
-    <div class="habba-keypoints">
-        <h1>HABBA HABBA HABBA</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum ex pretium nisi mattis, ac convallis augue lacinia. 
-            Pellentesque vitae erat dolor. Vivamus commodo arcu enim, ut accumsan leo imperdiet a. Nam in nisl eu massa consectetur aliquam vitae rhoncus purus. 
-            Vestibulum tincidunt volutpat mattis. Curabitur sed tellus in tellus pellentesque vulputate. Donec placerat condimentum sapien ut ullamcorper. 
-            In nec facilisis est. Donec eleifend est a dolor placerat dignissim. Integer nec consequat ex, ac imperdiet felis. 
-            Nam pharetra tellus est, vitae vehicula nibh mollis quis.</p>
-    </div>
+    <section class="Keypoints">
+
+        <div class="keypoints-head">
+            <h1>Main Keypoints of Habba 2K24</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Suspendisse tortor risus, tempor vel nulla quis, laoreet pharetra ex.</p>
+            <div class="keypoints-title">
+                <div class="keypoints-title-1">
+                    <i class="fa-solid fa-headphones-simple"></i>
+                    <h2>DJ Night</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Suspendisse tortor risus, tempor vel nulla quis, laoreet pharetra ex.</p>
+
+                    <i class="fa-solid fa-car-side"></i>
+                    <h2>Soap Box</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Suspendisse tortor risus, tempor vel nulla quis, laoreet pharetra ex.</p>
+
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h2>Gym</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Suspendisse tortor risus, tempor vel nulla quis, laoreet pharetra ex.</p>
+                </div>
+                <div class="keypoints-title-2">
+                    <i class="fa-solid fa-headphones-simple"></i>
+                    <h2>DJ Night</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Suspendisse tortor risus, tempor vel nulla quis, laoreet pharetra ex.</p>
+
+                    <i class="fa-solid fa-headphones-simple"></i>
+                    <h2>DJ Night</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Suspendisse tortor risus, tempor vel nulla quis, laoreet pharetra ex.</p>
+
+                    <i class="fa-solid fa-headphones-simple"></i>
+                    <h2>DJ Night</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Suspendisse tortor risus, tempor vel nulla quis, laoreet pharetra ex.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Sponsor Logo -->
+
+    <div class="logos">
+        <h1>Sponsor</h1>
+        <div class="logos-slide">
+            <img src="../images/Sponsor/1.png" />
+            <img src="../images/Sponsor/2.png" />
+            <img src="../images/Sponsor/3.png" />
+            <img src="../images/Sponsor/4.png" />
+            <img src="../images/Sponsor/5.png" />
+            <img src="../images/Sponsor/6.png" />
+            <img src="../images/Sponsor/7.png" />
+            <img src="../images/Sponsor/8.png" />
+        </div>
+      </div>
     
     <!-- Footer Page -->
 
@@ -156,12 +206,12 @@
                 <div class="col">
                     <h1>Links <div class="underline"><span></span></div> </h1>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="about.html">Events</a></li>
-                        <li><a href="admission.html">Teams</a></li>
-                        <li><a href="contact.html">FAQ</a></li>
-                        <li><a href="login.html">Contact</a></li>
+                        <li><a href="../index.html">Home</a></li>
+					    <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="../pages/event.html">Events</a></li>
+					    <li><a href="../pages/team.html">Teams</a></li>
+					    <li><a href="../pages/faq.html">FAQ</a></li>
+					    <li><a href="../pages/contatus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -223,6 +273,12 @@
             slider.prepend(slides[slides.length - 1]);
             })
         </script>
+
+    <!-- #### Sponsor Logo Animation #### -->
+    <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+    </script>
 
 
 </body>
