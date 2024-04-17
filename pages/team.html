@@ -11,546 +11,125 @@
 
     <!-- ##### StyleSheet ##### -->
     <link rel="stylesheet" href="/css/stylesheet.css">
-    <link rel="stylesheet" href="/pages/faq.css">
-    <link rel="stylesheet" href="./team.css">
+    <link rel="stylesheet" href="/pages/about.css">
 
     <!-- ##### Google Fonts ##### -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- ##### Font awesome ##### -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- ##### AOS Scroll Animation ##### -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>Habba'23 | Team</title>
+
+    <title>Habba'23 | Teams</title>
 </head>
+
+<!-- Sub Headrer -->
 
 <body>
     <main>
+    <section class="sub-header">
         <nav>
-            <div class="logo">
-                <img src="/images/HabbaLogo.png" alt="HabbaLogo">
-            </div>
-
-            <div class="dropdown">
-                <button id="myBtn" class="dropbtn">Navigation</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="/index.html">Home</a>
-                    <a href="./event.html">Events</a>
-                    <a href="./schedule.html">Schedule</a>
-                    <a href="./sponsor.html">Sponsor</a>
-                    <a href="./team.html">Teams</a>
-                    <a href="./faq.html">Faq</a>
-                    <a href="./contatus.html">Contact Us</a>
-                </div>
-            </div>
-
-            <div class="menu flex">
-                <ul class="flex">
-                    <a href="/index.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="/pages/event.html">
-                        <li>Events</li>
-                    </a>
-                    <a href="/pages/schedule.html">
-                        <li>Schedule</li>
-                    </a>
-                    <a href="./sponsor.html">
-                        <li>Sponsor</li>
-                    </a>
-                    <a href="./team.html">
-                        <li>Teams</li>
-                    </a>
-                    <a href="./faq.html">
-                        <li>Faq</li>
-                    </a>
-                    <a href="/pages/contatus.html">
-                        <li>Contact Us</li>
-                    </a>
+            <a href="index.html"><img src="/images/HabbaLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/event.html">Events</a></li>
+                    <li><a href="../pages/team.html">Teams</a></li>
+                    <li><a href="../pages/faq.html">Faq</a></li>	
+                    <li><a href="../pages/contatus.html">Contact</a></li>				
                 </ul>
-
             </div>
-
-        </nav>
-
-        <div class="faq-heading">
-            <h1>- Teams -</h1>
-            <p>Meet the Men and Women who worked countless hours behind the scenes.</p>
-            <!-- <img src="/images/Cultural-characters.jpg" alt=""> -->
-        </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav> 
+            <h1>Teams</h1>
+    </section>
     </main>
 
-    <section class="team">
+    <!-- Sponsor Logo -->
 
-        <!-- <h1 class="team-heading">- ACHARYA DIRECTORS -</h1> -->
-
-        <div class="container faculty director">
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/head1.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>B Premnath Reddy<br /><span>Founder & Chairman</span></h3>
-                    </div>
-                    <!-- <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                    </ul> -->
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/head2.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Shalini Reddy<br /><span>Executive Director</span></h3>
-                    </div>
-                    <!-- <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                    </ul> -->
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/head3.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Krishna Reddy<br /><span>Managing Director</span></h3>
-                    </div>
-                    <!-- <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                    </ul> -->
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/head4.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Vishesh Chandrashekar<br /><span>Admission Director</span></h3>
-                    </div>
-                    <!-- <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                    </ul> -->
-                </div>
-            </div>
+    <div class="logos">
+        <h1>Sponsor</h1>
+        <div class="logos-slide">
+            <img src="../images/Sponsor/1.png" />
+            <img src="../images/Sponsor/2.png" />
+            <img src="../images/Sponsor/3.png" />
+            <img src="../images/Sponsor/4.png" />
+            <img src="../images/Sponsor/5.png" />
+            <img src="../images/Sponsor/6.png" />
+            <img src="../images/Sponsor/7.png" />
+            <img src="../images/Sponsor/8.png" />
         </div>
+    </div>
 
-        <h1 class="team-heading">- Faculty Co-Ordinators -</h1>
-
-        <div class="container faculty">
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/facilitator1.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Tejas K<br /><span>Faculty Co-ordinator</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/facilitator2.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Mayank Nandwana<br /><span>Faculty Co-ordinator</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <h1 class="team-heading">- Students Organizers Habba Core 2023 -</h1>
-
-        <div class="container">
-
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/core1.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Kumar Gourav <br /><span>HR</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/core2.jpg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Abhishek Raj<br /><span>Marketing & Sponsership</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/core3.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Rakesh Kumar<br /><span>Event Manager & Technical Head</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="https://www.instagram.com/rakesh_aarvi/" target="_blank"><i class="fa fa-instagram"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="https://github.com/aarvi18" target="_blank"><i class="fa fa-github"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="https://www.linkedin.com/in/rakesh-kumar-676a7b206/" target="_blank"><i
-                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/core4.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Abha Sharma<br /><span>Event Manager</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/core5.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Divyanshu Sinha<br /><span>Sports</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/core6.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Abhishek V<br /><span>Sports</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/core7.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Preethi<br /><span>Finance</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/core8.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Vikas<br /><span>Hospitality</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/core9.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Daivik<br /><span>Logistics</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/core10.jpeg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Keshav<br /><span>Design & Creative</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/core11.jpg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Pritha<br /><span>Security</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="/images/team/core12.jpg" alt="" />
-                </div>
-                <div class="content">
-                    <div class="contentBx">
-                        <h3>Abhinav<br /><span>Production</span></h3>
-                    </div>
-                    <ul class="sci">
-                        <li style="--i: 1">
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 2">
-                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li style="--i: 3">
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <h1 class="team-heading">- Technical Team -</h1>
-
-
-        <div class="team-body">
-            <div class="team-card">
-                <img class="team-member-image" src="../images/team/tech2.jpeg">
-                <div class="tm-description">
-                    <p class="name" style="color:black;">Aditya Raj</p>
-                    <p class="designation" style="color:grey">Backend Developer</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <img class="team-member-image" src="../images/team/tech3.jpg">
-                <div class="tm-description">
-                    <p class="name" style="color:black;">Suthar Payal</p>
-                    <p class="designation" style="color:grey">Web Developer</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <img class="team-member-image" src="../images/team/tech4.jpg">
-                <div class="tm-description">
-                    <p class="name" style="color:black;">Sarvaiya Jaydeep</p>
-                    <p class="designation" style="color:grey">Web Developer</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <img class="team-member-image" src="../images/team/tech5.jpeg">
-                <div class="tm-description">
-                    <p class="name" style="color:black;">Sweksha Tripathi</p>
-                    <p class="designation" style="color:grey">Web Developer</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="team-message">
-            <p>Greeting Acharyans,</p>
-            <br>
-            <p>And we are very thankful to all the HABBA'23 volunteers i.e. 250+, management team & non-teaching staffs
-                of Acharya College without of them this would not have been possible. </p>
-            <br>
-            <p>Thank You</p>
-            <p>Team HABBA 2023 🐯 </p>
-        </div>
-
-
-    </section>
-
-    <footer class="footer">
-        <div class="sub-footer flex">
-            <div class="college-add box">
-                <img src="/images/acharyalogo.png" alt="acharyaLogo">
-                <p>
-                    Acharya Dr. Sarvepalli
-                    Radhakrishnan Road
-                    Acharya PO, Soladevanahalli
-                    Bangalore-560 107, India
+    <footer>
+		<div class="row">
+			<div class="col">
+				<img src="../images/acharyalogo.png" class="logo1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Suspendisse tortor risus, tempor vel nulla quis, laoreet pharetra ex. 
+                    Nunc tempor faucibus tempor. Aenean viverra, est sit amet vulputate tincidunt, 
+                    nisi erat eleifend massa, vel luctus eros enim at tellus. 
                 </p>
-
-
-            </div>
-            <div class="shortCut box">
-                <img src="/images/HabbaLogo.png" alt="">
-            </div>
-            <div class="social-link box">
-                <div class="insta">
-                    <a href="https://www.instagram.com/acharyahabba/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                        <Span>@acharyahabba</Span>
-                    </a>
-                </div>
-                <div class="facebook">
-                    <a href="https://www.facebook.com/acharya.habba.3" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                        <span>Acharya Habba</span>
-                    </a>
-                </div>
-                <div class="email">
-                    <a href="mailto:acharyahabba@acharya.ac.in">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>acharyahabba@acharya.ac.in</span>
-                    </a>
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="copyright">
-            <p>© 2023 Designed & Developed by Habba Tech Team, Acharya Habba'23</p>
-        </div>
-    </footer>
+			</div>
+			<div class="col">
+				<h1>Reach Us <div class="underline"><span></span></div> </h1>
+				<!---<p><i style="line-height: 2;" class="fa-solid fa-phone-volume"></i><br>012-345-6789</p>---->
+				<p class="email-id"><i style="line-height: 2;" class="fa-solid fa-message"></i><br>acharyahabba@acharya.ac.in</p>
+				<p><i style="line-height: 2;" class="fa-solid fa-map-location-dot"></i><br>Acharya Dr. Sarvepalli Radhakrishnan Road Acharya Post, 
+                    Soladevanahalli Bangalore, Karnataka 560 107</p>
+			</div>
+			<div class="col">
+				<h1>Links <div class="underline"><span></span></div> </h1>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/event.html">Events</a></li>
+					<li><a href="../pages/team.html">Teams</a></li>
+					<li><a href="../pages/faq.html">FAQ</a></li>
+					<li><a href="../pages/contatus.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h1>Enquiry <div class="underline"><span></span></div> </h1>
+				<form>
+					<i class="fa-solid fa-envelope"></i>
+					<input type="email" placeholder="Enter your email id" required>
+					<button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+				</form>
+				<div class="social-icons">
+					<a href="" target="_blank"><i style="color:#717ffc;" class="fa-brands fa-square-facebook"></i></a>
+                    <a href="" target="_blank"><i style="color:#717ffc;" class="fa-brands fa-square-instagram"></i></a>
+                    <a href="" target="_blank"><i style="color:#717ffc;" class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href="" target="_blank"><i style="color:#717ffc;" class="fa-brands fa-square-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<p class="copyrights">© 2024 Designed and Developed by Habba Technical Team</p>
+	</footer>
 
     <!-- ##### Java Script #####  -->
     <script src="/script.js"></script>
 
+    <!-- #### Sponsor Logo Animation #### -->
+    <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+    </script>
 
 </body>
 

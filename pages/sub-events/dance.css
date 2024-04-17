@@ -12,11 +12,11 @@
     background: url('/images/Habba/beanstalk.webp');
     margin: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     width: 25%;
     border-radius: 10px;
     padding: 25px;
-
 }
 
 /* .dance-sec img {
@@ -27,13 +27,12 @@
 } */
 
 .event-cnt {
-    text-align: justify;
 }
 
 .event-cnt h1 {
-    margin-bottom: 15px;
-    letter-spacing: 0.11rem;
+    font-family: "JetBrains Mono", monospace;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 600px) {
