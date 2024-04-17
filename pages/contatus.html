@@ -11,109 +11,81 @@
 
     <!-- ##### StyleSheet ##### -->
     <link rel="stylesheet" href="/css/stylesheet.css">
-    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="/pages/contactus.css">
 
     <!-- ##### Google Fonts ##### -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- ##### Font awesome ##### -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Contact Us</title>
+    <!-- ##### AOS Scroll Animation ##### -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <title>Habba'23 | Contact Us</title>
 </head>
+
+<!-- Sub Headrer -->
 
 <body>
     <main>
+    <section class="sub-header">
         <nav>
-            <div class="logo">
-                <img src="/images/HabbaLogo.png" alt="HabbaLogo">
-            </div>
-
-            <div class="dropdown">
-                <button id="myBtn" class="dropbtn">Navigation</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="/index.html">Home</a>
-                    <a href="./event.html">Events</a>
-                    <a href="./schedule.html">Schedule</a>
-                    <a href="./sponsor.html">Sponsor</a>
-                    <a href="./team.html">Teams</a>
-                    <a href="./faq.html">Faq</a>
-                    <a href="./contatus.html">Contact Us</a>
-                </div>
-            </div>
-
-            <div class="menu flex">
-                <ul class="flex">
-                    <a href="/index.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="./event.html">
-                        <li>Events</li>
-                    </a>
-                    <a href="./schedule.html">
-                        <li>Schedule</li>
-                    </a>
-                    <a href="./sponsor.html">
-                        <li>Sponsor</li>
-                    </a>
-                    <a href="./team.html">
-                        <li>Teams</li>
-                    </a>
-                    <a href="./faq.html">
-                        <li>Faq</li>
-                    </a>
-                    <a href="./pages/contatus.html">
-                        <li>Contact Us</li>
-                    </a>
+            <a href="index.html"><img src="/images/HabbaLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/event.html">Events</a></li>
+                    <li><a href="../pages/team.html">Teams</a></li>
+                    <li><a href="../pages/faq.html">Faq</a></li>	
+                    <li><a href="../pages/contatus.html">Contact</a></li>				
                 </ul>
-
             </div>
-
-        </nav>
-
-
-
-
-
-
-
-
-    </main>
-    <section class="contactus">
-        <!-- <img src="/images/Cultural-characters.jpg" alt="contactus"> -->
-        <img src="/images/Contact-us.png" alt="contactus">
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav> 
+            <h1>Contact Us</h1>
     </section>
+    </main>
 
     <section class="contactus-box">
         <div class="name">
-            <p>Note : If you guys are facing any problem related to Habba'23, then you can directly connect with us by
+            <p>Note : If you guys are facing any problem related to Habba'24, then you can directly connect with us by
                 clicking on this mail.</p>
         </div>
         <div class="cnt-bx1 flex">
             <div class="name">
-                <h2>Kumar Gourav</h2>
-                <p><p>HR</p></p>
+                <h2>HR</h2>
+                <p><a href="tel:+916204810793">+91 6204810793</a></p>
             </div>
             <div class="name">
-                <h2>Abhishek Raj</h2>
-                <p><p>Marketing</p></p>
+                <h2>Marketing</h2>
+                <p><a href="tel:+919686381426">+91 9686381426</a></p>
             </div>
             <div class="name">
-                <h2>Rakesh Kumar</h2>
-                <p><p>Event & Technical</p></p>
+                <h2>Sponsor Marketing</h2>
+                <p><a href="tel:+918050668173">+91 8050668173</a></p>
             </div>
             <div class="name">
-                <h2>Abha Sharma</h2>
-                <p>Event</p>
+                <h2>Event</h2>
+                <p><a href="tel:+917023459840">+91 7023459840</a></p>
             </div>
         </div>
 
         <div class="habbamail">
             <p><a href="mailto:acharyahabba@acharya.ac.in">acharyahabba@acharya.ac.in</a></p>
+            <p><a href="tel:+919449890035">9449890035</a></p>
         </div>
 
     </section>
@@ -127,12 +99,26 @@
         </div>
     </section>
 
+    <!-- Sponsor Logo -->
 
+    <div class="logos">
+        <h1>Sponsor</h1>
+        <div class="logos-slide">
+          <img src="../images/Sponsor/1.png" />
+          <img src="../images/Sponsor/2.png" />
+          <img src="../images/Sponsor/3.png" />
+          <img src="../images/Sponsor/4.png" />
+          <img src="../images/Sponsor/5.png" />
+          <img src="../images/Sponsor/6.png" />
+          <img src="../images/Sponsor/7.png" />
+          <img src="../images/Sponsor/8.png" />
+        </div>
+      </div>
 
     <footer>
 		<div class="row">
 			<div class="col">
-				<img src="images/acharyalogo.png" class="logo1">
+				<img src="../images/acharyalogo.png" class="logo1">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Suspendisse tortor risus, tempor vel nulla quis, laoreet pharetra ex. 
                     Nunc tempor faucibus tempor. Aenean viverra, est sit amet vulputate tincidunt, 
@@ -149,26 +135,27 @@
 			<div class="col">
 				<h1>Links <div class="underline"><span></span></div> </h1>
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-                    <li><a href="about.html">Events</a></li>
-					<li><a href="admission.html">Teams</a></li>
-					<li><a href="contact.html">FAQ</a></li>
-					<li><a href="login.html">Contact</a></li>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/event.html">Events</a></li>
+					<li><a href="../pages/team.html">Teams</a></li>
+					<li><a href="../pages/faq.html">FAQ</a></li>
+					<li><a href="../pages/contatus.html">Contact</a></li>
 				</ul>
 			</div>
-			<div class="col">
+			<div class="col"> 
 				<h1>Enquiry <div class="underline"><span></span></div> </h1>
 				<form>
 					<i class="fa-solid fa-envelope"></i>
+
 					<input type="email" placeholder="Enter your email id" required>
 					<button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
 				</form>
 				<div class="social-icons">
-					<a href="" target="_blank"><i style="color:#152cfa;" class="fa-brands fa-square-facebook"></i></a>
-					<a href="" target="_blank"><i style="color:#152cfa;" class="fa-brands fa-square-instagram"></i></a>
-					<a href="" target="_blank"><i style="color:#152cfa;" class="fa-brands fa-square-whatsapp"></i></a>
-					<a href="" target="_blank"><i style="color:#152cfa;" class="fa-brands fa-square-youtube"></i></a>
+					<a href="" target="_blank"><i style="color:#717ffc;" class="fa-brands fa-square-facebook"></i></a>
+                    <a href="" target="_blank"><i style="color:#717ffc;" class="fa-brands fa-square-instagram"></i></a>
+                    <a href="" target="_blank"><i style="color:#717ffc;" class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href="" target="_blank"><i style="color:#717ffc;" class="fa-brands fa-square-youtube"></i></a>
 				</div>
 			</div>
 		</div>
@@ -178,6 +165,12 @@
 
     <!-- ##### Java Script #####  -->
     <script src="/script.js"></script>
+
+    <!-- #### Sponsor Logo Animation #### -->
+    <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+      </script>
 
 </body>
 
