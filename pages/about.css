@@ -105,6 +105,7 @@ body{
     transition: 0.5s;
     border-radius: 20px;
     box-shadow: 0 25px 50px rgba(255, 255, 255, 0.016);
+
 }
 
 .slider .slides:nth-child(1),
@@ -178,7 +179,7 @@ body{
 }
 
 .Keypoints{
-  margin: 700px 100px 0px 150px;
+  margin: 800px 100px 0px 150px;
   display: flex;
   justify-content: center;
 }
@@ -293,7 +294,8 @@ body{
 }
 
 .logos-slide img {
-  height: 100px;
+  border-radius: 100px;
+  height: 90px;
   margin: 0 40px;
 }
 
@@ -350,7 +352,7 @@ footer {
 	width: 100%;
 	position: absolute;
 	bottom: 1;
-	background-color: rgba(255, 255, 255, 0);
+  background: linear-gradient(to right, #000000, #1c1d1f);
 	/*background: url('../images/Habba/beanstalk.webp');*/
 	color: #eea47f;
 	padding: 30px 0 10px;
@@ -591,10 +593,10 @@ hr {
     }
     
     .yearsp h2{
-        color: #ffffff6a;
+        color: #ffffffc2;
         font-size: 60px;
         letter-spacing: 5px;
-        margin: -60px 0px 40px 0px;
+        margin: -50px 0px 40px 0px;
     }
     
     .yearsp p{
@@ -646,7 +648,7 @@ hr {
     }
 
     .Keypoints{
-      margin: 800px 13px 0px 13px;
+      margin: 900px 13px 0px 13px;
       display: flex;
       justify-content: center;
     }
@@ -723,7 +725,7 @@ hr {
     
 
     footer {
-        background: #ffffff00;
+      background: linear-gradient(to right, #000000, #1c1d1f);
         bottom: unset;
         margin-top: 10px;
       }
