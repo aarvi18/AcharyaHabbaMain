@@ -28,6 +28,23 @@ body{
 
 /* Sub Header - for other pages Header CSS end ---------- */
 
+.card {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.cardImage {
+  width: 100%;
+}
 
 .logos {
   overflow: hidden;
@@ -77,6 +94,8 @@ body{
   height: 100px;
   margin: 0 40px;
 }
+
+
 
 @media only screen and (max-width: 600px) {
   .sub-header {

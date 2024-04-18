@@ -57,12 +57,12 @@ body{
 }
 
 .yearsp h2{
-    color: #ffffff60;
-    font-family: "Chela One", system-ui;
-    font-size: 300px;
+    color: #ffffffb1;
+    font-family: GlorichExtraBold;
+    font-size: 280px;
     text-align: center;
     letter-spacing: 15px;
-    margin: -200px 0px 80px 0px;
+    margin: -170px 0px 80px 0px;
 }
 
 .yearsp p{
@@ -105,6 +105,7 @@ body{
     transition: 0.5s;
     border-radius: 20px;
     box-shadow: 0 25px 50px rgba(255, 255, 255, 0.016);
+
 }
 
 .slider .slides:nth-child(1),
@@ -178,7 +179,7 @@ body{
 }
 
 .Keypoints{
-  margin: 700px 100px 0px 150px;
+  margin: 800px 100px 0px 150px;
   display: flex;
   justify-content: center;
 }
@@ -293,15 +294,65 @@ body{
 }
 
 .logos-slide img {
-  height: 100px;
+  border-radius: 100px;
+  height: 90px;
   margin: 0 40px;
+}
+
+.Enquiry-fixed {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0);
+}
+.Enquiry-fixed ul a {
+  text-decoration: none;
+}
+
+.Enquiry-fixed li {
+  list-style: none;
+  color: #fff;
+  width: 60px;
+  display: flex;
+  overflow: hidden;
+  padding: 17px 17px 5px 17px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1.5rem;
+}
+.Enquiry-fixed li:hover {
+  width: 180px;
+}
+
+.Enquiry-fixed li i {
+  margin-right: 22px;
+}
+.register {
+  background-color: #717ffc;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.call {
+  background-color: #ff934f;
+  border-radius: 0px 20px 20px 0px;
+}
+
+
+.Enquiry-fixed .register:hover {
+  background-color: #717ffc;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.Enquiry-fixed .call:hover {
+  background-color: #ff934f;
+  border-radius: 0px 50px 50px 0px;
 }
 
 footer {
 	width: 100%;
 	position: absolute;
 	bottom: 1;
-	background-color: rgba(255, 255, 255, 0);
+  background: linear-gradient(to right, #000000, #1c1d1f);
 	/*background: url('../images/Habba/beanstalk.webp');*/
 	color: #eea47f;
 	padding: 30px 0 10px;
@@ -542,10 +593,10 @@ hr {
     }
     
     .yearsp h2{
-        color: #ffffff6a;
+        color: #ffffffc2;
         font-size: 60px;
         letter-spacing: 5px;
-        margin: -60px 0px 40px 0px;
+        margin: -50px 0px 40px 0px;
     }
     
     .yearsp p{
@@ -597,7 +648,7 @@ hr {
     }
 
     .Keypoints{
-      margin: 800px 13px 0px 13px;
+      margin: 900px 13px 0px 13px;
       display: flex;
       justify-content: center;
     }
@@ -674,7 +725,7 @@ hr {
     
 
     footer {
-        background: #ffffff00;
+      background: linear-gradient(to right, #000000, #1c1d1f);
         bottom: unset;
         margin-top: 10px;
       }
