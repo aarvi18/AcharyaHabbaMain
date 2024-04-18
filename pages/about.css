@@ -57,12 +57,12 @@ body{
 }
 
 .yearsp h2{
-    color: #ffffff60;
-    font-family: "Chela One", system-ui;
-    font-size: 300px;
+    color: #ffffffb1;
+    font-family: GlorichExtraBold;
+    font-size: 280px;
     text-align: center;
     letter-spacing: 15px;
-    margin: -200px 0px 80px 0px;
+    margin: -170px 0px 80px 0px;
 }
 
 .yearsp p{
@@ -295,6 +295,55 @@ body{
 .logos-slide img {
   height: 100px;
   margin: 0 40px;
+}
+
+.Enquiry-fixed {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0);
+}
+.Enquiry-fixed ul a {
+  text-decoration: none;
+}
+
+.Enquiry-fixed li {
+  list-style: none;
+  color: #fff;
+  width: 60px;
+  display: flex;
+  overflow: hidden;
+  padding: 17px 17px 5px 17px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1.5rem;
+}
+.Enquiry-fixed li:hover {
+  width: 180px;
+}
+
+.Enquiry-fixed li i {
+  margin-right: 22px;
+}
+.register {
+  background-color: #717ffc;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.call {
+  background-color: #ff934f;
+  border-radius: 0px 20px 20px 0px;
+}
+
+
+.Enquiry-fixed .register:hover {
+  background-color: #717ffc;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.Enquiry-fixed .call:hover {
+  background-color: #ff934f;
+  border-radius: 0px 50px 50px 0px;
 }
 
 footer {
