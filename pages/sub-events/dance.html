@@ -1,73 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- This one is for favicon logo -->
-     <link rel="shortcut icon" href="/images/HabbaLogo.png" type="image/x-icon">
+    <!-- This one is for favicon logo -->
+    <link rel="shortcut icon" href="/images/HabbaLogo.png" type="image/x-icon">
 
-     <!-- ##### StyleSheet ##### -->
-     <link rel="stylesheet" href="/css/stylesheet.css">
-     <link rel="stylesheet" href="/pages/faq.css">
-     <link rel="stylesheet" href="./dance.css">
- 
-     <!-- ##### Google Fonts ##### -->
-     <link
-         href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap"
-         rel="stylesheet">
- 
-     <!-- ##### Font awesome ##### -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ##### StyleSheet ##### -->
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="../about.css">
+    <link rel="stylesheet" href="../sub-events/dance.css">
+
+    <!-- ##### Google Fonts ##### -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rochester&family=Sacramento&family=Sail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rochester&family=Sacramento&family=Sail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Sail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceland&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <!---Updated Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet" />
+
+
+    <!-- ##### Font awesome ##### -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ##### AOS Scroll Animation ##### -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <title>Habba'23 | Dance</title>
 </head>
+
+<!-- Sub Headrer -->
+
 <body>
-    
     <main>
+    <section class="sub-header">
         <nav>
-            <div class="logo">
-                <img src="/images/HabbaLogo.png" alt="HabbaLogo">
-            </div>
-
-            <div class="menu flex">
-                <ul class="flex">
-                    <a href="/index.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="/pages/event.html">
-                        <li>Events</li>
-                    </a>
-                    <a href="/pages/schedule">
-                        <li>Schedule</li>
-                    </a>
-                    <a href="/pages/sponsor.html">
-                        <li>Sponsor</li>
-                    </a>
-                    <a href="/pages/team.html">
-                        <li>Teams</li>
-                    </a>
-                    <a href="/pages/faq.html">
-                        <li>Faq</li>
-                    </a>
-                    <a href="/pages/contatus.html">
-                        <li>Contact Us</li>
-                    </a>
+            <a href="index.html"><img src="/images/HabbaLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/event.html">Events</a></li>
+                    <li><a href="../pages/team.html">Teams</a></li>
+                    <li><a href="../pages/faq.html">Faq</a></li>	
+                    <li><a href="../pages/contatus.html">Contact</a></li>				
                 </ul>
-
             </div>
-
-        </nav>
-
-        <div class="faq-heading">
-            <h1>- Dance -</h1>
-            <!-- <img src="/images/Cultural-characters.jpg" alt=""> -->
-        </div>
-    </main>
-
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav> 
+            <h1>DANCE</h1>
+    </section>
 
     <section class="dance">
 
@@ -77,15 +147,10 @@
                 
             </div>
         </div>
-        <div class="dance-sec">
-            <div class="event-cnt">
-                <h1>Natya Mayuri</h1>
-                
-            </div>
         </div>
         <div class="dance-sec">
             <div class="event-cnt">
-                <h1>Any Body Can Dance</h1>
+                <h1>Solo Dance</h1>
                 
             </div>
         </div>
@@ -96,53 +161,123 @@
             </div>
         </div>
 
-    </section>
+    </section> 
 
+<!-- Footer Page -->
 
-    <footer class="footer">
-        <div class="sub-footer flex">
-            <div class="college-add box">
-                <img src="/images/acharyalogo.png" alt="acharyaLogo">
-                <p>
-                    Acharya Dr. Sarvepalli
-                    Radhakrishnan Road
-                    Acharya PO, Soladevanahalli
-                    Bangalore-560 107, India
-                </p>
-
-
-            </div>
-            <div class="shortCut box">
-                <img src="/images/HabbaLogo.png" alt="">
-            </div>
-            <div class="social-link box">
-                <div class="insta">
-                    <a href="https://www.instagram.com/acharyahabba/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                        <Span>@acharyahabba</Span>
-                    </a>
-                </div>
-                <div class="facebook">
-                    <a href="https://www.facebook.com/acharya.habba.3" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                        <span>Acharya Habba</span>
-                    </a>
-                </div>
-                <div class="email">
-                    <a href="mailto:acharyahabba@acharya.ac.in">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>acharyahabba@acharya.ac.in</span>
-                    </a>
-                </div>
-
-
-            </div>
+<footer>
+    <div class="row">
+      <div class="col">
+        <img src="../../images/acharyalogo.png" class="logo1" />
+        <p>
+          Acharya Habba, launched in 2005, is an annual college fest known for its diverse social and cultural experiences, featuring talent displays, music, sports, and collaborative events. With over 50 inter-collegiate competitions, it's one of Bangalore's top festivals, attracting students from various colleges. Over the years, it has expanded its size and reputation, drawing top performers and renowned figures from the music industry to its expansive campus.
+        </p>
+      </div>
+      <div class="col">
+        <h1>
+          Reach Us
+          <div class="underline"><span></span></div>
+        </h1>
+        <!---<p><i style="line-height: 2;" class="fa-solid fa-phone-volume"></i><br>012-345-6789</p>---->
+        <p class="email-id">
+          <i style="line-height: 2" class="fa-solid fa-square-envelope"></i
+          ><br />acharyahabba@acharya.ac.in
+        </p>
+        <p>
+          <i style="line-height: 2" class="fa-solid fa-location-dot"></i
+          ><br />Acharya Dr. Sarvepalli Radhakrishnan Road Acharya Post,
+          Soladevanahalli Bangalore, Karnataka 560 107
+        </p>
+      </div>
+      <div class="col">
+        <h1>
+          Links
+          <div class="underline"><span></span></div>
+        </h1>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../pages/event.html">Events</a></li>
+                    <li><a href="../pages/team.html">Teams</a></li>
+                    <li><a href="../pages/faq.html">FAQ</a></li>
+                    <li><a href="../pages/contatus.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>
+          Enquiry
+          <div class="underline"><span></span></div>
+        </h1>
+        <form>
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required />
+          <button type="submit">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+        <div class="social-icons">
+          <a href="" target="_blank"
+            ><i
+              style="color: #717ffc"
+              class="fa-brands fa-square-facebook"
+            ></i
+          ></a>
+          <a href="" target="_blank"
+            ><i
+              style="color: #717ffc"
+              class="fa-brands fa-square-instagram"
+            ></i
+          ></a>
+          <a href="" target="_blank"
+            ><i
+              style="color: #717ffc"
+              class="fa-brands fa-square-whatsapp"
+            ></i
+          ></a>
+          <a href="" target="_blank"
+            ><i
+              style="color: #717ffc"
+              class="fa-brands fa-square-youtube"
+            ></i
+          ></a>
         </div>
+      </div>
+    </div>
+    <hr />
+    <p class="copyrights">
+      © 2024 Designed and Developed by Habba Technical Team
+    </p>
+  </footer>
+</main>
 
-        <div class="copyright">
-            <p>© 2023 Designed & Developed by Habba Tech Team, Acharya Habba'23</p>
-        </div>
-    </footer>
+<!-- ##### Java Script #####  -->
+<script src="./script.js"></script>
+<script src="./script1.js"></script>
+
+<!-- Nav Bar -->
+<script>
+
+  var navLinks = document.getElementById("navLinks");	
+  function showMenu(){
+      navLinks.style.right = "0px";
+  }
+  function hideMenu(){
+      navLinks.style.right = "-200px";
+  }
+  
+</script> 
+
+<!-- ##### AOS Scroll Animation ##### -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- #### Sponsor Logo Animation #### -->
+<script>
+  var copy = document.querySelector(".logos-slide").cloneNode(true);
+  document.querySelector(".logos").appendChild(copy);
+</script>
 
 </body>
 </html>

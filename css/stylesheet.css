@@ -94,11 +94,11 @@ nav img {
 }
 
 .nav-links ul li a {
+  font-family: Glorich;
   color: #fff;
-  font-family: "Kanit", sans-serif;
   text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 .nav-links ul li::after {
@@ -490,7 +490,7 @@ nav .fa {
   position: relative;
 }
 
-.logos h1{
+.logos h1 {
   font-size: 50px;
   color: #fff;
   text-align: center;
@@ -509,12 +509,20 @@ nav .fa {
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  );
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  );
 }
 
 .logos:hover .logos-slide {
@@ -825,6 +833,8 @@ hr {
     right: -200px;
     text-align: left;
     z-index: 2;
+    background: white;
+    transition: 0.2s ease-in-out;
     transition: 0.3s ease-in-out;
     background: black;
   }
