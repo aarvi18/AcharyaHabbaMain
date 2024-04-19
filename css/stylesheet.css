@@ -559,7 +559,6 @@ nav .fa {
   width: 50px;
   display: flex;
   overflow: hidden;
-  align-items: center;
   padding: 17px 17px 5px 17px;
   cursor: pointer;
   transition: all 0.2s;
