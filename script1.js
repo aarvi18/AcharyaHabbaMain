@@ -8,7 +8,7 @@ function updateCountdown () {
     const timeRemaining = targetDateTime - currentDate;
 
     if (timeRemaining <= 0) {
-        document.getElementById('countdown').innerHTML = "Welcome to Course by Sid";
+        document.getElementById('countdown').innerHTML = "Welcome to HABBA 2K24";
     } else {
 
         const days = Math.floor(timeRemaining / (1000*60*60*24));
