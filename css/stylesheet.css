@@ -188,40 +188,19 @@ nav img {
 }
 
 .button-home-right {
-  /* display: block;
-  text-decoration: none;
-  color: black;
-  padding: 12px 70px;
-  font-size: 18px;
-  background: #ff913d;
-  position: relative;
-  cursor: pointer;
-  margin: 10px 0px 0px 0px;
-  transition: 0.4s ease-in-out; */
-
   background: linear-gradient(to right, #ff8c00, #e66b00); /* Orange gradient */
   color: white;
   padding: 15px 30px;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease-in-out;
-}
-
-.button-home-right button {
-  font-family: "JetBrains mono", monospace;
-  position: relative;
-  z-index: 2;
-  font-weight: 500;
-  border: none;
-  color: black;
+  transition: 0.2s ease-in-out;
   font-size: 22px;
-  background: transparent;
+  color: black;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .button-home-right:hover {
-  /* background: linear-gradient(to top, #ff8c00, #e66b00); Shift direction */
+  border-radius: 0;
 }
 
 /* .button-home-right:after {
@@ -291,7 +270,8 @@ nav .fa {
 }
 
 .about-habba-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../images/background/bg2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/background/bg2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -346,7 +326,8 @@ nav .fa {
   text-align: center;
   padding: 25px;
   margin: auto;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),url("../images/background/bg3.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)),
+    url("../images/background/bg3.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -559,7 +540,6 @@ nav .fa {
   width: 50px;
   display: flex;
   overflow: hidden;
-  align-items: center;
   padding: 17px 17px 5px 17px;
   cursor: pointer;
   transition: all 0.2s;
