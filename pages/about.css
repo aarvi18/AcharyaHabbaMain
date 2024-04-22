@@ -762,7 +762,7 @@ hr {
   }
 
   .Keypoints {
-    margin: 900px 13px 0px 13px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
   }
