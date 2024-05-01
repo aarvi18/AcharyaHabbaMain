@@ -1,6 +1,6 @@
 // Countdown
 
-const targetDateTime = new Date("2024-04-20T15:00:00");
+const targetDateTime = new Date("2024-05-10T14:00:00");
 
 function updateCountdown() {
   const currentDate = new Date();
@@ -8,7 +8,8 @@ function updateCountdown() {
   const timeRemaining = targetDateTime - currentDate;
 
   if (timeRemaining <= 0) {
-    document.getElementById("countdown").innerHTML = "Welcome to HABBA 2K24";
+    document.getElementById("countdown").innerHTML =
+      "Prepare yourself for the Bangalore biggest fest";
   } else {
     const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
     const hours = Math.floor(
