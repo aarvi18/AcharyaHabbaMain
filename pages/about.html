@@ -1,236 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- This one is for favicon logo -->
-    <link rel="shortcut icon" href="/images/HabbaLogo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/images/HabbaLogo.png"
+      type="image/x-icon"
+    />
 
     <!-- ##### StyleSheet ##### -->
-    <link rel="stylesheet" href="/css/stylesheet.css">
-    <link rel="stylesheet" href="/pages/about.css">
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <link rel="stylesheet" href="/pages/about.css" />
 
     <!-- ##### Google Fonts ##### -->
-    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300;400;500;700&family=Sancreek&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- ##### Font awesome ##### -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- ##### AOS Scroll Animation ##### -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Habba'24 | About</title>
-</head>
+  </head>
 
-<!-- Sub Headrer -->
+  <!-- Sub Headrer -->
 
-<body>
+  <body>
     <main>
-    <section class="sub-header">
+      <section class="sub-header">
         <nav>
-            <a href="index.html"><img src="/images/HabbaLogo.png"></a>
-            <div class="nav-links" id="navLinks">
+          <a href="index.html"><img src="/images/HabbaLogo.png" /></a>
+          <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/about.html">About</a></li>
-                    <li><a href="../pages/event.html">Events</a></li>
-                    <li><a href="../pages/team.html">Teams</a></li>
-                    <li><a href="../pages/faq.html">Faq</a></li>	
-                    <li><a href="../pages/contatus.html">Contact</a></li>				
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav> 
-            <h1>About Habba</h1>
-    </section>
-    
-    <!-- Years of Celebration -->
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../pages/about.html">About</a></li>
+              <li><a href="../pages/event.html">Events</a></li>
+              <li><a href="../pages/team.html">Teams</a></li>
+              <li><a href="../pages/faq.html">Faq</a></li>
+              <li><a href="../pages/contatus.html">Contact</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Habba</h1>
+      </section>
 
-    <div class="year">
-        <h1>Celebrating 18th year of <i style="background: linear-gradient(to top, #ffb765, #ff6600); 
-                    -webkit-background-clip: text; 
-                    -webkit-text-fill-color: transparent; font-weight: 500;">Acharya Habba</i>..</h1>
-    </div>
+      <!-- Years of Celebration -->
 
-    <div class="Years">
+      <div class="year">
+        <h1>
+          Celebrating 18th year of
+          <i
+            style="
+              background: linear-gradient(to top, #ffb765, #ff6600);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              font-weight: 500;
+            "
+            >Acharya Habba</i
+          >..
+        </h1>
+      </div>
+
+      <div class="Years">
         <div class="yearsp">
-            <a href="index.html"><img src="../images/Habba/60.JPG"></a>
-            <h2>HABBA....</h2>
+          <a href="../index.html"><img src="../images/Habba/60.JPG" /></a>
 
-            <p>Acharya provides a unique social and cultural experience at its annual festival that is filled with talent showcases, 
-                music, cultural collaborations, and a lively atmosphere to enrich the students’ college life. 
-                Acharya Habba attracts numerous students from various colleges to participate in various inter-collegiate competitions,
-                events and showcases.
+          <div class="para-div">
+            <p>
+              Acharya provides a unique social and cultural experience at its
+              annual festival that is filled with talent showcases, music,
+              cultural collaborations, and a lively atmosphere to enrich the
+              students’ college life. Acharya Habba attracts numerous students
+              from various colleges to participate in various inter-collegiate
+              competitions, events and showcases.
             </p>
 
-            <p>The enormous campus comes alive with the music, mascot, and much more! The three-day annual college festival 
-                hosts more than 50 events across various departments. “Habba” in its true essence is a grand festival and a 
-                showcase of the best Acharya has to offer.
+            <p>
+              The enormous campus comes alive with the music, mascot, and much
+              more! The three-day annual college festival hosts more than 50
+              events across various departments. “Habba” in its true essence is
+              a grand festival and a showcase of the best Acharya has to offer.
             </p>
 
-            <p>Acharya Habba- launched in 2005, and has now emerged as one of the biggest and best college festivals in Bangalore, 
-                with every year the festival getting bigger and better. Acharya’s enormous, picturesque campus is an added advantage 
-                to hosting thousands of students and visitors. Some of the best performers and the biggest names in the music industry 
-                have marked their presence in Acharya Habba.
+            <p>
+              Acharya Habba- launched in 2005, and has now emerged as one of the
+              biggest and best college festivals in Bangalore, with every year
+              the festival getting bigger and better. Acharya’s enormous,
+              picturesque campus is an added advantage to hosting thousands of
+              students and visitors. Some of the best performers and the biggest
+              names in the music industry have marked their presence in Acharya
+              Habba.
             </p>
 
-            <p>Acharya Habba grew from a few thousand attendees in its first year to 30,000 visitors in a decade, and now hosting over 
-                50,000 guests in 2023. Renowned musicians like Gurukiran, Benny Dayal have graced the stage previously at the festival. 
-                Numerous talented artists have brought art and music back to life at Acharya Habba and shone their creativity along with
-                various cultural showcases by the students.
+            <p>
+              Acharya Habba grew from a few thousand attendees in its first year
+              to 30,000 visitors in a decade, and now hosting over 50,000 guests
+              in 2023. Renowned musicians like Gurukiran, Benny Dayal have
+              graced the stage previously at the festival. Numerous talented
+              artists have brought art and music back to life at Acharya Habba
+              and shone their creativity along with various cultural showcases
+              by the students.
             </p>
 
-            <p>Events such as multicultural Ethnic Day celebrations, Canvas Painting, Face Painting, Clay Modelling, Western and 
-                Classical Singing and Dance showcases, Faculty Talent Events, Cooking Events, Habbathon, Treasure Hunt, Coding 
-                Competitions, Cosplaying, Open Mic Events for Poetry Recitals and Comic Stand-Up Acts, are few of the events that 
-                make up Acharya Habba. Various Sports Leagues in Basketball, Volleyball, Kabaddi, and Acharya Premier League (Cricket) 
-                keep you on the edge of your seat.
+            <p>
+              Events such as multicultural Ethnic Day celebrations, Canvas
+              Painting, Face Painting, Clay Modelling, Western and Classical
+              Singing and Dance showcases, Faculty Talent Events, Cooking
+              Events, Habbathon, Treasure Hunt, Coding Competitions, Cosplaying,
+              Open Mic Events for Poetry Recitals and Comic Stand-Up Acts, are
+              few of the events that make up Acharya Habba. Various Sports
+              Leagues in Basketball, Volleyball, Kabaddi, and Acharya Premier
+              League (Cricket) keep you on the edge of your seat.
             </p>
-
-        </div>
-    </div>
-
-    <!-- Image Slider -->
-
-    <div class="containerimg">
-        <div class="slider">
-            <div class="slides" style="--img: url('../images/Habba/1.jpg')">
-                <div class="content"></div>
-            </div>
-            <div class="slides" style="--img: url('../images/Habba/2.jpg')">
-                <div class="content"></div>
-            </div>
-            <div class="slides" style="--img: url('../images/Habba/3.jpg')">
-                <div class="content"></div>
-            </div>
-            <div class="slides" style="--img: url('../images/Habba/4.jpg')">
-                <div class="content"></div>
-            </div>
-            <div class="slides" style="--img: url('../images/Habba/5.jpg')">
-                <div class="content"></div>
-            </div>
-            <div class="slides" style="--img: url('../images/Habba/6.jpg')">
-                <div class="content"></div>
-            </div>
-        </div>
-        <div class="buttons">
-            <span class="prev"></span>
-            <span class="next"></span>
-        </div>
-    </div>
-
-    <!-- Keypoints -->
-    <section class="Keypoints">
-
-        <div class="keypoints-head">
-            <h1>Spotlight moments of acharya <i style="background: linear-gradient(45deg, #ff5900, #ffae89);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;">Habba 2K24</i></h1>
-            <p>Experience the pulse of Bengaluru’s biggest fest at Acharya Habba – where tradition 
-                thrives and memories are made!</p>
-            <div class="keypoints-title">
-                <div class="keypoints-title-1">
-
-                    <div class="keypoints-point">
-                        <i class="fa-solid fa-headphones-simple"></i>
-                        <h2>DJ Night</h2>
-                        <p>Don’t miss out the opportunity of experiencing electrifying beats and euphoric melodies with The 
-                            Acharya Habba. From the pulsating bass drops to the mesmerizing light show, every moment is a thrilling 
-                            adventure.</p>
-                    </div>
-
-                    <div class="keypoints-point">
-                        <i class="fa-solid fa-baseball-bat-ball"></i>
-                        <h2>APL</h2>
-                        <p>APL is an eagerly anticipated event that brings together students, faculty, and staff in a spirited display 
-                            of cricketing talent and camaraderie.</p>
-                    </div>
-
-                    <div class="keypoints-point">
-                        <i class="fa-solid fa-dumbbell"></i>
-                        <h2>Weightlifting</h2>
-                        <p>It’s a testament to the dedication and hard work of each participant, making the weightlifting competition a 
-                            highlight of the college sports calendar.</p>
-                    </div>
-
-                </div>
-                <div class="keypoints-title-2">
-
-                    <div class="keypoints-point">
-                        <i class="fa-solid fa-guitar"></i>
-                        <h2>Batel of Bands</h2>
-                        <p>Attire spectra is a dazzling spectacle that combines creativity, style, and flair. Students showcase their 
-                            talent design, modeling, and presentation as they bring their unique fashion visions to life on the 
-                            runway.</p>
-                    </div>
-
-                    <div class="keypoints-point">
-                        <i class="fa-solid fa-car-side"></i>
-                        <h2>Soap Box</h2>
-                        <p>Unleash Your Creativity and Engineering Skills!
-                            Join us for an exhilarating soapbox competition where creativity, engineering 
-                            prowess, and teamwork collide!</p>
-                    </div>
-                    
-                    <div class="keypoints-point">
-                        <i class="fa-solid fa-person-half-dress"></i>
-                        <h2>Attire-Spectra</h2>
-                        <p>Step into a world of style and creativity as students take the spotlight at 
-                            Attire Spectra! Welcome to a fashion extravaganza like no other.</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Sponsor Logo -->
-
-    <div class="logos">
-        <h1>Sponsor</h1>
-        <div class="logos-slide">
-            <img src="../images/Sponsor/1.jpg" />
-            <img src="../images/Sponsor/2.jpg" />
-            <img src="../images/Sponsor/3.jpg" />
-            <img src="../images/Sponsor/4.jpg" />
-            <img src="../images/Sponsor/5.jpg" />
-            <img src="../images/Sponsor/6.jpg" />
-            <img src="../images/Sponsor/7.jpg" />
-            <img src="../images/Sponsor/8.jpg" />
+          </div>
         </div>
       </div>
 
-    <!-- Side Fixed Icons -->
+      <!-- Image Slider -->
 
-    <section class="Enquiry-fixed">
+      <!-- <div class="containerimg">
+        <div class="slider">
+          <div class="slides" style="--img: url('../images/Habba/1.jpg')">
+            <div class="content"></div>
+          </div>
+          <div class="slides" style="--img: url('../images/Habba/2.jpg')">
+            <div class="content"></div>
+          </div>
+          <div class="slides" style="--img: url('../images/Habba/3.jpg')">
+            <div class="content"></div>
+          </div>
+          <div class="slides" style="--img: url('../images/Habba/4.jpg')">
+            <div class="content"></div>
+          </div>
+          <div class="slides" style="--img: url('../images/Habba/5.jpg')">
+            <div class="content"></div>
+          </div>
+          <div class="slides" style="--img: url('../images/Habba/6.jpg')">
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="buttons">
+          <span class="prev"></span>
+          <span class="next"></span>
+        </div>
+      </div> -->
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="../images/Habba/1.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../images/Habba/2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../images/Habba/3.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../images/Habba/4.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../images/Habba/5.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../images/Habba/6.jpg" style="width: 100%" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+      <br />
+
+      <!-- Keypoints -->
+      <section class="Keypoints">
+        <div class="keypoints-head">
+          <h1>
+            Spotlight moments of acharya
+            <i
+              style="
+                background: linear-gradient(45deg, #ff5900, #ffae89);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+              >Habba 2K24</i
+            >
+          </h1>
+          <p>
+            Experience the pulse of Bengaluru’s biggest fest at Acharya Habba –
+            where tradition thrives and memories are made!
+          </p>
+          <div class="keypoints-title">
+            <div class="keypoints-title-1">
+              <div class="keypoints-point">
+                <i class="fa-solid fa-headphones-simple"></i>
+                <h2>DJ Night</h2>
+                <p>
+                  Don’t miss out the opportunity of experiencing electrifying
+                  beats and euphoric melodies with The Acharya Habba. From the
+                  pulsating bass drops to the mesmerizing light show, every
+                  moment is a thrilling  adventure.
+                </p>
+              </div>
+
+              <div class="keypoints-point">
+                <i class="fa-solid fa-baseball-bat-ball"></i>
+                <h2>APL</h2>
+                <p>
+                  APL is an eagerly anticipated event that brings together
+                  students, faculty, and staff in a spirited display of
+                  cricketing talent and camaraderie.
+                </p>
+              </div>
+
+              <div class="keypoints-point">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h2>Weightlifting</h2>
+                <p>
+                  It’s a testament to the dedication and hard work of each
+                  participant, making the weightlifting competition a highlight
+                  of the college sports calendar.
+                </p>
+              </div>
+            </div>
+            <div class="keypoints-title-2">
+              <div class="keypoints-point">
+                <i class="fa-solid fa-guitar"></i>
+                <h2>Battle of Bands</h2>
+                <p>
+                  Attire spectra is a dazzling spectacle that combines
+                  creativity, style, and flair. Students showcase their talent
+                  design, modeling, and presentation as they bring their unique
+                  fashion visions to life on the  runway.
+                </p>
+              </div>
+
+              <div class="keypoints-point">
+                <i class="fa-solid fa-car-side"></i>
+                <h2>Soap Box</h2>
+                <p>
+                  Unleash Your Creativity and Engineering Skills! Join us for an
+                  exhilarating soapbox competition where creativity, engineering
+                  prowess, and teamwork collide!
+                </p>
+              </div>
+
+              <div class="keypoints-point">
+                <i class="fa-solid fa-person-half-dress"></i>
+                <h2>Attire-Spectra</h2>
+                <p>
+                  Step into a world of style and creativity as students take the
+                  spotlight at Attire Spectra! Welcome to a fashion
+                  extravaganza like no other.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sponsor Logo -->
+
+      <div class="logos">
+        <h1>Sponsor</h1>
+        <div class="logos-slide">
+          <img src="../images/Sponsor/1.jpg" />
+          <img src="../images/Sponsor/2.jpg" />
+          <img src="../images/Sponsor/3.jpg" />
+          <img src="../images/Sponsor/4.jpg" />
+          <img src="../images/Sponsor/5.jpg" />
+          <img src="../images/Sponsor/6.jpg" />
+          <img src="../images/Sponsor/7.jpg" />
+          <img src="../images/Sponsor/8.jpg" />
+          <img src="../images/Sponsor/9.jpg" />
+        </div>
+      </div>
+
+      <!-- Side Fixed Icons -->
+
+      <section class="Enquiry-fixed">
         <ul>
-            <a href="tel:+919449890035">
-                <li class="register"><i class="fa-solid fa-phone"></i>Enquiry</li>
-            </a>
-            <a href="https://register.acharyahabba.com/">
-                <li class="call"><i class="fa-solid fa-newspaper"></i>Register</li>
-            </a>
+          <a href="tel:+919449890035">
+            <li class="register"><i class="fa-solid fa-phone"></i>Enquiry</li>
+          </a>
+          <a href="https://register.acharyahabba.com/">
+            <li class="call"><i class="fa-solid fa-newspaper"></i>Register</li>
+          </a>
         </ul>
-    </section>
-    
-    <!-- Footer Page -->
+      </section>
 
-    <footer>
+      <!-- Footer Page -->
+
+      <footer>
         <div class="row">
           <div class="col">
             <img src="../images/acharyalogo.png" class="logo1" />
@@ -246,14 +369,38 @@
             </p>
           </div>
           <div class="col">
-            <h1>Reach Us <div class="underline"><span></span></div></h1>
-            <p><i style="line-height: 2;" class="fa-solid fa-phone-volume"></i><br>
-                <a href="tel:+919449890035" style="color: #ffffff; text-decoration: none;">9449890035</a></p>
-            <p class="email-id"><i style="line-height: 2;" class="fa-solid fa-square-envelope"></i><br>
-                <a href="mailto:acharyahabba@acharya.ac.in" style="color: #ffffff; text-decoration: none;">acharyahabba@acharya.ac.in</a></p>
-            <p><i style="line-height: 2;" class="fa-solid fa-location-dot"></i><br><a href="contatus.html" style="color: #ffffff; text-decoration: none;">Acharya Dr. Sarvepalli Radhakrishnan Road Acharya Post, 
-                Soladevanahalli Bangalore, Karnataka 560 107</a></p>
-        </div>
+            <h1>
+              Reach Us
+              <div class="underline"><span></span></div>
+            </h1>
+            <p>
+              <i style="line-height: 2" class="fa-solid fa-phone-volume"></i
+              ><br />
+              <a
+                href="tel:+919449890035"
+                style="color: #ffffff; text-decoration: none"
+                >9449890035</a
+              >
+            </p>
+            <p class="email-id">
+              <i style="line-height: 2" class="fa-solid fa-square-envelope"></i
+              ><br />
+              <a
+                href="mailto:acharyahabba@acharya.ac.in"
+                style="color: #ffffff; text-decoration: none"
+                >acharyahabba@acharya.ac.in</a
+              >
+            </p>
+            <p>
+              <i style="line-height: 2" class="fa-solid fa-location-dot"></i
+              ><br /><a
+                href="contatus.html"
+                style="color: #ffffff; text-decoration: none"
+                >Acharya Dr. Sarvepalli Radhakrishnan Road Acharya Post,
+                Soladevanahalli Bangalore, Karnataka 560 107</a
+              >
+            </p>
+          </div>
           <div class="col">
             <h1>
               Links
@@ -281,10 +428,31 @@
               </button>
             </form>
             <div class="social-icons">
-              <a href="" target="_blank"><i style="color:#717ffc;" class="fa-solid fa-folder-open"></i></a>
-              <a href="https://www.instagram.com/acharyahabba?igsh=MTdxbjg4Ym1vMmw2cQ==" target="_blank"><i style="color: #717ffc"class="fa-brands fa-square-instagram"></i></a>
-              <a href="https://wa.me/918762691191" target="_blank"><i style="color: #717ffc"class="fa-brands fa-square-whatsapp"></i></a>
-              <a href="https://youtube.com/@AcharyaHabba?si=MpiqVtdzJiE0DctM" target="_blank"><i style="color: #717ffc"class="fa-brands fa-square-youtube"></i></a>
+              <a href="" target="_blank"
+                ><i style="color: #717ffc" class="fa-solid fa-folder-open"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/acharyahabba?igsh=MTdxbjg4Ym1vMmw2cQ=="
+                target="_blank"
+                ><i
+                  style="color: #717ffc"
+                  class="fa-brands fa-square-instagram"
+                ></i
+              ></a>
+              <a href="https://wa.me/+919449890035" target="_blank"
+                ><i
+                  style="color: #717ffc"
+                  class="fa-brands fa-square-whatsapp"
+                ></i
+              ></a>
+              <a
+                href="https://youtube.com/@AcharyaHabba?si=MpiqVtdzJiE0DctM"
+                target="_blank"
+                ><i
+                  style="color: #717ffc"
+                  class="fa-brands fa-square-youtube"
+                ></i
+              ></a>
             </div>
           </div>
         </div>
@@ -295,53 +463,65 @@
       </footer>
     </main>
 
-        <!-- ##### Java Script #####  -->
-        <script src="./script.js"></script>
-        <script src="./script1.js"></script>
+    <!-- ##### Java Script #####  -->
+    <script src="../script.js"></script>
+    <script src="../script1.js"></script>
 
-        <!-- Nav Bar -->
-        <script>
-    
-            var navLinks = document.getElementById("navLinks");	
-            function showMenu(){
-                navLinks.style.right = "0px";
-            }
-            function hideMenu(){
-                navLinks.style.right = "-200px";
-            }
-            
-        </script> 
-        
-    
-        <!-- ##### AOS Scroll Animation ##### -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+    <!-- Nav Bar -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
 
-        <!-- Image Slider Script -->
-        <script>
-            let next = document.querySelector('.next');
-            let prev = document.querySelector('.prev');
-            let slider = document.querySelector('.slider');
+    <!-- ##### AOS Scroll Animation ##### -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-            next.addEventListener('click', function(){
-            let slides = document.querySelectorAll('.slides');
-            slider.appendChild(slides[0]);
-            })
-            prev.addEventListener('click', function(){
-            let slides = document.querySelectorAll('.slides');
-            slider.prepend(slides[slides.length - 1]);
-            })
-        </script>
+    <!-- Image Slider Script -->
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
 
     <!-- #### Sponsor Logo Animation #### -->
     <script>
-        var copy = document.querySelector(".logos-slide").cloneNode(true);
-        document.querySelector(".logos").appendChild(copy);
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
     </script>
-
-
-</body>
-
+  </body>
 </html>
